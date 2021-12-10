@@ -1,3 +1,18 @@
+/*===== ADMIN / NAVBAR ===== */
+const toggleButton = document.getElementsByClassName('toggle-button')[0];
+
+console.log(toggleButton);
+const navbarLinks = document.getElementsByClassName('navbar-links')[0];
+
+
+console.log(navbarLinks);
+
+console.log(navbarLinks.classList)
+toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active');
+})
+
+
 var removeCartItemBottons = document.querySelector(".removeBtn")
 for (var i = 0; i < removeCartItemBottons.length; i++) {
     var button = removeCartItemBottons[i]
