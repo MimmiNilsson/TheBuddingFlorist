@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff; }
+
+/*===== ADMIN LOGIN SECTION =====*/
+.login-container {
+  width: 65vh;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* min-height: 100vh;  */
+  height: 100vh;
+  font-size: 1rem;
+  margin: auto; }
+
+.login-group {
+  margin-bottom: 1rem;
+  transition: all .3s; }
+
+.login-label {
+  display: block;
+  opacity: 1;
+  transform: translateY(-1.25rem);
+  transform-origin: 0 0;
+  transition: all .3s; }
+
+.login-control {
+  width: 100%;
+  padding: 0.9rem;
+  box-shadow: none;
+  border-radius: 0;
+  border-color: #ccc;
+  border-style: none none solid none;
+  transition: all .5s; }
+
+.login-control::placeholder {
+  color: transparent; }
+
+.login-control:focus {
+  box-shadow: none;
+  outline: none;
+  /* border-color: #a5a58d; */
+  border-color: #c67f43; }
+
+.login-control:focus + .login-label, .login-control:not(:placeholder-shown) + .login-label {
+  transform: translateY(-3rem) scale(0.825); }
+
+.login-group:focus-within {
+  transform: scale(1.05, 1.05); }
+
+fieldset {
+  padding: 6rem;
+  color: #7b876d;
+  border-radius: 5px; }
+
+fieldset > legend {
+  color: #7b876d;
+  margin: auto;
+  padding: 0 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1; }
+
+.login-btn {
+  cursor: pointer;
+  background-color: #7b876d;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  border: 0;
+  display: block;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 20px 0 30px;
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px; }
+
+.login-btn:focus {
+  background-color: #989e8b;
+  outline-style: none; }
+
+/*===== NAVBAR w/ MEDIA QUERY =====*/
+.navbar {
+  background-color: #7b876d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; }
+
+.shop-title {
+  font-size: 1.2rem;
+  margin: .5rem; }
+
+.navbar-links {
+  height: 100%; }
+
+.navbar-links ul {
+  display: flex; }
+
+.navbar-links li {
+  list-style: none; }
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem; }
+
+.navbar-links li:hover {
+  background-color: #c67f43; }
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.8rem;
+  height: 1.3rem; }
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px; }
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; }
+  .toggle-button {
+    display: flex; }
+  .navbar-links {
+    display: none;
+    width: 100%; }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column; }
+  .navbar-links ul li {
+    text-align: center; }
+  .navbar-links ul li a {
+    padding: .5rem 1rem; }
+  .navbar-links.active {
+    display: flex; } }
