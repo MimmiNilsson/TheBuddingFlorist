@@ -1,0 +1,24 @@
+{
+    "name": "gruppuppgift",
+    "version": "1.0.0",
+    "description": "Gruppinlämning för julprojektet \"Webbshop\"",
+    "main": "main.js",
+    "scripts": {
+        "start": "node-sass scss/main.scss css/main.css -w",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/MimmiNilsson/webbshoppen_grupp2.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MimmiNilsson/webbshoppen_grupp2/issues"
+    },
+    "homepage": "https://github.com/MimmiNilsson/webbshoppen_grupp2#readme",
+    "dependencies": {
+        "node-sass": "^7.0.0"
+    }
+}
