@@ -11,9 +11,9 @@ console.log(navbarLinks.classList)
 toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 })
+/*===== ADMIN / NAVBAR ===== */
 
-
-var removeCartItemBottons = document.querySelector(".removeBtn")
+var removeCartItemBottons = document.querySelector("removeBtn")
 for (var i = 0; i < removeCartItemBottons.length; i++) {
     var button = removeCartItemBottons[i]
     button.addEventListener("click", function(e) {
@@ -21,12 +21,12 @@ for (var i = 0; i < removeCartItemBottons.length; i++) {
         buttonClicked.parentElement.parentElement.remove()
     })
 }
-
+/*
 function updateCartTotal() {
     var cartItemContainer = document.querySelector("products")[0]
 
-
 }
+*/
 
 
 
