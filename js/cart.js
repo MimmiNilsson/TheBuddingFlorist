@@ -1,5 +1,25 @@
-let carts = document.querySelectorAll('.add-cart');
+var removeCartItemBottons = document.querySelector(".removeBtn")
+for (var i = 0; i < removeCartItemBottons.length; i++) {
+    var button = removeCartItemBottons[i]
+    button.addEventListener("click", function(e) {
+        var buttonClicked = e.target
+        buttonClicked.parentElement.parentElement.remove()
+    })
+}
 
+function updateCartTotal() {
+    var cartItemContainer = document.querySelector("products")[0]
+
+
+}
+
+
+
+
+
+
+
+let carts = document.querySelectorAll('.add-cart');
 let products = [
     {
         name: "Flower 1",
@@ -125,7 +145,7 @@ function displayCart() {
         Object.values(cartItems).map(item => {
             productContainer.innerHTML += `
             <div class="product">
-                <ion-icon name="trash-outline"></ion-icon>
+                <ion-icon class="removeBtn" name="trash-outline"></ion-icon>
                 <img src="./bouquets/${item.tag}.jpg">
                 <span>${item.name}</span>
             </div>
