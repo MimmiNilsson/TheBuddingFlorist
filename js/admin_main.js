@@ -12,25 +12,26 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 })
 
-// empty array eller information från localstorage 
-const adminStock = JSON.parse( localStorage.getItem("adminStock")) || [];
+/*===== ADMIN / IMPORT NEW STOCK ===== */
 
-function adminAddStock(e) {
+// empty array eller information från localstorage 
+const adminList = JSON.parse( localStorage.getItem("productList")) || [];
+
+// gammalLista  + nytt lista
+
+
+function addAdminProduct(e) {
     e.preventDefault();
 // vi läser in input fältet och sparar data in i localstorage
-const src= document.querySelector("#imgSrc").value;
-const productName= document.querySelector("#productName").value
+const prodTitle= document.querySelector("#prod-title").value;
+const prodPrice= document.querySelector("#prod-price").value;
+
 let productObj= {
-    productName:productName,
-    img:src
+    prodTitle,
+    prodPrice
 }
- productList.push(productObj)
- localStorage.setItem("productList", JSON.stringify(productList))
- //const oldProduct= localStorage.getItem("productList");
- //productList.concat(oldProduct);
-// array av object 
+ adminList.push(productObj)
+ localStorage.setItem("adminList", JSON.stringify(adminList));
 }
 
-
-
-document.querySelector("button").addEventListener("click" , addProduct);
+document.querySelector("button").addEventListener("click" , addAdminProduct);
