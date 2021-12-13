@@ -1,17 +1,16 @@
 @charset "UTF-8";
 body {
-  background-color: black; }
+  background-color: white; }
 
 .fa-snowflake {
-  color: red;
-  color: #fff;
   position: absolute;
   top: -20px;
-  animation: fall linear forwards; }
+  animation: fall linear forwards;
+  color: white; }
 
 @keyframes fall {
   to {
-    transform: translateY(105vh); } }
+    transform: translateY(3000px); } }
 
 .navbar {
   background-color: #7b876d;
