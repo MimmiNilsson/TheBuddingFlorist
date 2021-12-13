@@ -179,3 +179,18 @@ p {
 
 .card button:hover {
   opacity: 0.7; }
+
+#makeItSnow {
+  position: absolute;
+  margin-top: 40%;
+  z-index: 20;
+  border: none;
+  height: 5%;
+  width: 10%;
+  background-color: #d49b7e;
+  color: white;
+  cursor: pointer;
+  font-size: 18px; }
+
+#makeItSnow:hover {
+  opacity: 0.8; }
