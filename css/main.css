@@ -1,14 +1,69 @@
 @charset "UTF-8";
 body {
-  margin: auto;
-  padding: 0;
-  background: white;
-  width: 1400px; }
+  background-color: black; }
+
+.fa-snowflake {
+  color: red;
+  color: #fff;
+  position: absolute;
+  top: -20px;
+  animation: fall linear forwards; }
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh); } }
+
+.navbar {
+  background-color: #7b876d;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative; }
+
+.shop-title {
+  font-size: 1.2rem;
+  margin: .5rem; }
+
+.navbar-links {
+  height: 100%; }
+
+.navbar-links ul {
+  display: flex; }
+
+.navbar-links li {
+  list-style: none; }
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem; }
+
+.navbar-links li:hover {
+  background-color: #989e8b; }
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1.8rem;
+  height: 1.3rem; }
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px; }
 
 .bildspel {
-  width: 1500px;
+  width: 99%;
   height: 600px;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
 
 .spel {
   position: absolute;
@@ -26,13 +81,13 @@ body {
 .fyrkant {
   width: 50px;
   height: 10px;
-  border: 2px solid brown;
+  border: 2px solid #893f04;
   margin: 6px;
   cursor: pointer;
   transition: 0.4s; }
 
 .fyrkant:hover {
-  background: rgba(158, 56, 31, 0.5); }
+  background: #c67f43; }
 
 input[name="cirkel"] {
   /* gömmer den fula "gamla" menyn där uppe till vänster  */
@@ -62,70 +117,66 @@ input[name="cirkel"] {
   margin-left: -40%; }
 
 h2 {
-  background-color: rgba(126, 3, 14, 0.685);
-  position: absolute;
-  margin-top: -3.2%;
-  margin-left: -3.1%;
+  background-color: #d49b7e;
   font-size: 35px;
-  text-shadow: 10px 10px red;
-  width: 1500px; }
+  color: #c67f43;
+  text-shadow: 5px 10px 5px   #893f04;
+  height: 55px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35.5%; }
 
 section .ett {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 50%; }
+  flex-wrap: wrap; }
 
 section .tva {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 8%; }
+  flex-wrap: wrap; }
 
 section .tre {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 8%; }
+  flex-wrap: wrap; }
 
 /* mogges kod  */
 .card {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 300px;
+  max-width: 300px;
   margin: auto;
   margin-top: 5%;
   text-align: center;
   font-family: arial;
   height: 550px; }
 
+h1 {
+  color: #d49b7e; }
+
 .card img {
   height: 300px; }
 
 .price {
-  color: grey;
+  color: #d49b7e;
   font-size: 22px; }
+
+p {
+  color: #893f04; }
 
 .card button {
   border: none;
   outline: 0;
-  padding: 12px;
   color: white;
-  background-color: #000;
-  text-align: center;
+  background-color: #c67f43;
   cursor: pointer;
   width: 100%;
-  font-size: 18px; }
+  font-size: 18px;
+  padding: 12px;
+  text-align: center; }
 
 .card button:hover {
   opacity: 0.7; }
-
-.obj {
-  position: absolute;
-  left: 0px;
-  top: -20px;
-  z-index: 10000;
-  visibility: hidden;
-  color: #fff;
-  font-weight: normal;
-  font-family: Verdana; }

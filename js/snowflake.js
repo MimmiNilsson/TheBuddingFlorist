@@ -1,46 +1,4 @@
-
-
-
-
-/* 
-const productList = JSON.parse( localStorage.getItem("productList")) || []; */
-/* 
-
-const addToList = [];
-document.querySelector("button").addEventListener("click", addProduct);
-
-function addProduct{
-    localStorage.setItem(, button)
-    
-}
-
-
-
-<script>
-function mySongTwo() {
-  localStorage.setItem("favsong", "<a href='https://song2.com'><h1>song2</h1></a>");
-}
-
-
-</script>
-
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-
-Width =1500; // ange bredden på sidan som ska snöas in...
+/* Width =1500; // ange bredden på sidan som ska snöas in...
 Height =2000; // ange höjden på sidan som ska snöas in...
 Count =25; // antal snöflingor OBS! ange inte för stort antal!
 MaxStep=3; // max steg i rörelsen
@@ -62,7 +20,7 @@ StepY[i] =MinStep+Math.random()* MaxStep;
 StarSize[i]=MinFlake+Math.random() * MaxFlake;
  
 document.write("<div id='Obj" + i + "' style='position:absolute; left:0px; top:-20px; z-index:10000; visibility:hidden; color:#fff; font-weight:normal; font-family:Verdana; font-size:"+StarSize[i]+"pt'>•</div>");
-} 
+} /*
  
 
 function snowFall() {
@@ -84,46 +42,23 @@ function snowFall() {
     setTimeout("snowFall()", 50);// hastighet
     } 
  
- setTimeout("snowFall()", 1000);  */ 
+ setTimeout("snowFall()", 1000);   */
 
- 
+ const body = document.body;
+ setInterval(createSnowFlake, 50); 
 
+function createSnowFlake() {
+    const snow_flake = document.createElement('i');
+    snow_flake.classList.add('far');
+    snow_flake.classList.add('fa-snowflake');
+    snow_flake.style.left = Math.random() * window.innerWidth + 'px';
+    snow_flake.style.animationDuration = Math.random() * 3 + 2 + 's'; //between 2-5 seconds
+    snow_flake.style.opacity = Math.random();
+    snow_flake.style.fontSize = Math.random() * 10 + 10 + 'px';
 
+    document.body.appendChild(snow_flake);
 
-
-
-
-
-
-
-/*  document.getElementById("cirkel1").addEventListener("click", headerPic);
-
-function headerPic() {
-
-}
-
-// Get the modal
-var modal = document.getElementById('myModal');
-// Get the image and insert it inside the modal - use its 'alt' text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById('img01');
-var captionText = document.getElementById('caption');
-img.onclick = function(){ modal.style.display = 'block';
-modalImg.src = this.src; captionText.innerHTML = this.alt; }
-// Get the  element that closes the modal
-var span = document.getElementsByClassName('close')[0];
-// When the user clicks on  (x), close the modal
-span.onclick = function() { modal.style.display = 'none'; }
-
-
-
-
-
-GRUND URL
-https://api.unsplash.com/photos/random/3
-https://api.unsplash.com/photos/random/3${count};
-https://api.unsplash.com/flowers/photos?query=office&per_page=3
- */
-
-
-
+    setTimeout(() => {
+        snow_flake.remove();
+    }, 5000)
+} 
