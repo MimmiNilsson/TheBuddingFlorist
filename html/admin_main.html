@@ -32,7 +32,7 @@
     <div class="admin-container">
         <form autocomplete="off" action="">
             <fieldset class="admin_main">
-                <legend>New Stock</legend>
+                <legend>Add New Stock</legend>
                 <label for="text" class="admin-label">Product Name:</label>
                 <input type="text" class="admin-text" id="admin-prod-title">
                 <label for="text" class="admin-label">Image:</label>
@@ -41,12 +41,17 @@
                 <input type="numerical" class="admin-amount" id="admin-prod-price">
                 <label for="text" class="admin-label">Product Description:</label>
                 <textarea name="" class="admin-text" id="admin-prod-desc" cols="30" rows="10"></textarea>
-                <button id="admin-prod-btn">Add to list</button>
+                <button id="admin-prod-btn" type="submit">Add to list</button>
             </fieldset>
         </form>
     </div>
-    
+    <!--Products to be added-->
     <div class="admin-incoming-stock">
+        <fieldset class="admin_main">
+            <legend>Publish Incoming Stock</legend>
+            <ul class="stock-list" id="stock-list"></ul>
+            <button class="admin-incoming-stock-submit">Publish</button>
+        </fieldset>
         
     </div>
 </body>

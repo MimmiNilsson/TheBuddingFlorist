@@ -15,7 +15,7 @@ toggleButton.addEventListener('click', () => {
 /*===== ADMIN / IMPORT NEW STOCK ===== */
 
 // empty array eller information från localstorage 
-const adminList = JSON.parse( localStorage.getItem("productList")) || [];
+const adminList = JSON.parse(localStorage.getItem("productList")) || [];
 
 // gammalLista  + nytt lista
 
