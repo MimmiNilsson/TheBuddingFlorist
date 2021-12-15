@@ -1,5 +1,10 @@
+svg{ //snöflingan från fontawesome i head
+visibility: hidden;
+}
+
 body{
     background-color: white;
+    margin: 0 4;
 }
 
 .fa-snowflake{
@@ -7,7 +12,6 @@ body{
 	top: -20px;
 	animation: fall linear forwards;
     color: white;
-
 }
 
 @keyframes fall{
@@ -23,7 +27,11 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative; }
+    position: absolute; 
+    z-index: 21;
+    width: 99%;
+    top: 0;
+}
   
   .shop-title {
     font-size: 1.2rem;
@@ -77,6 +85,7 @@ body{
     height: 600px;
     overflow: hidden;
     position: relative;
+    top: 0;
 }
 
 .spel{
@@ -146,12 +155,12 @@ h2{
     font-size: 35px;
     color: #c67f43;
     text-shadow: 5px 10px 5px   #893f04;
-    height: 55px;
+    height: 60px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 35.5%;
+    margin-top: 36%;
 }
 
 section .ett{
@@ -220,15 +229,99 @@ section .ett{
     opacity: 0.7;
   }
 
+/* .fa-heart{
+    margin-top: 0;
+    margin-right: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.fa-heart:hover{
+    <i class="fas fa-heart"></i>
+} */
+
+
+
+
+
+/* försök för hjärt funktionen
+#heart{
+display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 130px;
+
+}
+
+.heartFunction{
+    position: relative;
+  margin-top: 500px;
+  width: 160px;
+  height: 130px;
+}
+
+
+.heartFunction:before {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    width: 80px;
+    height: 125px;
+    border-radius: 40px 40px 0 0;
+    background-color: white;
+    content: "";
+    cursor: pointer;
+    transition: .4s;
+  }
+
+  .heartFunction:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
+    width: 80px;
+    height: 125px;
+    border-radius: 40px 40px 0 0;
+    background-color: white;
+    content: "";
+    cursor: pointer;
+    transition: .4s;
+    border: 2px red solid;
+  }
+  .heart-like-button.liked::before,
+  .heart-like-button.liked::after {
+    background-color: #d65076;
+
+  .heartFunction.liked {
+    animation: liked .4s ease;
+  }
+  @keyframes liked {
+    0% {
+      transform: scale(.8);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  } */
+
+
+
 
   #makeItSnow{
-      position: absolute;
-    margin-top: 40%;
+    position: absolute;
+    margin-top: 38%;
+    left: 1%;
     z-index: 20;
     border: none;
     height: 5%;
     width: 10%;
-    background-color: #d49b7e;
+    background-color: #893f04;
     color: white;
     cursor: pointer;
     font-size: 18px;
