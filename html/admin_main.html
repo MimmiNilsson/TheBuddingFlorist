@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="shop-title">The Budding Florist</div>
+            <div class="shop-title">The Budding Florist <i class="fab fa-pagelines"></i></div>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -29,6 +29,7 @@
             </div>
           </nav>
     </header> 
+    <h2>Admin</h2>
     <div class="admin-container">
         <form autocomplete="off" action="">
             <fieldset class="admin_main">
@@ -41,7 +42,7 @@
                 <input type="numerical" class="admin-amount" id="admin-prod-price">
                 <label for="text" class="admin-label">Product Description:</label>
                 <textarea name="" class="admin-text" id="admin-prod-desc" cols="30" rows="10"></textarea>
-                <button id="admin-prod-btn" type="submit">Add to list</button>
+                <button class="admin-prod-btn" type="submit">Add to list</button>
             </fieldset>
         </form>
     </div>
@@ -49,7 +50,9 @@
     <div class="admin-incoming-stock">
         <fieldset class="admin_main">
             <legend>Publish Incoming Stock</legend>
-            <ul class="stock-list" id="stock-list"></ul>
+            <ul class="stock-list" id="stock-list">
+                <li>Test</li>
+            </ul>
             <button class="admin-incoming-stock-submit">Publish</button>
         </fieldset>
         

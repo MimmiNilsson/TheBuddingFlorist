@@ -20,6 +20,6 @@
     "homepage": "https://github.com/MimmiNilsson/TheBuddingFlorist.git#readme",
     "dependencies": {
         "node-sass": "^7.0.0"
-    }
+    } 
 }
 

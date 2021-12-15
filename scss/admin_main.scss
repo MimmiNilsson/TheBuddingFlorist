@@ -1,6 +1,7 @@
 /*===== NAVBAR w/ MEDIA QUERY =====*/
 .navbar {
-    background-color: #7b876d;
+    background-color: red;
+    // background-color: #7b876d;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -83,6 +84,9 @@
 
 /*===== ADMIN / NEW STOCK =====*/
 
+.admin-container {
+
+}
 .admin-label {
     display: block;
     opacity: 1;
@@ -90,3 +94,4 @@
     transform-origin: 0 0;
     transition: all .3s; 
 }
+
