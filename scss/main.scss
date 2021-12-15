@@ -1,26 +1,41 @@
-svg{ //snöflingan från fontawesome i head
-visibility: hidden;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+svg{ //snöflingan från fontawesome i <head>
+  visibility: hidden;
 }
 
 body{
-    background-color: white;
-    margin: 0 4;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+
+//========================
+//======SNOWFLAKE=========
+//========================
 .fa-snowflake{
 	position: absolute;
 	top: -20px;
 	animation: fall linear forwards;
-    color: white;
+  color: white;
 }
 
 @keyframes fall{
-    to{
-        transform: translateY(3000px);
-    }
+  to{
+      transform: translateY(3000px);
+  }
 }
 
-
+//========================
+//========NAVBAR==========
+//========================
 .navbar {
     background-color: #7b876d;
     color: white;
@@ -70,144 +85,115 @@ body{
     width: 100%;
     background-color: #fff;
     border-radius: 10px; }
-  
 
-
-
-
-
-
-
-
-
+//========================
+//======BILDSPEL==========
+//========================
 .bildspel{
-    width: 99%;
-    height: 600px;
-    overflow: hidden;
-    position: relative;
-    top: 0;
+  width: 99%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  top: 0;
 }
 
 .spel{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .knapp{
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 }
 
 .fyrkant{
-    width: 50px;
-    height: 10px;
-    border: 2px solid #893f04;
-    margin: 6px;
-    cursor: pointer;
-    transition: 0.4s;
+  width: 50px;
+  height: 10px;
+  border: 2px solid #893f04;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
 }
 
 .fyrkant:hover{
-    background: #c67f43;
+  background: #c67f43;
 }
 
-input[name="cirkel"]{ /* gömmer den fula "gamla" menyn där uppe till vänster  */
-    position: absolute;
-    visibility: hidden;
+input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  */
+  position: absolute;
+  visibility: hidden;
 }
 
 .bilder{
-    height: 100%;
-    width: 500%;
-    display: flex;
+  height: 100%;
+  width: 500%;
+  display: flex;
 }
 
 .bild{
-width: 20%;
-transition: 0.6s;
+  width: 20%;
+  transition: 0.6s;
 }
 
 .bild img{
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #cirkel1:checked ~ .ett{
-margin-left: 0;
+  margin-left: 0;
 }
 
 #cirkel2:checked ~ .ett{
-    margin-left: -20%;
+  margin-left: -20%;
 }
 
 #cirkel3:checked ~ .ett{
-    margin-left: -40%;
+  margin-left: -40%;
 }
 
 
-h2{
-    background-color: #d49b7e;
-    font-size: 35px;
-    color: #c67f43;
-    text-shadow: 5px 10px 5px   #893f04;
-    height: 60px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 36%;
+//========================
+//=========CARDS==========
+//========================
+.cards{ //parent för varje enskilt card
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  width: 99%;
+  margin-top: 150%;
 }
-
-section .ett{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
- section .tva {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
- }
-
- section .tre {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
- }
  
-
-
-/* mogges kod  */
 .card {
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    margin-top: 5%;
-    text-align: center;
-    font-family: arial;
-    height: 550px;
-  }
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  font-family: arial;
+  height: 550px;
+
+}
 
   h1{
-      color: #d49b7e;
-  }
+  color: #d49b7e;
+}
+
   .card img{
-      height: 300px;
-  }
+  height: 300px;
+}
 
   .price {
     color: #d49b7e;
     font-size: 22px;
-  }
+}
 
     p{
     color: #893f04;
@@ -229,93 +215,101 @@ section .ett{
     opacity: 0.7;
   }
 
-/* .fa-heart{
-    margin-top: 0;
-    margin-right: 0;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.fa-heart:hover{
-    <i class="fas fa-heart"></i>
-} */
-
-
-
-
-
-/* försök för hjärt funktionen
-#heart{
-display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 130px;
-
-}
-
-.heartFunction{
+//========================
+//====HEART-FUNCTION======
+//========================
+  .card .heart{
+    top: 4%;
+    left: 6%;
     position: relative;
-  margin-top: 500px;
-  width: 160px;
-  height: 130px;
+    height: 20px;
+    width: 20px;
+    background-color: grey;
+    border-radius: 0 0 0 3px;
+    transform: rotate(-45deg);
+    cursor: pointer;
 }
 
-
-.heartFunction:before {
+.card .heart.fill-color{
+    background-color: red;
+}
+.card .heart::before{ //vänster sida
+  position: absolute;
+  content: "";
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 50%;
+}
+.card .heart:after{ //höger sida
     position: absolute;
+    content: "";
+    right: -50%;
     top: 0;
-    left: 80px;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+    } 
+
+.card .animation-heart{
+    top: 9.5%;
+    left: 6%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 20px;
+    width: 20px;
+    background-color: red;
     transform: rotate(-45deg);
-    transform-origin: 0 100%;
-    width: 80px;
-    height: 125px;
-    border-radius: 40px 40px 0 0;
-    background-color: white;
-    content: "";
+    border-radius: 0 0 0 3px;
     cursor: pointer;
-    transition: .4s;
-  }
+    visibility: hidden;
+}
+.cards .animation-heart.animation{
+    animation: popup .8s linear;
+    visibility: visible;
+    margin-top: -30px;
+}
 
-  .heartFunction:after {
+.card .animation-heart:after{ //höger sida
     position: absolute;
-    top: 0;
-    left: 0;
-    transform: rotate(45deg);
-    transform-origin :100% 100%;
-    width: 80px;
-    height: 125px;
-    border-radius: 40px 40px 0 0;
-    background-color: white;
     content: "";
-    cursor: pointer;
-    transition: .4s;
-    border: 2px red solid;
-  }
-  .heart-like-button.liked::before,
-  .heart-like-button.liked::after {
-    background-color: #d65076;
+    height: 100%;
+    width: 100%;
+    top: -50%;
+    right: 0;
+    background-color: inherit;
+    border-radius: 50%;
+}
 
-  .heartFunction.liked {
-    animation: liked .4s ease;
-  }
-  @keyframes liked {
-    0% {
-      transform: scale(.8);
-    }
-    50% {
-      transform: scale(1.1);
-    }
+.card .animation-heart:before{ //vänster siida
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: -50%;
+    background-color: inherit;
+    border-radius: 50%;
+}
+
+@keyframes popup{
     100% {
-      transform: scale(1);
+        transform: scale(1.2) rotate(-45deg);
+        opacity: 0;
     }
-  } */
+}
 
-
-
-
+//========================
+//=======SNOW-EFFECT======
+//========================
   #makeItSnow{
     position: absolute;
-    margin-top: 38%;
+    margin-top: 35%;
     left: 1%;
     z-index: 20;
     border: none;
