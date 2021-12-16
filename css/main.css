@@ -24,6 +24,22 @@ body {
   to {
     transform: translateY(3000px); } }
 
+#makeItSnow {
+  position: absolute;
+  margin-top: 35%;
+  left: 1%;
+  z-index: 20;
+  border: none;
+  height: 5%;
+  width: 10%;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  font-size: 18px; }
+
+#makeItSnow:hover {
+  opacity: 0.8; }
+
 .navbar {
   background-color: #7b876d;
   color: white;
@@ -175,6 +191,15 @@ p {
 .card button:hover {
   opacity: 0.7; }
 
+/* .fas {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  color: red;
+} */
 .card .heart {
   top: 4%;
   left: 6%;
@@ -253,19 +278,3 @@ p {
   100% {
     transform: scale(1.2) rotate(-45deg);
     opacity: 0; } }
-
-#makeItSnow {
-  position: absolute;
-  margin-top: 35%;
-  left: 1%;
-  z-index: 20;
-  border: none;
-  height: 5%;
-  width: 10%;
-  background-color: #893f04;
-  color: white;
-  cursor: pointer;
-  font-size: 18px; }
-
-#makeItSnow:hover {
-  opacity: 0.8; }

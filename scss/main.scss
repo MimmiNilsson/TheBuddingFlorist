@@ -34,6 +34,28 @@ body{
 }
 
 //========================
+//=======SNOW-EFFECT======
+//========================
+#makeItSnow{ //make it snow button
+  position: absolute;
+  margin-top: 35%;
+  left: 1%;
+  z-index: 20;
+  border: none;
+  height: 5%;
+  width: 10%;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#makeItSnow:hover{
+    opacity: 0.8;
+}
+
+
+//========================
 //========NAVBAR==========
 //========================
 .navbar {
@@ -218,6 +240,19 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
 //========================
 //====HEART-FUNCTION======
 //========================
+
+/* .fas {
+  font-size: 50px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.fas:hover {
+  color: red;
+} */
+
+
+
   .card .heart{
     top: 4%;
     left: 6%;
@@ -233,7 +268,7 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
 .card .heart.fill-color{
     background-color: red;
 }
-.card .heart::before{ //vänster sida
+.card .heart::before{// vänster sida
   position: absolute;
   content: "";
   top: -50%;
@@ -304,23 +339,3 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
     }
 }
 
-//========================
-//=======SNOW-EFFECT======
-//========================
-  #makeItSnow{
-    position: absolute;
-    margin-top: 35%;
-    left: 1%;
-    z-index: 20;
-    border: none;
-    height: 5%;
-    width: 10%;
-    background-color: #893f04;
-    color: white;
-    cursor: pointer;
-    font-size: 18px;
-  }
-
-  #makeItSnow:hover{
-      opacity: 0.8;
-  }

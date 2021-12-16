@@ -3,8 +3,9 @@ window.addEventListener('load', () => {
     document.querySelector("#makeItSnow").addEventListener("click", dontBeAgrinch);})
 
 function dontBeAgrinch() {
+
     const body = document.body;
-    setInterval(createSnowFlake, 50);
+    setInterval(createSnowFlake, 100);
 
     function createSnowFlake() {
         const snow_flake = document.createElement('i');
@@ -17,10 +18,9 @@ function dontBeAgrinch() {
 
         document.body.appendChild(snow_flake);
 
+       
+
         setTimeout(() => {
             snow_flake.remove();
         }, 12500)
-    }
-
-}
-
+    }}
