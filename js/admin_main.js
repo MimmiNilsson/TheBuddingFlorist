@@ -1,6 +1,6 @@
-//=============================
+//=============================================================================
 /*===== ADMIN / NAVBAR ===== */
-//=============================
+//=============================================================================
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 
 console.log(toggleButton);
@@ -14,9 +14,9 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 })
 
-//==========================
+//=============================================================================
 /*===== ADMIN / MAIN =====*/
-//==========================
+//=============================================================================
 const heading = document.querySelector("#prod-heading");
 const image = document.querySelector("#prod-img");
 const price = document.querySelector("#prod-price");
@@ -70,11 +70,14 @@ function addIncomingDOM(incomingProd) {
     const item = document.createElement('li');
 
     item.innerHTML = 
-    `Product Name: ${incomingProd.heading} 
-    Product Image: ${incomingProd.image} 
+    `Product Name: ${incomingProd.heading}
+    Product Image:  
+    <img src="${incomingProd.image}">
     Price of Product: ${incomingProd.price} 
     Product Description: ${incomingProd.desc}
     <button class="delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>`;
+
+    // Product Image: ${incomingProd.image} 
 
     incomingList.appendChild(item);
 }
@@ -109,11 +112,9 @@ init();
 // Event listener for submission
 addBtn.addEventListener('click', addNewProduct);
 
-//==================================
+//=============================================================================
 /*===== PUBLISH PRODUCT LIST =====*/
-//==================================
-
-
+//=============================================================================
 
 const pubBtn = document.querySelector(".main-pub-btn");
 
