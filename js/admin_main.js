@@ -61,7 +61,12 @@ function generateID() {
 function addIncomingDOM(incomingProd) {
     const item = document.createElement('li');
 
-    item.innerHTML = `${incomingProd.heading}${incomingProd.image}${incomingProd.price}${incomingProd.desc}<span>${Math.abs(incomingProd.price)} </span> <button class="delete-btn" onclick="removeTransaction(${incomingProd.id})">x</button>`;
+    item.innerHTML = 
+    `Product Name: ${incomingProd.heading} 
+    Product Image: ${incomingProd.image} 
+    Price of Product: ${incomingProd.price} 
+    Product Description: ${incomingProd.desc}
+    <button class="delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>`;
 
     incomingList.appendChild(item);
 }

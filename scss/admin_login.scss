@@ -22,7 +22,7 @@
   .login-label {
     display: block;
     opacity: 1;
-    transform: translateY(-1.25rem);
+    transform: translateY(-2rem);
     transform-origin: 0 0;
     transition: all .3s; 
 }
@@ -49,7 +49,7 @@
 }
   
   .login-control:focus + .login-label, .login-control:not(:placeholder-shown) + .login-label {
-    transform: translateY(-3rem) scale(0.825); 
+    transform: translateY(-4rem) scale(0.825); 
 }
   
   .login-group:focus-within {
