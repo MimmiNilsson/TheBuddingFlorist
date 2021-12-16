@@ -29,11 +29,11 @@
             </div>
           </nav>
     </header> 
-        <form autocomplete= "off" action="">
-            <fieldset class="main-fieldset">
-                <legend class="main-legend">Admin Dashboard</legend>
-                <div class="main-prod-container">
-                    <h3>Add Product</h3>
+    <form autocomplete= "off" action="" class="admin-main-form">
+        <fieldset>
+            <legend>Admin Dashboard</legend>
+            <div class="main-prod-container">
+                <h3>Add Product</h3>
                     <label for="text">Name:</label>
                     <input type="text" class="main-add-prod">
                     <label for="file">Image:</label>
@@ -43,9 +43,9 @@
                     <label for="text">Description:</label>
                     <textarea name="prod-desc" id="" cols="30" rows="10" class="main-add-prod"></textarea>
                     <button id="main-add-btn">Add</button>
-                </div>
-                <div class="main-prod-container">
-                    <h3>Incoming Stock</h3>
+            </div>
+            <div class="main-prod-container">
+                <h3>Incoming Stock</h3>
                     <ul id="main-incoming-prod">
                         <li>
                             <!--Hard coded, needs to be full js-->
@@ -55,9 +55,8 @@
                             <button class="main-delete-btn">Delete</button>
                         </li>
                     </ul>
-                </div>
-            </fieldset>
-        </form>
-    </div>
+            </div>
+        </fieldset>
+    </form>
 </body>
 </html>
