@@ -240,19 +240,9 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
 //========================
 //====HEART-FUNCTION======
 //========================
-
-/* .fas {
-  font-size: 50px;
-  cursor: pointer;
-  user-select: none;
+.card .heart:hover{
+  background-color: red;
 }
-
-.fas:hover {
-  color: red;
-} */
-
-
-
   .card .heart{
     top: 4%;
     left: 6%;
@@ -268,6 +258,7 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
 .card .heart.fill-color{
     background-color: red;
 }
+
 .card .heart::before{// vänster sida
   position: absolute;
   content: "";
@@ -288,54 +279,3 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
     background: inherit;
     border-radius: 50%;
     } 
-
-.card .animation-heart{
-    top: 9.5%;
-    left: 6%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 20px;
-    width: 20px;
-    background-color: red;
-    transform: rotate(-45deg);
-    border-radius: 0 0 0 3px;
-    cursor: pointer;
-    visibility: hidden;
-}
-.cards .animation-heart.animation{
-    animation: popup .8s linear;
-    visibility: visible;
-    margin-top: -30px;
-}
-
-.card .animation-heart:after{ //höger sida
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    top: -50%;
-    right: 0;
-    background-color: inherit;
-    border-radius: 50%;
-}
-
-.card .animation-heart:before{ //vänster siida
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 100%;
-    top: 0;
-    right: -50%;
-    background-color: inherit;
-    border-radius: 50%;
-}
-
-@keyframes popup{
-    100% {
-        transform: scale(1.2) rotate(-45deg);
-        opacity: 0;
-    }
-}
-
