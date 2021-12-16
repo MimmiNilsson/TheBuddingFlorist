@@ -23,7 +23,7 @@ const price = document.querySelector("#prod-price");
 const desc = document.querySelector("#prod-desc");
 const addBtn = document.querySelector("#main-add-btn");
 
-const prodInfo = document.querySelector(".main-add-prod");
+const prodInfo = document.querySelectorAll(".main-add-prod");
 
 const incomingList = document.querySelector("#main-incoming-prod");
 
@@ -121,6 +121,11 @@ const pubBtn = document.querySelector(".main-pub-btn");
  pubBtn.addEventListener('click', (e)=> {
      e.preventDefault()
     window.location.href = "../html/products.html";
+
+    heading.value = '';
+    image.value = '';
+    price.value = '';
+    desc.value = '';
  });
 
 
