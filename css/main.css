@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*===== NAVBAR w/ MEDIA QUERY =====*/
 .navbar {
   background-color: #7b876d;
@@ -64,13 +65,14 @@
   .navbar-links.active {
     display: flex; } }
 
-/*===== ADMIN / NEW STOCK =====*/
 /*===== ADMIN / MAIN ADD PRODUCTS =====*/
 .admin-fieldset {
   padding: 6rem;
   color: #7b876d;
   border-radius: 5px;
-  padding: 2rem; }
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem; }
 
 .admin-fieldset > .admin-legend {
   color: #7b876d;
@@ -80,7 +82,7 @@
   text-transform: uppercase;
   line-height: 1; }
 
-.admin-prod-container {
+.main-prod-container  {
   display: flex;
   flex-direction: column;
   justify-content: center;

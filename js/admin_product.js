@@ -1,4 +1,4 @@
-const productString= localStorage.getItem("productList");
+const productString= localStorage.getItem("incomingStock");
 
 const productList = JSON.parse(productString);
 console.log(productList)

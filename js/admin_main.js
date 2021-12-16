@@ -1,4 +1,6 @@
+//=============================
 /*===== ADMIN / NAVBAR ===== */
+//=============================
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 
 console.log(toggleButton);
@@ -12,7 +14,9 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 })
 
+//==========================
 /*===== ADMIN / MAIN =====*/
+//==========================
 const heading = document.querySelector("#prod-heading");
 const image = document.querySelector("#prod-img");
 const price = document.querySelector("#prod-price");
@@ -23,8 +27,10 @@ const prodInfo = document.querySelector(".main-add-prod");
 
 const incomingList = document.querySelector("#main-incoming-prod");
 
-// Open array to add new products to 
-let incomingStock = [];
+const localStorageNewProduct = JSON.parse(localStorage.getItem('incomingStock'));
+
+// Using local storage or empty array to update or add new products to 
+let incomingStock = localStorage.getItem('incomingStock') !== null ? localStorageNewProduct : [];
 
 // Adding new product
 function addNewProduct(e) {
@@ -44,6 +50,8 @@ function addNewProduct(e) {
         incomingStock.push(incomingProd);
 
         addIncomingDOM(incomingProd);
+
+        updateLocalStorage();
 
         heading.value = '';
         image.value = '';
@@ -77,9 +85,16 @@ function addIncomingDOM(incomingProd) {
 
 // Using ID to remove transaction
 function removeIncomingProd(id) {
-    incomingStock = incomingProd.filter(incomingProd => incomingProd.id !== id);
+    incomingStock =  incomingStock.filter(incomingProd => incomingProd.id !== id);
+
+     updateLocalStorage();
     
     init();
+}
+
+// Update local storage added products
+function updateLocalStorage() {
+    localStorage.setItem('incomingStock', JSON.stringify(incomingStock));
 }
 
 // Init app
@@ -94,10 +109,19 @@ init();
 // Event listener for submission
 addBtn.addEventListener('click', addNewProduct);
 
-/*===== LOCAL STORAGE =====*/
-// empty array eller information från localstorage 
-// const adminList = JSON.parse(localStorage.getItem("productList")) || [];
-// gammalLista  + nytt lista
+//==================================
+/*===== PUBLISH PRODUCT LIST =====*/
+//==================================
+
+
+
+const pubBtn = document.querySelector(".main-pub-btn");
+
+ pubBtn.addEventListener('click', (e)=> {
+     e.preventDefault()
+    window.location.href = "../html/products.html";
+ });
+
 
 
 
