@@ -67,10 +67,10 @@
 
 /*===== ADMIN / MAIN ADD PRODUCTS =====*/
 .admin-main-container {
-  width: 100%;
   margin: auto;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  flex-flow: row wrap; }
 
 .admin-main-main {
   width: 40%;
@@ -94,10 +94,11 @@
   font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 1; }
-  .admin-main-fieldset > .admin-main-legend .admin-label {
-    font-size: 1.1rem;
-    padding-top: 10px;
-    justify-content: flex-start; }
+
+.admin-label {
+  font-size: 1.1rem;
+  padding-top: 10px;
+  justify-content: flex-start; }
 
 input[type='text'], input[type='number'], textarea {
   border: 1px solid #dedede;
@@ -123,7 +124,6 @@ input[type='text'], input[type='number'], textarea {
   background-color: #989e8b; }
 
 .main-incoming-prod {
-  border: 2px solid burlywood;
   display: flex;
   flex-direction: column; }
 
@@ -131,38 +131,29 @@ input[type='text'], input[type='number'], textarea {
   list-style-type: none; }
 
 #main-incoming-prod li {
-  height: 5rem;
+  height: 10rem;
   background-color: #fff;
   color: #333;
   display: flex;
   margin-bottom: 10px;
-  justify-content: center;
-  align-self: center;
-  border: 1px solid black; }
-
-#main-incoming-prod li:hover .main-delete-btn {
-  opacity: 1; }
+  border-bottom: 1px solid #dedede; }
 
 .main-delete-btn {
   cursor: pointer;
   border: 0;
   font-size: 1rem;
-  line-height: 20px; }
+  line-height: 20px;
+  align-items: center; }
 
-.delete-btn {
+.main-delete-btn {
   cursor: pointer;
-  background-color: red;
-  color: black;
+  background-color: #cccccc;
+  color: #fff;
   border: 0;
   font-size: 1.1rem;
   line-height: 20px;
   padding: 2px 5px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translate(-100%, -50%);
-  opacity: 0;
-  transition: opacity 0.2s ease; }
+  align-self: center; }
 
 /*===== ADMIN / MAIN w/ MEDIA QUERY =====*/
 @media (max-width: 1020px) {

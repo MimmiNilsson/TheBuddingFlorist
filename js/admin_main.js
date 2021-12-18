@@ -71,11 +71,12 @@ function addIncomingDOM(incomingProd) {
     
     item.innerHTML = `
     <div>
-        ${incomingProd.heading}
-        <img src="${incomingProd.image}" height="100%">
-        ${incomingProd.price}
-        ${incomingProd.desc}
+        Name: ${incomingProd.heading}<br>
+        <img src="${incomingProd.image}" height="50%"><br>
+        Price: ${incomingProd.price} SEK<br>
+        Desc: ${incomingProd.desc}
         <button class="main-delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>
+        
     </div>`;
 
     incomingList.appendChild(item);
