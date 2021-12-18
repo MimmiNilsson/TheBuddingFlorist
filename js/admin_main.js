@@ -72,7 +72,7 @@ function addIncomingDOM(incomingProd) {
     item.innerHTML = `
     <div>
         ${incomingProd.heading}
-        <img src="${incomingProd.image}">
+        <img src="${incomingProd.image}" height="100%">
         ${incomingProd.price}
         ${incomingProd.desc}
         <button class="main-delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>
