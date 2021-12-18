@@ -167,19 +167,27 @@ input[type='text'], input[type='number'], textarea {
     margin: auto; } }
 
 /*===== ADMIN LOGIN SECTION =====*/
+.body-admin-login {
+  background-image: url(../assets/admin_login/background-img-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+
 .login-container {
   width: 65vh;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
   background-color: #fff;
+  opacity: 0.90;
   border-radius: 5px;
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  /* min-height: 100vh;  */
   height: 100vh;
   font-size: 1rem;
   margin: auto; }
+
+.login-container:hover {
+  opacity: 1; }
 
 .login-group {
   margin-bottom: 1rem;
@@ -190,7 +198,8 @@ input[type='text'], input[type='number'], textarea {
   opacity: 1;
   transform: translateY(-2rem);
   transform-origin: 0 0;
-  transition: all .3s; }
+  transition: all .3s;
+  font-size: 1.2rem; }
 
 .login-control {
   width: 100%;
