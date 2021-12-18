@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative; 
+    margin-bottom: 1rem;
 }
   
   .shop-title {
@@ -86,14 +87,33 @@
 //=======================================
 /*===== ADMIN / MAIN ADD PRODUCTS =====*/ 
 //=======================================
+.admin-main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.admin-main-main {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  background-color: orange;
+}
+
+.admin-main-aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 70%;
+  background-color: rebeccapurple;
+}
 
 .admin-fieldset {
-  padding: 6rem;
+  margin: auto;
+  padding: 2rem;
   color: #7b876d;
   border-radius: 5px; 
-  width: 80%;
-  margin: auto;
-  margin-top: 2rem;
 }
 
 .admin-fieldset > .admin-legend {
@@ -106,14 +126,13 @@
 }
 
 .main-prod-container {
-  background-color: rebeccapurple;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.main-delete-btn {
+.delete-btn {
   cursor: pointer;
   background-color: red;
   color: #fff;
@@ -126,52 +145,58 @@
   left: 0;
   transform: translate(-100%, -50%);
   opacity: 0;
-  transition: opacity 0.2s ease; }
+  transition: opacity 0.2s ease; 
+}
 
 .list li:hover .main-delete-btn {
-  opacity: 1; }
+  opacity: 1; 
+}
 
   label {
   display: inline-block;
-  margin: 10px 0; }
+  margin: 10px 0; 
+}
 
-input[type='text'], input[type='number'] {
+input[type='text'], input[type='number'], textarea {
   border: 1px solid #dedede;
   border-radius: 5px;
   display: block;
   font-size: 1rem;
   padding: 10px;
-  width: 100%; }
+  width: 100%; 
+}
 
 .main-pub-btn {
   cursor: pointer;
   background-color: #ffbdc7;
   color: #fff;
-  box-shadow: var(--box-shadow);
   border: 0;
   display: block;
   font-size: 1rem;
   margin: 10px 0 30px;
   padding: 10px;
-  width: 100%; }
+  width: 100%; 
+}
 
-.main-pub-btn:focus, .main-delete-btn:focus {
+.main-pub-btn:focus, .delete-btn:focus {
   outline-style: outset;
-  background-color: #fcdde8; }
+  background-color: #fcdde8; 
+}
 
 .list {
   list-style-type: none;
-  margin-bottom: 40px; }
+  margin-bottom: 40px; 
+}
 
 .list li {
   background-color: #fff;
   color: #333;
-  box-shadow: var(--box-shadow);
   display: flex;
   justify-content: space-between;
   position: relative;
   padding: 10px;
-  margin: 10px 0; }
+  margin: 10px 0; 
+}
 
 
 
