@@ -69,21 +69,35 @@
 .admin-main-container {
   width: 100%;
   margin: auto;
-  border: 2px solid orange;
   display: flex; }
 
 .admin-main-main {
-  width: 30%;
-  border: 2px solid green; }
+  width: 40%;
+  margin: auto; }
 
 .admin-main-aside {
-  width: 70%;
-  border: 2px solid blue; }
+  width: 60%;
+  margin: auto; }
 
 .admin-label {
   display: flex;
   align-self: center;
-  width: 100%; }
+  width: 100%;
+  margin: auto; }
+
+.admin-main-fieldset {
+  margin: auto;
+  padding: 1.5rem;
+  color: #c67f43;
+  border-radius: 5px; }
+
+.admin-main-fieldset > .admin-main-legend {
+  color: #c67f43;
+  margin: auto;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 1; }
 
 input[type='text'], input[type='number'], textarea {
   border: 1px solid #dedede;
@@ -107,9 +121,13 @@ input[type='text'], input[type='number'], textarea {
   outline-style: outset;
   background-color: #fcdde8; }
 
+.main-incoming-prod {
+  border: 2px solid burlywood;
+  display: flex;
+  flex-direction: column; }
+
 #main-incoming-prod {
-  list-style-type: none;
-  border: 2px solid black; }
+  list-style-type: none; }
 
 #main-incoming-prod li {
   height: 3rem;
@@ -117,7 +135,8 @@ input[type='text'], input[type='number'], textarea {
   color: #333;
   display: flex;
   justify-content: center;
-  border: 2px solid blueviolet; }
+  align-self: center;
+  border-bottom: 1px dotted black; }
 
 #main-incoming-prod li:hover .main-delete-btn {
   opacity: 1; }

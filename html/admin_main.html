@@ -32,29 +32,36 @@
     <h1>Admin Dashboard</h1>
     <div class="admin-main-container">
         <main class="admin-main-main">
-            <form autocomplete= "off" action="" class="admin-main-form">
-                <h3>Add Product</h3>
-                <div class="main-prod-container">
-                    <label class="admin-label" for="text">Name:</label>
-                    <input type="text" class="main-add-prod prod-heading" id="prod-heading">
-                    <label class="admin-label" for="file">Image:</label>
-                    <input type="text" class="main-add-prod prod-img" id="prod-img">
-                    <!-- <input type="file" class="main-add-prod" id="prod-img"> -->
-                    <label class="admin-label" for="number">Price:</label>
-                    <input type="number" class="main-add-prod prod-price" id="prod-price">
-                    <label class="admin-label" for="text">Description:</label>
-                    <textarea name="prod-desc"  cols="30" rows="10" class="main-add-prod prod-desc" id="prod-desc"></textarea>
-                    <button id="main-add-btn">Add</button>
-                </div>
-            </form>
+            <fieldset class="admin-main-fieldset">
+                <legend class="admin-main-legend">Add Product</legend>
+                <form autocomplete= "off" action="" class="admin-main-form">
+                    <div class="main-prod-container">
+                        <label class="admin-label" for="text">Name:</label>
+                        <input type="text" class="main-add-prod prod-heading" id="prod-heading">
+                        <label class="admin-label" for="file">Image:</label>
+                        <input type="text" class="main-add-prod prod-img" id="prod-img">
+                        <!-- <input type="file" class="main-add-prod" id="prod-img"> -->
+                        <label class="admin-label" for="number">Price:</label>
+                        <input type="number" class="main-add-prod prod-price" id="prod-price">
+                        <label class="admin-label" for="text">Description:</label>
+                        <textarea name="prod-desc"  cols="30" rows="10" class="main-add-prod prod-desc" id="prod-desc"></textarea>
+                        <button id="main-add-btn">Add to Incoming Stock</button>
+                    </div>
+                </form>
+            </fieldset>
         </main>
         <aside class="admin-main-aside">
             <div class="main-prod-container">
-                <h3>Incoming Stock</h3>
-                <ul id="main-incoming-prod">
+                <fieldset class="admin-main-fieldset">
+                    <legend class="admin-main-legend">Incoming Stock</legend>
+                    <div class="main-incoming-prod">
+                        <ul id="main-incoming-prod">
     
-                </ul>
-                <button class="main-pub-btn">Publish</button>
+                        </ul>
+                    </div>
+                    <button class="main-pub-btn">Publish to Product Page</button>
+                </fieldset>
+              
             </div>
             <!-- <section class="admin-main-aside">
                 <div class="main-prod-container">

@@ -89,10 +89,8 @@
 //=======================================
 .admin-main-container {
   width: 100%;
+  // height: 50vh;
   margin: auto;
-  // width: 80%;
-  // margin: auto;
-  border: 2px solid orange;
   display: flex;
   // justify-content: center;
   // flex-flow: row wrap;
@@ -100,45 +98,40 @@
 }
 
 .admin-main-main {
-  width: 30%;
-  border: 2px solid green;
+  width: 40%;
+  margin: auto;
   // display: flex;
   // justify-content: center;
   // align-self: center;
-  // width: 40%;
 }
 
 .admin-main-aside {
-  width: 70%;
-  border: 2px solid blue;
-  // display: flex;
- 
-  // width: 60%;
+  width: 60%;
+  margin: auto;
 }
 
 .admin-label {
   display: flex;
   align-self: center;
   width: 100%;
-  
+  margin: auto;
 }
 
-// .admin-fieldset {
-//   width: 100%;
-//   margin: auto;
-//   padding: 2rem;
-//   color: #c67f43;
-//   border-radius: 5px; 
-// }
+.admin-main-fieldset {
+  margin: auto;
+  padding: 1.5rem;
+  color: #c67f43;
+  border-radius: 5px; 
+}
 
-// .admin-fieldset > .admin-legend {
-//   color: #c67f43;
-//   margin: auto;
-//   padding: 0 1rem;
-//   font-size: 2rem;
-//   text-transform: uppercase;
-//   line-height: 1; 
-// }
+.admin-main-fieldset > .admin-main-legend {
+  color: #c67f43;
+  margin: auto;
+  padding: 0 1rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 1; 
+}
 
 
 
@@ -160,12 +153,18 @@ input[type='text'], input[type='number'], textarea {
   font-size: 1rem;
   margin: 10px 0 30px;
   padding: 10px;
-  width: 100%; 
+  width: 100%
 }
 
 .main-pub-btn:focus, .delete-btn:focus {
   outline-style: outset;
   background-color: #fcdde8; 
+}
+
+.main-incoming-prod {
+  border: 2px solid burlywood;
+  display: flex;
+  flex-direction: column;
 }
 
 #main-incoming-prod {
@@ -174,7 +173,7 @@ input[type='text'], input[type='number'], textarea {
   // display: flex;
   // flex-flow: column wrap;
   // justify-content: center;
-  border: 2px solid black;
+ 
 }
 
 #main-incoming-prod li {
@@ -183,16 +182,11 @@ input[type='text'], input[type='number'], textarea {
   color: #333;
   display: flex;
   justify-content: center;
-  
+  align-self: center;
+  border-bottom: 1px dotted black;
   // padding: 10px;
   // margin: 10px 0; 
-  border: 2px solid blueviolet;
 }
-
-
-
-
-
 
 #main-incoming-prod li:hover .main-delete-btn {
   opacity: 1; 

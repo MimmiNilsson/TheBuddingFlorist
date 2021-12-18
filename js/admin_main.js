@@ -23,7 +23,7 @@ const price = document.querySelector("#prod-price");
 const desc = document.querySelector("#prod-desc");
 const addBtn = document.querySelector("#main-add-btn");
 
-const prodInfo = document.querySelectorAll(".main-add-prod");
+// const prodInfo = document.querySelectorAll(".main-add-prod"); 
 
 const incomingList = document.querySelector("#main-incoming-prod");
 
@@ -36,8 +36,8 @@ let incomingStock = localStorage.getItem('incomingStock') !== null ? localStorag
 function addNewProduct(e) {
     e.preventDefault();
 
-    if(prodInfo.value == '') {
-        alert('Please fill out all fields before continuing.')
+    if(heading.value == '' || price.value == '' || desc.value == '') {
+        alert('Please provide all necessary data before continuing.')
     } else {
         const incomingProd = {
             id: generateID(),
