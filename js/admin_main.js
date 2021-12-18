@@ -1,6 +1,7 @@
 //=============================================================================
 /*===== ADMIN / NAVBAR ===== */
 //=============================================================================
+
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
 
 console.log(toggleButton);
@@ -17,6 +18,7 @@ toggleButton.addEventListener('click', () => {
 //=============================================================================
 /*===== ADMIN / MAIN =====*/
 //=============================================================================
+
 const heading = document.querySelector("#prod-heading");
 const image = document.querySelector("#prod-img");
 const price = document.querySelector("#prod-price");

@@ -1,6 +1,7 @@
 //=============================================================================
 /*===== PRODUCTS / IMPORT FROM LOCAL STORAGE ===== */
 //=============================================================================
+
 const prodString = localStorage.getItem("incomingStock");
 const prodList = JSON.parse(prodString);
 
