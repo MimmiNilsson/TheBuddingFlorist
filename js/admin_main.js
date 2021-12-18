@@ -68,18 +68,14 @@ function generateID() {
 // Add product to DOM list
 function addIncomingDOM(incomingProd) {
     const item = document.createElement('li');
-
+    
     item.innerHTML = `
     <div>
-        <h4>Name:</h4>
         ${incomingProd.heading}
-        <h4>Image:</h4>
         <img src="${incomingProd.image}">
-        <h4>Price:</h4>
         ${incomingProd.price}
-        <h4>Description:</h4>
         ${incomingProd.desc}
-        <button class="delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>
+        <button class="main-delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>
     </div>`;
 
     incomingList.appendChild(item);
