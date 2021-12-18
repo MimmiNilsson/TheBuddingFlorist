@@ -80,42 +80,7 @@ function addIncomingDOM(incomingProd) {
     </div>`;
 
     incomingList.appendChild(item);
-
-
-    // `Product Name: ${incomingProd.heading}
-    // Product Image:  
-    // <img src="${incomingProd.image}">
-    // Price of Product: ${incomingProd.price} 
-    // Product Description: ${incomingProd.desc}
-    // <button class="delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>`;
-
-    // incomingList.appendChild(item);
-
-    // item.innerHTML = `
-    // <div class="prod-item">
-    //     <div class="products-prod-container">
-    //         <div class="prod-item-container">
-    //             <div class="prod-heading">${incomingProd.heading}</div>
-    //             <img class="prod-img" src="${incomingProd.image}">
-    //             <div class="prod-price">${incomingProd.price}</div>
-    //             <div class="prod-desc">${incomingprod.desc}</div>
-    //             <button class="delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>
-    //         </div>
-    //     </div>
-    // </div>
-    // `;
-    
-    
-    
-
-    // // Product Image: ${incomingProd.image} 
-
-   
 }
-
-// https:dsaasdfas
-
-// img src
 
 // Using ID to remove transaction
 function removeIncomingProd(id) {
