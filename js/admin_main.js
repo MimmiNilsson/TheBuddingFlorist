@@ -38,7 +38,7 @@ let incomingStock = localStorage.getItem('incomingStock') !== null ? localStorag
 function addNewProduct(e) {
     e.preventDefault();
 
-    if(heading.value == '' || price.value == '' || desc.value == '') {
+    if(heading.value == '' || image.value == '' || price.value == '' || desc.value == '') {
         alert('Please provide all necessary data before continuing.')
     } else {
         const incomingProd = {

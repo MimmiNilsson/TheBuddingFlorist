@@ -1,8 +1,8 @@
 /*===== ADMIN / LOGIN ===== */
 function validateAdmin(e) {
     e.preventDefault();
-    var username = document.querySelector('#username').value;
-    var password = document.querySelector('#password').value;
+    const username = document.querySelector('#username').value;
+    const password = document.querySelector('#password').value;
 
     if(username == "admin" && password == "admin"){
         window.location.href = "../html/admin_main.html";
