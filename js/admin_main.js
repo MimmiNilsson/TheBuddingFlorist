@@ -39,7 +39,7 @@ function addNewProduct(e) {
     e.preventDefault();
 
     if(heading.value == '' || image.value == '' || price.value == '' || desc.value == '') {
-        alert('Please provide all necessary data before continuing.')
+        alert('Hey, Admin! I think you forgot to add some information to your new awesome product. Once you have it all, you can add the product to the list.')
     } else {
         const incomingProd = {
             id: generateID(),
