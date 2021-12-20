@@ -53,60 +53,6 @@ svg{ //snöflingan från fontawesome i <head>
     opacity: 0.8;
 }
 
-
-//========================
-//========NAVBAR==========
-//========================
-.navbar {
-    background-color: #7b876d;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute; 
-    z-index: 21;
-    width: 99%;
-    top: 0;
-}
-  
-  .shop-title {
-    font-size: 1.2rem;
-    margin: .5rem; }
-  
-  .navbar-links {
-    height: 100%; }
-  
-  .navbar-links ul {
-    display: flex; }
-  
-  .navbar-links li {
-    list-style: none; }
-  
-  .navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 1rem; }
-  
-  .navbar-links li:hover {
-    background-color: #989e8b; }
-  
-  .toggle-button {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 1.8rem;
-    height: 1.3rem; }
-  
-  .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: #fff;
-    border-radius: 10px; }
-
 //========================
 //======BILDSPEL==========
 //========================

@@ -18,7 +18,7 @@ GRUND URL
 https://api.unsplash.com/photos/random/3
 https://api.unsplash.com/photos/random/3${count};
 https://api.unsplash.com/flowers/photos?query=office&per_page=3
- */
+ 
 // fetch()
 // res-urls 
 
@@ -46,5 +46,5 @@ async function fetchImg() {
   response.json().then( res=> console.log(res.urls.small))
 }
 
-document.querySelector("button").addEventListener("click", fetchImg)
+document.querySelector("button").addEventListener("click", fetchImg) */
 
