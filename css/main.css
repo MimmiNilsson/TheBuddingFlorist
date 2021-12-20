@@ -126,7 +126,7 @@ input[type='text'], input[type='number'], textarea {
 
 .main-incoming-prod {
   display: flex;
-  flex-direction: column; }
+  flex-direction: row; }
 
 #main-incoming-prod {
   list-style-type: none; }

@@ -160,7 +160,7 @@ input[type='text'], input[type='number'], textarea {
 
 .main-incoming-prod {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 #main-incoming-prod {
@@ -201,8 +201,6 @@ input[type='text'], input[type='number'], textarea {
   padding: 2px 5px;
   align-self: center;
 }
-
-
 
 //==============================================
 /*===== ADMIN / MAIN w/ MEDIA QUERY =====*/ 
