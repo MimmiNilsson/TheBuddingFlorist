@@ -11,8 +11,8 @@ console.log(prodList)
 prodList.forEach(item => {
     insertProd.innerHTML += `
     <div>
-    Name: ${item.heading}<br>
-    <img src="${item.image}" height="10%" width="10%"><br>
+    Name: ${item.name}<br>
+    <img src="${item.imgSrc}" height="10%" width="10%"><br>
     Price: ${item.price} SEK<br>
     Description: ${item.desc}<br>
     <button class="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>`;

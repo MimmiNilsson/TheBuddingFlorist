@@ -19,8 +19,8 @@ toggleButton.addEventListener('click', () => {
 /*===== ADMIN / MAIN =====*/
 //=============================================================================
 
-const heading = document.querySelector("#prod-heading");
-const image = document.querySelector("#prod-img");
+const name = document.querySelector("#prod-heading");
+const imgSrc = document.querySelector("#prod-img");
 const price = document.querySelector("#prod-price");
 const desc = document.querySelector("#prod-desc");
 const addBtn = document.querySelector("#main-add-btn");
@@ -38,13 +38,13 @@ let incomingStock = localStorage.getItem('incomingStock') !== null ? localStorag
 function addNewProduct(e) {
     e.preventDefault();
 
-    if(heading.value == '' || image.value == '' || price.value == '' || desc.value == '') {
-        alert('Hey, Admin! I think you forgot to add some information to your new awesome product. Once you have it all, you can add the product to the list.')
+    if(name.value == '' || imgSrc.value == '' || price.value == '' || desc.value == '') {
+        alert('Hey, Admin! It would appear that you have forgotten to add some information to your new awesome product. Once you have it all, you can add the product to the list.')
     } else {
         const incomingProd = {
             id: generateID(),
-            heading: heading.value,
-            image: image.value,
+            name: name.value,
+            imgSrc: imgSrc.value,
             price: +price.value,
             desc: desc.value
         };
@@ -55,8 +55,8 @@ function addNewProduct(e) {
 
         updateLocalStorage();
 
-        heading.value = '';
-        image.value = '';
+        name.value = '';
+        imgSrc.value = '';
         price.value = '';
         desc.value = '';
     }
@@ -73,8 +73,8 @@ function addIncomingDOM(incomingProd) {
     
     item.innerHTML = `
     <div>
-        Name: ${incomingProd.heading}<br>
-        <img src="${incomingProd.image}" height="50%"><br>
+        Name: ${incomingProd.name}<br>
+        <img src="${incomingProd.imgSrc}" height="50%"><br>
         Price: ${incomingProd.price} SEK<br>
         Desc: ${incomingProd.desc}
         <button class="main-delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>
@@ -120,8 +120,8 @@ const pubBtn = document.querySelector(".main-pub-btn");
      e.preventDefault()
     window.location.href = "../html/products.html";
 
-    heading.value = '';
-    image.value = '';
+    name.value = '';
+    imgSrc.value = '';
     price.value = '';
     desc.value = '';
  });
