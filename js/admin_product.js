@@ -15,7 +15,9 @@ prodList.forEach(item => {
         <h1 class="prod-h1">${item.name}</h1>
         <p class="prod-price">${item.price}kr</p>
         <p class="prod-desc">${item.desc}</p>
-        <button class="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>
+        <a class="add-cart">
+            <button class="add" onclick="addToCart(${item.id})">Add to Cart</button>
+         </a>
     </div>
         `;
         // <button class="delete-btn" onclick="removeIncomingProd(${item.id})">x</button>`;

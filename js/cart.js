@@ -30,7 +30,7 @@ function cartNumbers(product) {
 
 ///////////////////// Get the right product with name + id
 function setItems(product){
-    let cartItems = localStorage.getItem("productsInCart")
+    let cartItems = localStorage.getItem("productsInCart")|| [];
     cartItems = JSON.parse(cartItems);
 
     if(cartItems != null) {
@@ -106,3 +106,4 @@ function displayCart() {
 }
 onLoadCartNumbers();
 displayCart();
+
