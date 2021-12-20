@@ -6,71 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.min.css">
+    <script src="../js/admin_main.js" defer></script>
     <script src="../js/products.js" defer></script>
+    <script src="../js/cart.js" defer></script>
 </head>
 <body>
-    
-
+    <header>
+        <nav class="navbar">
+            <div class="shop-title">The Budding Florist</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./products.html">Our Products</a></li>
+                <li><a href="./admin_login.html"><i class="fas fa-user-cog"></i></a></li>
+                <li><a href="./favorited.html"><i class="fas fa-heart"></i></a></li>
+                <li class="cart"><a href="./cart.html"><span>0</span><i class="fas fa-shopping-cart"></i></a></li>
+              </ul>
+            </div>
+          </nav>
+    </header> 
     <div class="container-product">
-        <div class="card">
-            <img src="../assets/products/1037.jpg" alt="brori" style="width:100%">
-            <h1>Flower 1</h1>
-            <p class="price">599kr</p>
-            <p>Beautiful bouquet when someone close to you just died.</p>
-            <a class="add-cart cart1" href="#"><button>Add to Pot</button></a>
-        </div>
-        <div class="card">
-            <img src="../assets/products/1158.jpg" alt="brori" style="width:100%">
-            <h1>Flower 2</h1>
-            <p class="price">599kr</p>
-            <p>Beautiful bouquet when someone close to you just died.</p>
-            <a class="add-cart cart2" href="#"><button>Add to Pot</button></a>
-        </div>
-        <div class="card">
-            <img src="../assets/products/1217-38204h.jpg" alt="brori" style="width:100%">
-            <h1>Flower 3</h1>
-            <p class="price">599kr</p>
-            <p>Beautiful bouquet when someone close to you just died.</p>
-            <a class="add-cart cart3" href="#"><button>Add to Pot</button></a>
-        </div>
-        <div class="card">
-            <img src="../assets/products/allahjartan2.jpeg" alt="brori" style="width:100%">
-            <h1>Flower 4</h1>
-            <p class="price">599kr</p>
-            <p>Beautiful bouquet when someone close to you just died.</p>
-            <a class="add-cart cart4" href="#"><button>Add to Pot</button></a>
-        </div>
-        <div class="card">
-            <img src="../assets/products/amore.jpg" alt="brori" style="width:100%">
-            <h1>Flower 5</h1>
-            <p class="price">599kr</p>
-            <p>Beautiful bouquet when someone close to you just died.</p>
-            <a class="add-cart cart5" href="#"><button>Add to Pot</button></a>
-        </div>
-        <div class="card">
-            <img src="../assets/products/behaglig-82427h.jpg" alt="brori" style="width:100%">
-            <h1>Flower 6</h1>
-            <p class="price">599kr</p>
-            <p>Beautiful bouquet when someone close to you just died.</p>
-            <a class="add-cart cart6" href="#"><button>Add to Pot</button></a>
-        </div>
-        <div class="card">
-            <img src="../assets/products/hearts.jpg" alt="brori" style="width:100%">
-            <h1>Flower 7</h1>
-            <p class="price">599kr</p>
-            <p>Beautiful bouquet when someone close to you just died.</p>
-            <a class="add-cart cart7" href="#"><button>Add to Pot</button></a>
-        </div>
-        <div class="card">
-            <img src="../assets/products/rosormini.jpg" alt="brori" style="width:100%">
-            <h1>Flower 8</h1>
-            <p class="price">599kr</p>
-            <p>Beautiful bouquet when someone close to you just died.</p>
-            <a class="add-cart cart8" href="#"><button>Add to Pot</button></a>
-        </div>
+        <!-- products in here from products.js -->
     </div>
-    <script src="../cart.js"></script>
-    
-
 </body>
 </html>
