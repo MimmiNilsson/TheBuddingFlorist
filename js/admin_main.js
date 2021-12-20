@@ -75,7 +75,7 @@ function addIncomingDOM(incomingProd) {
     <div>
         Name: ${incomingProd.name}<br>
         <img src="${incomingProd.imgSrc}" height="50%"><br>
-        Price: ${incomingProd.price} SEK<br>
+        Price: ${incomingProd.price}kr<br>
         Desc: ${incomingProd.desc}
         <button class="main-delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>
         
