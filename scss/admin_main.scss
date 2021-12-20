@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 //========================================
 /*===== NAVBAR w/ MEDIA QUERY =====*/
 //========================================
+=======
+>>>>>>> 9b76a8cf780b24ef975cdfa71efd63249afd8bd7
 /*===== NAVBAR w/ MEDIA QUERY =====*/
 .navbar {
     background-color: #7b876d;
@@ -9,9 +12,14 @@
     justify-content: space-between;
     align-items: center;
     position: relative; 
+<<<<<<< HEAD
     margin-bottom: 1rem;
 }
   
+=======
+}
+
+>>>>>>> 9b76a8cf780b24ef975cdfa71efd63249afd8bd7
   .shop-title {
     font-size: 1.2rem;
     margin: .5rem; 
@@ -39,7 +47,10 @@
   .navbar-links li:hover {
     background-color: #989e8b; 
 }
+<<<<<<< HEAD
   
+=======
+>>>>>>> 9b76a8cf780b24ef975cdfa71efd63249afd8bd7
 
   .toggle-button {
     position: absolute;
@@ -82,6 +93,7 @@
       padding: .5rem 1rem; 
     }
     .navbar-links.active {
+<<<<<<< HEAD
       display: flex; 
     } 
 }
@@ -224,3 +236,7 @@ input[type='text'], input[type='number'], textarea {
   }
 }
     
+=======
+      display: flex; } 
+    }
+>>>>>>> 9b76a8cf780b24ef975cdfa71efd63249afd8bd7
