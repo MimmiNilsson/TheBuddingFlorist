@@ -14,7 +14,6 @@ function onLoadCartNumbers() {
     }
 }
 
-////////////////////
 function cartNumbers(product) {
     let productNumbers = localStorage.getItem("cartNumbers");
     productNumbers = parseInt(productNumbers);

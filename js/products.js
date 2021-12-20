@@ -2,7 +2,7 @@
 let products = [
     {
         id: 0,
-        name: "Flower 1",
+        name: "R",
         price: 599,
         desc: "A nice fucking flower",
         inCart: 0,
@@ -50,17 +50,17 @@ let products = [
     },
     {
         id: 6,
-        name: "Flower 7",
+        name: "Pretty ladys",
         price: 799,
-        desc: "flowerpower 8",
+        desc: "Ouuuuh pretty ladys",
         inCart: 0,
         imgSrc: "../assets/products/flower 7.jpg"
     },
     {
         id: 7,
-        name: "Flower 8",
+        name: "Red roses",
         price: 799,
-        desc: "flowerpower 8",
+        desc: "Roses really smell like poo poo poo",
         inCart: 0,
         imgSrc: "../assets/products/flower 8.jpg"
     },
