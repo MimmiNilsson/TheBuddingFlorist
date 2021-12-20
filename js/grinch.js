@@ -10,7 +10,6 @@ const grinch = document.querySelector('#makeItSnow');
 } else {
         this.style.backgroundColor = "brown"; 
         grinch.value = "Make It Snow: ";
-        
     }
  } 
 
