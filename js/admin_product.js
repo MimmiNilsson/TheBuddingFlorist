@@ -10,12 +10,14 @@ const insertProd = document.querySelector(".incoming-prod-admin");
 console.log(prodList)
 prodList.forEach(item => {
     insertProd.innerHTML += `
-    <div>
-    Name: ${item.name}<br>
-    <img src="${item.imgSrc}" height="10%" width="10%"><br>
-    Price: ${item.price} SEK<br>
-    Description: ${item.desc}<br>
-    <button class="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>`;
-    // <button class="delete-btn" onclick="removeIncomingProd(${item.id})">x</button>`;
+    <div class="card">
+        <img src="${item.imgSrc}" alt="${item.name}" style="width:100%"><br>
+        <h1 class="prod-h1">${item.name}</h1>
+        <p class="prod-price">${item.price}kr</p>
+        <p class="prod-desc">${item.desc}</p>
+        <button class="add-to-cart" onclick="addToCart(${item.id})">Add to Cart</button>
+    </div>
+        `;
+        // <button class="delete-btn" onclick="removeIncomingProd(${item.id})">x</button>`;
 })
 
