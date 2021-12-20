@@ -1,20 +1,19 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 svg{ //snöflingan från fontawesome i <head>
   visibility: hidden;
 }
 
-body{
+
+
+
+.johanna{
   background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+
+
+
 
 
 //========================
@@ -112,8 +111,8 @@ body{
 //======BILDSPEL==========
 //========================
 .bildspel{
+  border: 2px solid black;
   width: 99%;
-  height: 600px;
   overflow: hidden;
   position: relative;
   top: 0;
@@ -189,7 +188,7 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
   flex-direction: row;
   flex-wrap: wrap; 
   width: 99%;
-  margin-top: 150%;
+  margin-top: 600px;
 }
  
 .card {
@@ -201,7 +200,6 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
   text-align: center;
   font-family: arial;
   height: 550px;
-
 }
 
   h1{
@@ -241,10 +239,9 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
 //====HEART-FUNCTION======
 //========================
 .card .heart:hover{
-  background-color: red;
+  background-color: darkred;
 }
   .card .heart{
-    top: 4%;
     left: 6%;
     position: relative;
     height: 20px;
@@ -279,3 +276,9 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
     background: inherit;
     border-radius: 50%;
     } 
+
+footer{
+  position: relative;
+  bottom: 0;
+  width: 99%;
+}
