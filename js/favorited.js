@@ -2,8 +2,8 @@ let favs = document.querySelectorAll('.add-favs');
 let productsAll = products.concat(products2);
 
 /////////////////// To listen when u press "add to cart"
-for (let i=0; i < carts.length; i++) {
-    carts[i].addEventListener("click", () => {
+for (let i=0; i < favs.length; i++) {
+    favs[i].addEventListener("click", () => {
         cartNumbers(productsAll[i]);
         totalCost(productsAll[i])
     })
