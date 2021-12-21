@@ -1,39 +1,6 @@
-/*===== NAVBAR w/ MEDIA QUERY =====*/
 @charset "UTF-8";
-svg {
-  visibility: hidden; }
-
-.johanna {
-  background-color: white;
-  padding: 0;
-  box-sizing: border-box; }
-
-.fa-snowflake {
-  position: absolute;
-  top: -20px;
-  animation: fall linear forwards;
-  color: white; }
-
-@keyframes fall {
-  to {
-    transform: translateY(3000px); } }
-
-#makeItSnow {
-  position: absolute;
-  margin-top: 35%;
-  left: 1%;
-  z-index: 20;
-  border: none;
-  height: 5%;
-  width: 10%;
-  background-color: brown;
-  color: white;
-  cursor: pointer;
-  font-size: 18px; }
-
-#makeItSnow:hover {
-  opacity: 0.8; }
-
+/*===== NAVBAR w/ MEDIA QUERY =====*/
+/*===== NAVBAR w/ MEDIA QUERY =====*/
 .navbar {
   background-color: #7b876d;
   color: white;
@@ -203,26 +170,18 @@ input[type='text'], input[type='number'], textarea {
     margin: auto; } }
 
 /*===== ADMIN LOGIN SECTION =====*/
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; }
+
 .body-admin-login {
   background-image: url(../assets/admin_login/background-img-3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom; }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0; }
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #fff; }
-
-/*===== ADMIN LOGIN SECTION =====*/
 .login-container {
   width: 65vh;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  box-shadow: var(--box-shadow);
   background-color: #fff;
   opacity: 0.90;
   border-radius: 5px;
@@ -263,7 +222,6 @@ body {
 .login-control:focus {
   box-shadow: none;
   outline: none;
-  /* border-color: #a5a58d; */
   border-color: #c67f43; }
 
 .login-control:focus + .login-label, .login-control:not(:placeholder-shown) + .login-label {
@@ -289,7 +247,7 @@ body {
   cursor: pointer;
   background-color: #7b876d;
   color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  box-shadow: var(--box-shadow);
   border: 0;
   display: block;
   font-size: 1.2rem;
@@ -303,140 +261,11 @@ body {
   background-color: #989e8b;
   outline-style: none; }
 
-/*===== NAVBAR w/ MEDIA QUERY =====*/
-.navbar {
-  background-color: #7b876d;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative; }
-
-.shop-title {
-  font-size: 1.2rem;
-  margin: .5rem; }
-
-.navbar-links {
-  height: 100%; }
-
-.navbar-links ul {
-  display: flex; }
-
-.navbar-links li {
-  list-style: none; }
-
-.navbar-links li a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-  padding: 1rem; }
-
-.navbar-links li:hover {
-  background-color: #989e8b; }
-
-.toggle-button {
-  position: absolute;
-  top: .75rem;
-  right: 1rem;
-  display: none;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 1.8rem;
-  height: 1.3rem; }
-
-.toggle-button .bar {
-  height: 3px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 10px; }
-
-@media (max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start; }
-  .toggle-button {
-    display: flex; }
-  .navbar-links {
-    display: none;
-    width: 100%; }
-  .navbar-links ul {
-    width: 100%;
-    flex-direction: column; }
-  .navbar-links ul li {
-    text-align: center; }
-  .navbar-links ul li a {
-    padding: .5rem 1rem; }
-  .navbar-links.active {
-    display: flex; } }
 .container-product {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 10%; }
-.bildspel {
-  border: 2px solid black;
-  width: 99%;
-  overflow: hidden;
-  position: relative;
-  top: 0; }
-
-.spel {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.knapp {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex; }
-
-.fyrkant {
-  width: 50px;
-  height: 10px;
-  border: 2px solid #893f04;
-  margin: 6px;
-  cursor: pointer;
-  transition: 0.4s; }
-
-.fyrkant:hover {
-  background: #c67f43; }
-
-input[name=cirkel] {
-  /* gömmer den fula "gamla" menyn där uppe till vänster  */
-  position: absolute;
-  visibility: hidden; }
-
-.bilder {
-  height: 100%;
-  width: 500%;
-  display: flex; }
-
-.bild {
-  width: 20%;
-  transition: 0.6s; }
-
-.bild img {
-  width: 100%;
-  height: 100%; }
-
-#cirkel1:checked ~ .ett {
-  margin-left: 0; }
-
-#cirkel2:checked ~ .ett {
-  margin-left: -20%; }
-
-#cirkel3:checked ~ .ett {
-  margin-left: -40%; }
-
-.cards {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 99%;
-  margin-top: 600px; }
 
 .card {
   position: relative;
@@ -565,6 +394,143 @@ input[name=cirkel] {
 .checkOutBtn:hover span:after {
   opacity: 1;
   right: 0; }
+
+svg {
+  visibility: hidden; }
+
+.johanna {
+  background-color: white;
+  padding: 0;
+  box-sizing: border-box; }
+
+.fa-snowflake {
+  position: absolute;
+  top: -20px;
+  animation: fall linear forwards;
+  color: white; }
+
+@keyframes fall {
+  to {
+    transform: translateY(3000px); } }
+
+#makeItSnow {
+  position: absolute;
+  margin-top: 35%;
+  left: 1%;
+  z-index: 20;
+  border: none;
+  height: 5%;
+  width: 10%;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  font-size: 18px; }
+
+#makeItSnow:hover {
+  opacity: 0.8; }
+
+.bildspel {
+  border: 2px solid black;
+  width: 99%;
+  overflow: hidden;
+  position: relative;
+  top: 0; }
+
+.spel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.knapp {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex; }
+
+.fyrkant {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #893f04;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s; }
+
+.fyrkant:hover {
+  background: #c67f43; }
+
+input[name=cirkel] {
+  /* gömmer den fula "gamla" menyn där uppe till vänster  */
+  position: absolute;
+  visibility: hidden; }
+
+.bilder {
+  height: 100%;
+  width: 500%;
+  display: flex; }
+
+.bild {
+  width: 20%;
+  transition: 0.6s; }
+
+.bild img {
+  width: 100%;
+  height: 100%; }
+
+#cirkel1:checked ~ .ett {
+  margin-left: 0; }
+
+#cirkel2:checked ~ .ett {
+  margin-left: -20%; }
+
+#cirkel3:checked ~ .ett {
+  margin-left: -40%; }
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 99%;
+  margin-top: 600px; }
+
+.card {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  font-family: arial;
+  height: 550px; }
+
+h1 {
+  color: #d49b7e; }
+
+.card img {
+  height: 300px; }
+
+.price {
+  color: #d49b7e;
+  font-size: 22px; }
+
+p {
+  color: #893f04; }
+
+.card button {
+  border: none;
+  outline: 0;
+  color: white;
+  background-color: #c67f43;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  padding: 12px;
+  text-align: center; }
+
+.card button:hover {
+  opacity: 0.7; }
+
 .card .heart:hover {
   background-color: darkred; }
 
