@@ -12,4 +12,3 @@ const grinch = document.querySelector('#makeItSnow');
         grinch.value = "Make It Snow: ";
     }
  } 
-
