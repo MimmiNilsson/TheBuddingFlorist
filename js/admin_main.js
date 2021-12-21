@@ -46,7 +46,8 @@ function addNewProduct(e) {
             name: name.value,
             imgSrc: imgSrc.value,
             price: +price.value,
-            desc: desc.value
+            desc: desc.value,
+            inCart: 0
         };
 
         incomingStock.push(incomingProd);
