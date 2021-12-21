@@ -1,9 +1,9 @@
-let carts = document.querySelectorAll("button");
-let products = [
+let products2 = [
     {
         id: 30,
         name: "Snowfall Bouquet",
         price: 349,
+        desc: "A nice fFESAFASEFEFEFasr",
         inCart: 0,
         imgSrc: "../assets/Snowfall Bouquet.jpg"
     },
@@ -85,19 +85,3 @@ let products = [
         imgSrc: "../assets/Oh Christmas Tree.jpg"
     },
 ]
-
-
-
-for (let i = 0; i < carts.length; i++) {
-    carts[i].addEventListener("click", () => {
-        cartNumbers();
-    })
-}
-
-function cartNumbers() {
-    let productNumbers = localStorage.getItem('cartNumbers');
-
-
-    productNumbers = parseInt(productNumbers);
-    localStorage.setItem('cartNumbers', 1);
-}
