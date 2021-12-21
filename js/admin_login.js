@@ -1,4 +1,7 @@
+//=============================================================================
 /*===== ADMIN / LOGIN ===== */
+//=============================================================================
+
 function validateAdmin(e) {
     e.preventDefault();
     const username = document.querySelector('#username').value;

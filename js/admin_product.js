@@ -20,6 +20,5 @@ prodList.forEach(item => {
          </a>
     </div>
         `;
-        // <button class="delete-btn" onclick="removeIncomingProd(${item.id})">x</button>`;
 })
 

@@ -1,7 +1,7 @@
-let carts = document.querySelectorAll('.add-cart');
 let productsAll = products.concat(products2);
+let carts = document.querySelectorAll('.add-cart');
 
-/////////////////// To listen when u press "add to cart"
+/////////////////// To listen when u press "add to pot"
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener("click", () => {
         cartNumbers(productsAll[i]);
@@ -30,7 +30,7 @@ function cartNumbers(product) {
     setItems(product);
 }
 
-///////////////////// Get the right product with name
+///////////////////// Get the right product with name + id
 function setItems(product){
     let cartItems = localStorage.getItem("productsAllInCart")
     cartItems = JSON.parse(cartItems);

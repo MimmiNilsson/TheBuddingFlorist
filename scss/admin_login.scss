@@ -1,6 +1,10 @@
-//===========================================
-/*===== ADMIN LOGIN SECTION =====*/
-//===========================================
+//=============================================================================
+/*===== ADMIN LOGIN SECTION ===== */
+//=============================================================================
+
+:root {
+  --box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
 
 .body-admin-login {
   background-image: url(../assets/admin_login/background-img-3.jpg);
@@ -11,14 +15,13 @@
 
 .login-container {
   width: 65vh;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  box-shadow: var(--box-shadow);
   background-color: #fff;
   opacity: 0.90;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  // min-height: 100vh;
   height: 100vh;
   font-size: 1rem;
   margin: auto;
@@ -59,7 +62,6 @@
 .login-control:focus {
   box-shadow: none;
   outline: none;
-  /* border-color: #a5a58d; */
   border-color: #c67f43; 
 }
 
@@ -90,7 +92,7 @@
   cursor: pointer;
   background-color: #7b876d;
   color: #fff;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  box-shadow: var(--box-shadow);
   border: 0;
   display: block;
   font-size: 1.2rem;
