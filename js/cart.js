@@ -1,7 +1,7 @@
 let carts = document.querySelectorAll('.add-cart');
 let productsAll = products.concat(products2);
 
-/////////////////// To listen when u press "add to pot"
+/////////////////// To listen when u press "add to cart"
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener("click", () => {
         cartNumbers(productsAll[i]);
@@ -17,9 +17,8 @@ function onLoadCartNumbers() {
 
 ////////////////////
 function cartNumbers(product) {
-    let productNumbers = localStorage.getItem("cartNumbers");
-    productNumbers = parseInt(productNumbers);
-
+    let productNumbers = parseInt(localStorage.getItem("cartNumbers")) || [];
+    
     if( productNumbers ) {
         localStorage.setItem("cartNumbers", productNumbers + 1);
         document.querySelector(".cart span").textContent = productNumbers + 1;
@@ -32,8 +31,7 @@ function cartNumbers(product) {
 
 ///////////////////// Get the right product with name + id
 function setItems(product){
-    let cartItems = localStorage.getItem("productsInCart");
-    cartItems = JSON.parse(cartItems);
+    let cartItems = JSON.parse(localStorage.getItem("productsInCart")) || [];
 
     if(cartItems != null) {
         if(cartItems[product.id] == undefined) {
