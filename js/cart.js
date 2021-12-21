@@ -1,10 +1,11 @@
 let carts = document.querySelectorAll('.add-cart');
+let productsAll = products.concat(products2);
 
-/////////////////// To listen when u press "add to pot"
+/////////////////// To listen when u press "add to cart"
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener("click", () => {
-        cartNumbers(products[i]);
-        totalCost(products[i])
+        cartNumbers(productsAll[i]);
+        totalCost(productsAll[i])
     })
 }
 function onLoadCartNumbers() {
@@ -14,6 +15,7 @@ function onLoadCartNumbers() {
     }
 }
 
+////////////////////
 function cartNumbers(product) {
     let productNumbers = localStorage.getItem("cartNumbers");
     productNumbers = parseInt(productNumbers);
@@ -28,9 +30,9 @@ function cartNumbers(product) {
     setItems(product);
 }
 
-///////////////////// Get the right product with name + id
+///////////////////// Get the right product with name
 function setItems(product){
-    let cartItems = localStorage.getItem("productsInCart")|| [];
+    let cartItems = localStorage.getItem("productsAllInCart")
     cartItems = JSON.parse(cartItems);
 
     if(cartItems != null) {
@@ -47,7 +49,7 @@ function setItems(product){
         [product.id]: product
         }
     }
-    localStorage.setItem("productsInCart", JSON.stringify
+    localStorage.setItem("productsAllInCart", JSON.stringify
     (cartItems));
 }
 /////////////////// total price, for each product
@@ -62,7 +64,7 @@ function totalCost(product) {
     }
 }
 function displayCart() {
-    let cartItems = localStorage.getItem("productsInCart");
+    let cartItems = localStorage.getItem("productsAllInCart");
         cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector (".products");
     let cartCost = localStorage.getItem("totalCost");
@@ -81,9 +83,9 @@ function displayCart() {
                 ${item.price}kr
             </div>
             <div class="quantity">
-                <ion-icon id="btnSubtract" name="chevron-back-outline"></ion-icon>
+                <ion-icon id="btnSubtract" name="chevron-back-outline" value="-" onclick="subtract();"></ion-icon>
                 <span id="txtNumber">${item.inCart}</span>
-                <ion-icon id="btnAdd" name="chevron-forward-outline"></ion-icon>
+                <ion-icon id="btnAdd" name="chevron-forward-outline" onclick="add();"></ion-icon>
             </div>
             <div class="total">
                 ${item.inCart * item.price}kr
@@ -106,4 +108,3 @@ function displayCart() {
 }
 onLoadCartNumbers();
 displayCart();
-
