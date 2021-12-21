@@ -32,7 +32,7 @@ function cartNumbers(product) {
 
 ///////////////////// Get the right product with name + id
 function setItems(product){
-    let cartItems = localStorage.getItem("productsInCart")
+    let cartItems = localStorage.getItem("productsInCart");
     cartItems = JSON.parse(cartItems);
 
     if(cartItems != null) {
@@ -83,9 +83,9 @@ function displayCart() {
                 ${item.price}kr
             </div>
             <div class="quantity">
-                <ion-icon name="chevron-back-outline" value="-"</ion-icon>
+                <ion-icon name="chevron-back-outline"></ion-icon>
                 <span id="txtNumber">${item.inCart}</span>
-                <ion-icon name="chevron-forward-outline" value="+"></ion-icon>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
             </div>
             <div class="total">
                 ${item.inCart * item.price}kr
