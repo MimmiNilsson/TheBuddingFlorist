@@ -4,7 +4,6 @@
 
 .navbar {
     background-color: #7b876d;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,8 +15,8 @@
 .shop-title {
     font-family: "Staatliches", sans-serif;
     color: #fff;
-    // font-family: "Staatliches", sans-serif;
-    font-size: 1.5rem;
+    text-shadow: #eee 1px 0 10px;
+    font-size: 2rem;
     margin: .5rem; 
 
 }
@@ -43,6 +42,10 @@
   
   .navbar-links li:hover {
     background-color: #989e8b; 
+    font-size: 1rem;
+    border-radius: 2px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
 }
   
   .toggle-button {

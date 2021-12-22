@@ -74,6 +74,7 @@ function addIncomingDOM(incomingProd) {
     
     item.innerHTML = `
     <div>
+        <div class="heart"></div>
         Name: ${incomingProd.name}<br>
         <img src="${incomingProd.imgSrc}" height="50%"><br>
         Price: ${incomingProd.price}kr<br>
@@ -125,6 +126,7 @@ const pubBtn = document.querySelector(".main-pub-btn");
     imgSrc.value = '';
     price.value = '';
     desc.value = '';
+    
  });
 
 

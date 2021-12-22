@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Admin</title>
+        <title>Admin Dashboard</title>
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.min.css">
         <script src="../js/admin_main.js" defer></script>
@@ -14,7 +14,7 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="shop-title">The Budding Florist</div>
+            <div class="shop-title">Admin Dashboard</div>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -30,9 +30,9 @@
               </ul>
             </div>
           </nav>
-    </header> 
+    </header>
     <div class="admin-main-container">
-        <main class="admin-main-main">
+        <div class="admin-main-main">
             <fieldset class="admin-main-fieldset">
                 <legend class="admin-main-legend">Add Product</legend>
                 <form autocomplete= "off" action="" class="admin-main-form">
@@ -49,20 +49,18 @@
                     </div>
                 </form>
             </fieldset>
-        </main>
-        <aside class="admin-main-aside">
+        </div>
+        <div class="admin-main-aside">
             <div class="main-prod-container">
-                <fieldset class="admin-main-fieldset">
-                    <legend class="admin-main-legend">Incoming Stock</legend>
+                <h1>Incoming Stock</h1>
                     <div class="main-incoming-prod">
                         <ul id="main-incoming-prod">
     
                         </ul>
                     </div>
                     <button class="main-pub-btn">Take Products Live</button>
-                </fieldset>
             </div>
-        </aside>
+        </div>
     </div>
 </body>
 </html>

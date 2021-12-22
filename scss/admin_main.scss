@@ -3,31 +3,27 @@
 //=============================================================================
 
 .admin-main-container {
-  // width: 100%;
-  margin: auto;
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
-  // align-items: center;
+  justify-content: center;
 }
 
 .admin-main-main {
   width: 40%;
-  margin: auto;
-  padding-top: 2rem;
+  padding: 2rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #dedede;
 }
 
 .admin-main-aside {
   width: 60%;
-  margin: auto;
-  padding-top: 2rem;
+  padding: 2rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #f3f3f0;
 }
 
 .admin-main-fieldset {
-  margin: auto;
-  // padding: 1.5rem;
+  padding: 2rem;
   border-radius: 5px; 
 }
 
@@ -42,16 +38,15 @@
 
 .admin-label {
   font-size: 1.1rem;
-  padding-top: 10px;
-  justify-content: flex-start;
 }
 
 input[type='text'], input[type='number'], textarea {
+  display: block;
+  width: 100%;
   border: 1px solid #dedede;
   border-radius: 5px;
   font-size: 1rem;
-  padding: 10px;
-  width: 90%;
+  padding: 1rem;
 }
 
 #main-add-btn, .main-pub-btn {
@@ -96,6 +91,10 @@ input[type='text'], input[type='number'], textarea {
   // padding: 10px;
   // margin: 10px 0; 
 }
+
+
+
+
 
 .main-delete-btn {
   cursor: pointer;
