@@ -131,25 +131,29 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
 //========================
 .cards{ //parent för varje enskilt card
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap; 
-  width: 99%;
   margin-top: 600px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
  
 .card {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 300px;
+  max-width: 300px;
   margin: auto;
   margin-top: 5%;
+  margin-right: 2%;
+  margin-left: 2%;
   text-align: center;
   font-family: arial;
-  height: 550px;
+  line-height: 20px;
+  height: 450px;
 }
 
   h1{
-  color: #d49b7e;
+  color: #989e8b;
 }
 
   .card img{
@@ -157,23 +161,29 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
 }
 
     p{
-    color: #893f04;
+    color: #989e8b;
   }
 
-  .card button {
+  .card .add {
     border: none;
     outline: 0;
     color: white;
-    background-color: #c67f43;
+    background-color: #7b876d;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-    padding: 12px;
     text-align: center;
 }
 
   .card button:hover {
     opacity: 0.7;
+  }
+
+  .prodprice {
+    color: #989e8b;
+    font-size: 22px;
+    padding: 7px;
+    margin-top: 1%;
   }
 
 //========================
@@ -182,7 +192,8 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
 .card .heart:hover{
   background-color: darkred;
 }
-  .card .heart{
+  .heart{
+    margin-top: 5%;
     left: 6%;
     position: relative;
     height: 20px;
@@ -218,8 +229,42 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
     border-radius: 50%;
     } 
 
-footer{
-  position: relative;
+.footer_bottom{
+  display: flex;
+  justify-content: space-around;
   bottom: 0;
-  width: 99%;
+  width: 100%;
+  background-color: #7b876d;
+  margin-top: 5%;
+  display: flex;
+  height: 100px;
+  padding: 10px;
 }
+
+.footer_rubrik{
+  color: white;
+}
+
+.footer_text{
+  color: white;
+}
+
+.footer_ett{
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+}
+
+.footer_mitten{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer_tva{
+  position: relative;
+  text-align: right;
+  padding-top: 4px;
+}
+
