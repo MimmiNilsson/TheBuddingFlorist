@@ -29,13 +29,13 @@ svg{ //snöflingan från fontawesome i <head>
 //========================
 #makeItSnow{ //make it snow button
   position: absolute;
-  margin-top: 35%;
+  margin-top: 34%;
   left: 1%;
   z-index: 20;
   border: none;
   height: 5%;
   width: 10%;
-  background-color: brown;
+  background-color: #7b876d;
   color: white;
   cursor: pointer;
   font-size: 18px;
@@ -49,12 +49,11 @@ svg{ //snöflingan från fontawesome i <head>
 //======BILDSPEL==========
 //========================
 .bildspel{
-  border: 2px solid black;
-  width: 99%;
+  width: 100%;
   overflow: hidden;
   position: relative;
   top: 0;
-  height: 400px;
+  height: 600px;
 }
 
 .spel{
@@ -74,15 +73,15 @@ svg{ //snöflingan från fontawesome i <head>
 
 .fyrkant{
   width: 50px;
-  height: 10px;
-  border: 2px solid #893f04;
+  height: 20px;
+  border: 2px solid #7b876d;
   margin: 6px;
   cursor: pointer;
   transition: 0.4s;
 }
 
 .fyrkant:hover{
-  background: #c67f43;
+  background: #989e8b;
 }
 
 input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  */
@@ -116,6 +115,12 @@ input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  *
 
 #cirkel3:checked ~ .ett{
   margin-left: -40%;
+}
+
+
+#search::placeholder{
+color: white;
+cursor: pointer;
 }
 
 

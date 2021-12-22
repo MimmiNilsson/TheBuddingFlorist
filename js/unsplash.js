@@ -1,3 +1,47 @@
+function SearchPhotos () {
+    let client_id = "6yf5t5spIbfcpudUwkLl2SkoL86KmWElsYKptRDgDBY";
+    let query = document.getElementById("search").value;
+    let url = "https://api.unsplash.com/search/photos/?client_id=" +client_id+ "&query=" +query;
+    
+    fetch(url)
+        .then(function (data){
+            return data.json();
+        })
+        .then(function(data){
+            console.log(data);
+
+            data.results.forEach(photo => {
+                
+                let result = `
+                <img src="${photo.urls.regular}">
+                <a href="${photo.links.download}">
+                `;
+                
+                $("#result").html(result);
+
+            });
+        });
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* async function fetchPicture() {
    // hanterar vi promise
     response.json().then( res=> {  //callback function i promise som extraherar response
@@ -31,7 +75,7 @@ https://api.unsplash.com/flowers/photos?query=office&per_page=3
 
 
 
-const input = document.getElementById("bild");
+/* const input = document.getElementById("bild");
 const grid = document.getElementsByClassName("unsplash")[0];
 
 
@@ -80,4 +124,4 @@ function dayNightMode(){
         document.body.style.backgroundColor = "black";
         document.body.style.color = "white";
     }
-}
+} */
