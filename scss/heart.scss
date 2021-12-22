@@ -1,35 +1,225 @@
-.heart{
-    margin-top: 10%;
-    position: relative;
-    height: 100px;
-    width: 100px;
-    background-color: grey;
-    display: flex;
-    justify-content: center;
+svg{ //snöflingan från fontawesome i <head>
+  visibility: hidden;
+}
+
+
+
+
+.johanna{
+  background-color: white;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+//========================
+//======SNOWFLAKE=========
+//========================
+.fa-snowflake{
+	position: absolute;
+	top: -20px;
+	animation: fall linear forwards;
+  color: white;
+}
+
+@keyframes fall{
+  to{
+      transform: translateY(3000px);
+  }
+}
+
+//========================
+//=======SNOW-EFFECT======
+//========================
+#makeItSnow{ //make it snow button
+  position: absolute;
+  margin-top: 35%;
+  left: 1%;
+  z-index: 20;
+  border: none;
+  height: 5%;
+  width: 10%;
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#makeItSnow:hover{
+    opacity: 0.8;
+}
+
+//========================
+//======BILDSPEL==========
+//========================
+.bildspel{
+  border: 2px solid black;
+  width: 99%;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+}
+
+.spel{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.knapp{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.fyrkant{
+  width: 50px;
+  height: 10px;
+  border: 2px solid #893f04;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.fyrkant:hover{
+  background: #c67f43;
+}
+
+input[name=cirkel]{ /* gömmer den fula "gamla" menyn där uppe till vänster  */
+  position: absolute;
+  visibility: hidden;
+}
+
+.bilder{
+  height: 100%;
+  width: 500%;
+  display: flex;
+}
+
+.bild{
+  width: 20%;
+  transition: 0.6s;
+}
+
+.bild img{
+  width: 100%;
+  height: 100%;
+}
+
+#cirkel1:checked ~ .ett{
+  margin-left: 0;
+}
+
+#cirkel2:checked ~ .ett{
+  margin-left: -20%;
+}
+
+#cirkel3:checked ~ .ett{
+  margin-left: -40%;
+}
+
+
+//========================
+//=========CARDS==========
+//========================
+.cards{ //parent för varje enskilt card
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  width: 99%;
+  margin-top: 600px;
+}
+ 
+.card {
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 300px;
+  margin: auto;
+  margin-top: 5%;
+  text-align: center;
+  font-family: arial;
+  height: 550px;
+}
+
+  h1{
+  color: #d49b7e;
+}
+
+  .card img{
+  height: 300px;
+}
+
+    p{
+    color: #893f04;
+  }
+
+  .card button {
+    border: none;
+    outline: 0;
+    color: white;
+    background-color: #c67f43;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
     text-align: center;
-    border-radius: 0 0 0 10px;
-    transform: rotate (-45deg);
+}
+
+  .card button:hover {
+    opacity: 0.7;
+  }
+
+//========================
+//====HEART-FUNCTION======
+//========================
+.card .heart:hover{
+  background-color: darkred;
+}
+  .card .heart{
+    left: 6%;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: grey;
+    border-radius: 0 0 0 3px;
+    transform: rotate(-45deg);
     cursor: pointer;
 }
 
-.heart::before{
+.card .heart.fill-color{
+    background-color: red;
+}
+
+.card .heart::before{// vänster sida
   position: absolute;
   content: "";
-  top: -50;
+  top: -50%;
   left: 0;
   width: 100%;
   height: 100%;
   background: inherit;
   border-radius: 50%;
 }
+.card .heart:after{ //höger sida
+    position: absolute;
+    content: "";
+    right: -50%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 50%;
+    } 
 
-.heart:after{
-  position: absolute;
-content: "";
-right: -50%;
-top: 0;
-width: 100%;
-height: 100%;
-background: inherit;
-border-radius: 50%;
-} 
+footer{
+  position: relative;
+  bottom: 0;
+  width: 99%;
+}
