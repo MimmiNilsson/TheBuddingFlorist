@@ -88,6 +88,8 @@ body {
 
 /*===== ADMIN / MAIN ADD PRODUCTS===== */
 .admin-main-container {
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -125,17 +127,23 @@ body {
 .admin-label {
   font-size: 1.1rem; }
 
-input[type='text'], input[type='number'], textarea {
+.input-admin-main[type='text'], .input-admin-main[type='number'], textarea {
   display: block;
   width: 100%;
   border: 1px solid #dedede;
   border-radius: 5px;
-  font-size: 1rem;
-  padding: 1rem; }
+  font-size: 0.9rem;
+  padding: 1rem;
+  margin: 10px 0 10px 0; }
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1); }
 
 #main-add-btn, .main-pub-btn {
   cursor: pointer;
-  background-color: #dedede;
+  background-color: #c4c4c4;
+  color: #fff;
   text-transform: uppercase;
   border: 0;
   display: block;
@@ -146,12 +154,12 @@ input[type='text'], input[type='number'], textarea {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
 
 #main-add-btn:hover, .main-pub-btn:hover {
-  background-color: gray;
-  color: #fff; }
+  background-color: #dedede;
+  color: black; }
 
 .main-pub-btn:focus {
-  outline-style: outset;
-  background-color: #989e8b; }
+  background-color: #c4c4c4;
+  color: white; }
 
 .main-incoming-prod {
   display: flex;
@@ -163,7 +171,7 @@ input[type='text'], input[type='number'], textarea {
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 1rem;
-  background-image: url(../assets/admin_main/wreath.jpg);
+  background-image: url(../assets/admin_main/georgia-de-lotz-rTFwYeWGU-8-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; }
@@ -187,11 +195,14 @@ input[type='text'], input[type='number'], textarea {
 #admin-main-cost {
   border-bottom: 1px dotted #ccc; }
 
-.admin-main-text {
+.admin-main-text, .admin-main-text-2 {
   display: flex;
   justify-content: center;
   margin-top: 5px;
   color: black; }
+
+.admin-main-text-2 {
+  padding-left: 2rem; }
 
 .main-delete-btn {
   cursor: pointer;
@@ -224,7 +235,7 @@ input[type='text'], input[type='number'], textarea {
   --box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; }
 
 .body-admin-login {
-  background-image: url(../assets/admin_login/background-img-3.jpg);
+  background-image: url(../assets/admin_login/georgia-de-lotz-rTFwYeWGU-8-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom; }
@@ -261,7 +272,7 @@ input[type='text'], input[type='number'], textarea {
   width: 100%;
   padding: 0.9rem;
   box-shadow: none;
-  border-radius: 0;
+  border-radius: 0px;
   border-color: #ccc;
   border-style: none none solid none;
   transition: all .5s; }
@@ -275,7 +286,9 @@ input[type='text'], input[type='number'], textarea {
   border-color: #c67f43; }
 
 .login-control:focus + .login-label, .login-control:not(:placeholder-shown) + .login-label {
-  transform: translateY(-4rem) scale(0.825); }
+  box-shadow: none;
+  outline: none;
+  transform: translateY(-3.5rem) scale(0.825); }
 
 .login-group:focus-within {
   transform: scale(1.05, 1.05); }

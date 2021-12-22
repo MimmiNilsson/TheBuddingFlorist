@@ -3,6 +3,8 @@
 //=============================================================================
 
 .admin-main-container {
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -39,7 +41,6 @@
   font-size: 1.5rem;
   text-transform: uppercase;
   line-height: 1; 
-  // display: inline;
   background-color: #dedede;
   padding: 10px;
 }
@@ -48,19 +49,29 @@
   font-size: 1.1rem;
 }
 
-input[type='text'], input[type='number'], textarea {
+.input-admin-main[type='text'], .input-admin-main[type='number'], textarea {
   display: block;
   width: 100%;
   border: 1px solid #dedede;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 1rem;
+  margin: 10px 0 10px 0;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 
+  0 2px 2px rgba(0,0,0,0.1),
+  0 4px 4px rgba(0,0,0,0.1),
+  0 6px 6px rgba(0,0,0,0.1),
+  0 8px 8px rgba(0,0,0,0.1);
 }
 
 #main-add-btn, .main-pub-btn {
   cursor: pointer;
-  background-color: #dedede;
-  // background-color: #7b876d;
+  background-color: #c4c4c4;
+  color: #fff;
   text-transform: uppercase;
   border: 0;
   display: block;
@@ -68,18 +79,20 @@ input[type='text'], input[type='number'], textarea {
   margin: 10px 0 30px;
   padding: 10px;
   width: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 
+  0 1px 3px rgba(0, 0, 0, 0.12), 
+  0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 #main-add-btn:hover, .main-pub-btn:hover {
-  background-color: gray;
-  color: #fff;
+  background-color: #dedede;
+  color: black;
 }
 
-
 .main-pub-btn:focus {
-  outline-style: outset;
-  background-color: #989e8b; 
+  // outline-style: outset;
+  background-color: #c4c4c4; 
+  color: white;
 }
 
 .main-incoming-prod {
@@ -93,8 +106,7 @@ input[type='text'], input[type='number'], textarea {
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 1rem;
-  // padding: 2rem;
-  background-image: url(../assets/admin_main/wreath.jpg);
+  background-image: url(../assets/admin_main/georgia-de-lotz-rTFwYeWGU-8-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -123,11 +135,15 @@ input[type='text'], input[type='number'], textarea {
   border-bottom: 1px dotted #ccc;
 }
 
-.admin-main-text {
+.admin-main-text, .admin-main-text-2 {
   display: flex;
   justify-content: center;
   margin-top: 5px;
   color: black;
+}
+
+.admin-main-text-2 {
+  padding-left: 2rem;
 }
 
 .main-delete-btn {
