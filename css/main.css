@@ -67,6 +67,7 @@ body {
   background-color: #fff;
   border-radius: 10px; }
 
+/*===== MEDIA QUERY ===== */
 @media (max-width: 800px) {
   .navbar {
     flex-direction: column;
