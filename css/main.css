@@ -522,7 +522,7 @@ svg {
   top: -20px;
   position: absolute; }
 
-.johanna {
+.body-index {
   background-color: white;
   padding: 0;
   box-sizing: border-box; }
@@ -755,17 +755,22 @@ p {
 
 /*===== MIMMI: ORDER COMPLETED MESSAGE ===== */
 .body-checkout-msg {
-  background-color: yellowgreen;
-  margin-top: 10%; }
+  height: 100%;
+  margin-top: 15%;
+  background-image: url(../assets/checkout_msg/hands.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .msg-container {
-  width: 80vh;
+  width: 40%;
   margin: auto;
   padding: 2rem;
   display: flex;
   justify-content: center;
   background-color: #fff;
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .msg-fieldset {
   padding: 2rem;
@@ -787,5 +792,4 @@ p {
   align-self: center; }
 
 .msg {
-  border: 2px solid red;
   text-align: center; }
