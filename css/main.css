@@ -551,11 +551,26 @@ input[name=cirkel] {
   margin-left: -40%; }
 
 #search::placeholder {
-  color: white;
-  cursor: pointer; }
+  color: white; }
 
 #search {
-  width: 94%; }
+  width: 95%;
+  height: 9%;
+  padding-left: 3.5%;
+  font-size: 15px;
+  border: 0;
+  cursor: default; }
+
+#unsplashKnapp {
+  float: right;
+  height: 9%;
+  width: 5%;
+  font-size: 15px;
+  cursor: pointer; }
+
+#result {
+  height: 600px;
+  width: 100%; }
 
 .cards {
   display: flex;

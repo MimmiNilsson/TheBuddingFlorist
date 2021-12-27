@@ -3,6 +3,7 @@ function SearchPhotos () {
     let query = document.getElementById("search").value;
     let url = "https://api.unsplash.com/search/photos/?client_id=" +client_id+ "&query=" +query;
     
+    //gör en request till API
     fetch(url)
         .then(function (data){
             return data.json();
@@ -13,7 +14,7 @@ function SearchPhotos () {
             data.results.forEach(photo => {
                 
                 let result = `
-                <img src="${photo.urls.regular}">
+                <img src="${photo.urls.full}">
                 <a href="${photo.links.download}">
                 `;
                 
@@ -21,6 +22,11 @@ function SearchPhotos () {
             });
         });
 }
+
+/* GRUND URL
+https://api.unsplash.com/photos/random/3
+https://api.unsplash.com/photos/random/3${count};
+https://api.unsplash.com/flowers/photos?query=office&per_page=3 */
 
 
 
