@@ -1,25 +1,25 @@
 //=============================================================================
-/*===== ADMIN / MAIN ADD PRODUCTS===== */
+/*===== ADMIN / MAIN ADD PRODUCTS ===== */
 //=============================================================================
 
 .admin-main-container {
+  width: 80%;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  background-color: #fff;
 }
 
 .admin-main-main {
   width: 40%;
-  padding: 2rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background-color: #dedede;
+  padding: 0.75rem 2rem 2rem 2rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .admin-main-aside {
   width: 60%;
-  padding: 2rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  background-color: #f3f3f0;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .admin-main-fieldset {
@@ -28,7 +28,7 @@
 }
 
 .admin-main-fieldset > .admin-main-legend {
-  color: #c67f43;
+  color: black;
   margin: auto;
   padding: 0 1rem;
   font-size: 1.5rem;
@@ -36,35 +36,63 @@
   line-height: 1; 
 }
 
+.main-prod-heading {
+  color: black;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 1; 
+  background-color: #dedede;
+  padding: 10px;
+}
+
 .admin-label {
   font-size: 1.1rem;
 }
 
-input[type='text'], input[type='number'], textarea {
+.input-admin-main[type='text'], .input-admin-main[type='number'], textarea {
   display: block;
   width: 100%;
   border: 1px solid #dedede;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   padding: 1rem;
+  margin: 10px 0 10px 0;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  box-shadow: 
+  0 2px 2px rgba(0,0,0,0.1),
+  0 4px 4px rgba(0,0,0,0.1),
+  0 6px 6px rgba(0,0,0,0.1),
+  0 8px 8px rgba(0,0,0,0.1);
 }
 
 #main-add-btn, .main-pub-btn {
   cursor: pointer;
-  background-color: #7b876d;
+  background-color: #c4c4c4;
   color: #fff;
+  text-transform: uppercase;
   border: 0;
   display: block;
   font-size: 1rem;
   margin: 10px 0 30px;
   padding: 10px;
   width: 100%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 
+  0 1px 3px rgba(0, 0, 0, 0.12), 
+  0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.main-pub-btn:focus, .delete-btn:focus {
-  outline-style: outset;
-  background-color: #989e8b; 
+#main-add-btn:hover, .main-pub-btn:hover {
+  background-color: #dedede;
+  color: black;
+}
+
+.main-pub-btn:focus {
+  // outline-style: outset;
+  background-color: #c4c4c4; 
+  color: white;
 }
 
 .main-incoming-prod {
@@ -74,45 +102,65 @@ input[type='text'], input[type='number'], textarea {
 
 #main-incoming-prod {
   list-style-type: none;
-  // margin-bottom: 40px; 
-  // display: flex;
-  // flex-flow: column wrap;
-  // justify-content: center;
- 
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-image: url(../assets/admin_main/georgia-de-lotz-rTFwYeWGU-8-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #main-incoming-prod li {
-  height: 10rem;
   background-color: #fff;
-  color: #333;
+  width: 40%;
+  margin: 10px;
+  margin-bottom: 5px;
+  position: relative;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#main-incoming-prod li:hover {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#admin-main-pic {
+  padding-bottom: 5px;
+  margin: auto;
+}
+
+#admin-main-cost {
+  border-bottom: 1px dotted #ccc;
+}
+
+.admin-main-text, .admin-main-text-2 {
   display: flex;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #dedede;
-  // padding: 10px;
-  // margin: 10px 0; 
+  justify-content: center;
+  margin-top: 5px;
+  color: black;
 }
 
-
-
-
-
-.main-delete-btn {
-  cursor: pointer;
-  border: 0;
-  font-size: 1rem;
-  line-height: 20px;
-  align-items: center;
+.admin-main-text-2 {
+  padding-left: 2rem;
 }
 
 .main-delete-btn {
   cursor: pointer;
-  background-color: #cccccc;
-  color: #fff;
-  border: 0;
-  font-size: 1.1rem;
+  border: none;
+  font-size: 1.7rem;
   line-height: 20px;
-  padding: 2px 5px;
-  align-self: center;
+  position: absolute;
+  top: 13.5px;
+  left: 95%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: #b7b7b7;
+}
+
+.main-delete-btn:hover {
+  color: #8e8e8e;
 }
 
 //=============================================================================
