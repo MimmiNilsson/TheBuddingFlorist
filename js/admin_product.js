@@ -14,7 +14,7 @@ prodList.forEach(item => {
         <div class="heart"></div>
         <img src="${item.imgSrc}" alt="${item.name}" style="width:100%"><br>
         <h1 class="prod-h1">${item.name}</h1>
-        <p class="prod-price">${item.price}SEK</p>
+        <p class="prod-price">${item.price} SEK</p>
         <p class="prod-desc">${item.desc}</p>
         <a class="add-cart">
             <button class="add" onclick="addToCart(${item.id})">Add to Cart</button>
