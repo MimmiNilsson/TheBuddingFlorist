@@ -3,6 +3,8 @@ const cartItemsEl = document.querySelector(".cart-items");
 const subtotalEl = document.querySelector(".subtotal");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 
+const productsAll = products.concat(productsMain);
+
 // render cart items
 function renderCartItems() {
   cartItemsEl.innerHTML = ""; // clear cart element
@@ -36,7 +38,7 @@ function addToCart(id) {
   if (cart.some((item) => item.id === id)) {
     changeNumberOfUnits("plus", id);
   } else {
-    const item = products.find((product) => product.id === id);
+    const item = productsAll.find((product) => product.id === id);
 
     cart.push({
       ...item,
