@@ -86,7 +86,7 @@ body {
   .navbar-links.active {
     display: flex; } }
 
-/*===== ADMIN / MAIN ADD PRODUCTS===== */
+/*===== ADMIN / MAIN ADD PRODUCTS ===== */
 .admin-main-container {
   width: 80%;
   margin: auto;
@@ -555,6 +555,9 @@ input[name=cirkel] {
   color: white;
   cursor: pointer; }
 
+#search {
+  width: 94%; }
+
 .cards {
   display: flex;
   justify-content: center;
@@ -673,3 +676,12 @@ p {
   position: relative;
   text-align: right;
   padding-top: 4px; }
+
+/*===== CHECKOUT / ORDER COMPLETED MESSAGE ===== */
+.checkout-heading {
+  color: #fff; }
+
+.checkout-container {
+  width: 80%;
+  margin: auto;
+  border: 2px solid orange; }

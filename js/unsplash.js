@@ -18,10 +18,8 @@ function SearchPhotos () {
                 `;
                 
                 $("#result").html(result);
-
             });
         });
-
 }
 
 
