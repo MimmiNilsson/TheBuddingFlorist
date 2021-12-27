@@ -1,5 +1,7 @@
 svg{ //snöflingan från fontawesome i <head>
   visibility: hidden;
+  top: -20px;
+  position: absolute;
 }
 
 .johanna{
@@ -29,8 +31,8 @@ svg{ //snöflingan från fontawesome i <head>
 //========================
 #makeItSnow{ //make it snow button
   position: absolute;
-  margin-top: 34%;
-  left: 1%;
+  margin-top: 34.5%;
+  left: 6%;
   z-index: 20;
   border: none;
   height: 5%;
@@ -49,11 +51,12 @@ svg{ //snöflingan från fontawesome i <head>
 //======BILDSPEL==========
 //========================
 .bildspel{
-  width: 100%;
+  width: 90%;
   overflow: hidden;
   position: relative;
   top: 0;
   height: 600px;
+  border: solid 1px #7b876d;
 }
 
 .spel{
@@ -151,7 +154,7 @@ cursor: default;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; 
-  margin-top: 600px;
+  margin-top: 650px; 
   margin-left: 10%;
   margin-right: 10%;
 }
