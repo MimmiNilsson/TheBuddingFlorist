@@ -16,7 +16,7 @@ function renderCartItems() {
                 <h4>${item.name}</h4>
             </div>
             <div class="unit-price">
-                ${item.price}SEK
+                ${item.price} SEK
             </div>
             <div class="units">
                 <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
