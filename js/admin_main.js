@@ -74,12 +74,11 @@ function addIncomingDOM(incomingProd) {
     
     item.innerHTML = `
     <div>
-        <div class="heart"></div>
-        Name: ${incomingProd.name}<br>
-        <img src="${incomingProd.imgSrc}" height="50%"><br>
-        Price: ${incomingProd.price}kr<br>
-        Desc: ${incomingProd.desc}
-        <button class="main-delete-btn" onclick="removeIncomingProd(${incomingProd.id})">x</button>
+        <p class="admin-main-text" id="admin-main-text-heading">${incomingProd.name}</p>
+        <img class="admin-main-text" id="admin-main-pic" src="${incomingProd.imgSrc}" height="100%" width="25%">
+        <p class="admin-main-text" id="admin-main-cost">${incomingProd.price}kr</p>
+        <p class="admin-main-text">${incomingProd.desc}</p>
+        <button class="main-delete-btn" onclick="removeIncomingProd(${incomingProd.id})"><i class="far fa-times-circle"></i></button>
         
     </div>`;
 
@@ -126,7 +125,7 @@ const pubBtn = document.querySelector(".main-pub-btn");
     imgSrc.value = '';
     price.value = '';
     desc.value = '';
-    
+
  });
 
 

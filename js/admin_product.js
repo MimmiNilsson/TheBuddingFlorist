@@ -11,6 +11,7 @@ console.log(prodList)
 prodList.forEach(item => {
     insertProd.innerHTML += `
     <div class="card">
+        <div class="heart"></div>
         <img src="${item.imgSrc}" alt="${item.name}" style="width:100%"><br>
         <h1 class="prod-h1">${item.name}</h1>
         <p class="prod-price">${item.price}kr</p>
