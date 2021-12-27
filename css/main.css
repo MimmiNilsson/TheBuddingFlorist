@@ -508,6 +508,9 @@ input[name=cirkel] {
   color: white;
   cursor: pointer; }
 
+#search {
+  width: 94%; }
+
 .cards {
   display: flex;
   justify-content: center;
