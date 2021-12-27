@@ -29,7 +29,9 @@
                 <li><a href="./products.html">Our Products</a></li>
                 <li><a href="./admin_login.html"><i class="fas fa-user-cog"></i></a></li>
                 <li><a href="./favorited.html"><i class="fas fa-heart"></i></a></li>
-                <li><a href="./cart.html"><div class="total-items-in-cart"> 0 </div><i class="fas fa-shopping-cart"></i></a></li>
+                <!-- <li class="cart"><a href="./cart.html"><span>0</span><i class="fas fa-shopping-cart"></i></a></li> -->
+                <!-- <li><a href="./cart.html"><div class="total-items-in-cart">0</div><i class="fas fa-shopping-cart"></i></a></li> -->
+                <li><a href="./cart.html"><span class="total-items-in-cart">0</span> <i class="fas fa-shopping-cart"></i></a></li>
               </ul>
             </div>
           </nav>
@@ -48,7 +50,7 @@
                     <div class="subtotal">
                         Subtotal (0 items): $0
                     </div>
-                    <div class="checkout">
+                    <div class="checkout" id="cart-checkout">
                         Proceed to checkout
                     </div>
                 </div>

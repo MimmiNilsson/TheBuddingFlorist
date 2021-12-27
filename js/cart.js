@@ -99,3 +99,20 @@ function changeNumberOfUnits(action, id) {
 
   updateCart();
 }
+
+//=============================================================================
+/*===== MIMMI TRYING SOMETHING (CART/CHECKOUT WINDOW)=====*/
+//=============================================================================
+
+const checkoutBtn = document.querySelector("#cart-checkout");
+
+ checkoutBtn.addEventListener('click', (e)=> {
+     e.preventDefault()
+    window.location.href = "../html/checkout.html";
+
+    name.value = '';
+    imgSrc.value = '';
+    price.value = '';
+    desc.value = '';
+
+ });

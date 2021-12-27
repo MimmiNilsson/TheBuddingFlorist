@@ -359,11 +359,6 @@ input:focus, textarea:focus {
   display: flex; }
 
 /* CART */
-.cart {
-  height: 100%;
-  width: 25%;
-  position: relative; }
-
 /* cart header */
 .cart-header {
   display: flex;
@@ -713,3 +708,6 @@ p {
   width: 80%;
   margin: auto;
   border: 2px solid orange; }
+
+.checkout-box {
+  border: 2px solid rebeccapurple; }
