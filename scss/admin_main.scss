@@ -1,5 +1,5 @@
 //=============================================================================
-/*===== ADMIN / MAIN ADD PRODUCTS ===== */
+/*===== MIMMI: ADMIN / MAIN ADD PRODUCTS ===== */
 //=============================================================================
 
 .admin-main-container {
@@ -90,7 +90,6 @@ input:focus, textarea:focus {
 }
 
 .main-pub-btn:focus {
-  // outline-style: outset;
   background-color: #c4c4c4; 
   color: white;
 }
@@ -164,7 +163,7 @@ input:focus, textarea:focus {
 }
 
 //=============================================================================
-/*===== ADMIN / MAIN w/ MEDIA QUERY ===== */
+/*===== MIMMI: ADMIN / MAIN w/ MEDIA QUERY ===== */
 //=============================================================================
 
 @media (max-width: 1020px) {

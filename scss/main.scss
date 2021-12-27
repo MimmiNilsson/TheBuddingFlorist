@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 
 * {
@@ -20,6 +19,4 @@ body {
 @import "./products.scss";
 @import "./cart.scss";
 @import "./heart.scss";
-@import "./checkout.scss";
-
-@import "./mimmi_cart.scss";
+@import "./checkout_msg.scss";
