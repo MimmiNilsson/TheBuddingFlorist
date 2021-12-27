@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="../js/products.js" defer></script>
+    <script src="../js/productsdata.js" defer></script>
     <script src="../js/addToCart.js" defer></script>
     <script src="../js/cart.js" defer></script>
 </head>
@@ -28,20 +29,30 @@
                 <li><a href="./products.html">Our Products</a></li>
                 <li><a href="./admin_login.html"><i class="fas fa-user-cog"></i></a></li>
                 <li><a href="./favorited.html"><i class="fas fa-heart"></i></a></li>
-                <li class="cart"><a href="./cart.html"><span>0</span><i class="fas fa-shopping-cart"></i></a></li>
+                <li><a href="./cart.html"><div class="total-items-in-cart"> 0 </div><i class="fas fa-shopping-cart"></i></a></li>
               </ul>
             </div>
           </nav>
     </header>
-    <div class="products-container">
-        <div class="product-header">
-            <h5 class="product-title">PRODUCT</h5>
-            <h5 class="price">PRICE</h5>
-            <h5 class="quantity">QUANTITY</h5>
-            <h5 class="total">TOTAL</h5>
-        </div>
-        <div class="products">
-        </div>
+    <div class="products-list">
+            <div class="cart">
+                <div class="cart-header">
+                    <div class="column1">Item</div>
+                    <div class="column2">Unit price</div>
+                    <div class="column3">Units</div>
+                </div>
+                <div class="cart-items">
+                    <!-- render cart items here -->
+                </div>
+                <div class="cart-footer">
+                    <div class="subtotal">
+                        Subtotal (0 items): $0
+                    </div>
+                    <div class="checkout">
+                        Proceed to checkout
+                    </div>
+                </div>
+            </div>
     </div>
 </body>
 </html>

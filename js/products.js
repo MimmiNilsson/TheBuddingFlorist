@@ -1,91 +1,68 @@
-////// Our products
-let products = [
-    {
-        id: 0,
-        name: "R",
-        price: 599,
-        desc: "A nice fucking flower",
-        inCart: 0,
-        imgSrc: "../assets/products/flower 1.jpg"
-    },
-    {
-        id: 1,
-        name: "Flower 2",
-        price: 799,
-        desc: "flowerpower 8",
-        inCart: 0,
-        imgSrc: "../assets/products/flower 2.jpg"
-    },
-    {
-        id: 2,
-        name: "Flower 3",
-        price: 499,
-        desc: "flowerpower 8",
-        inCart: 0,
-        imgSrc: "../assets/products/flower 3.jpg"
-    }, 
-    {
-        id: 3,
-        name: "Flower 4",
-        price: 799,
-        desc: "flowerpower 8",
-        inCart: 0,
-        imgSrc: "../assets/products/flower 4.jpeg"
-    }, 
-    {
-        id: 4,
-        name: "Flower 5",
-        price: 799,
-        desc: "flowerpower 8",
-        inCart: 0,
-        imgSrc: "../assets/products/flower 5.jpg"
-    },
-    {
-        id: 5,
-        name: "Flower 6",
-        price: 799,
-        desc: "flowerpower 8",
-        inCart: 0,
-        imgSrc: "../assets/products/flower 6.jpg"
-    },
-    {
-        id: 6,
-        name: "Pretty ladys",
-        price: 799,
-        desc: "Ouuuuh pretty ladys",
-        inCart: 0,
-        imgSrc: "../assets/products/flower 7.jpg"
-    },
-    {
-        id: 7,
-        name: "Red roses",
-        price: 799,
-        desc: "Roses really smell like poo poo poo",
-        inCart: 0,
-        imgSrc: "../assets/products/flower 8.jpg"
-    },
-]
+// SELECT ELEMENTS
+const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
+const productsEl = document.querySelector(".products");
 
-////// Our products container that goes into HTML card
-const productsCard = document.querySelector(".container-product");
-
-function showProducts() {
-    products.forEach( (product) => {
-        productsCard.innerHTML += `
-            <div class="card">
-            <div class="heart"><a class="add-favs"></a></div>
-                    <img src="${product.imgSrc}" alt="${product.name}" style="width:100%">
-                    <h1>${product.name}</h1>
-                    <p class="prodprice">${product.price}kr</p>
-                    <p>
-                        ${product.desc}
-                    </p>
-                <a class="add-cart">
-                    <button class="add">Add to Cart</button>
-                    <div class="add-to-cart" onclick="addToCart(${product.id})">
-                </a>
-            </div>
-        `;
-    });
+// RENDER PRODUCTS
+function renderProducts() {
+  products.forEach((product) => {
+    productsEl.innerHTML += `
+    <div class="card">
+        <div class="add-to-wishlist">
+            <img src="HEAAAAAAAAAAAART FAV" alt="add to wish list">
+        </div>
+                <img src="${product.imgSrc}" alt="${product.name}" style="width:100%">
+                <h1>${product.name}</h1>
+            <p class="prodprice">${product.price}SEK</p>
+            <p class="desc"> ${product.desc}<p>
+        <div class="add-to-cart" onclick="addToCart(${product.id})">
+            <button class="add">Add to Cart</button>
+        </div>
+    </div>
+`;
+  });
 }
-showProducts();
+renderProducts();
+
+// cart array
+let cart = JSON.parse(localStorage.getItem("CART")) || [];
+
+// ADD TO CART
+function addToCart(id) {
+  // check if product already exist in cart
+  if (cart.some((item) => item.id === id)) {
+    changeNumberOfUnits(id);
+  } else {
+    const item = products.find((product) => product.id === id);
+
+    cart.push({
+      ...item,
+      numberOfUnits: 1,
+    });
+  }
+
+  // change number of units for an item
+function changeNumberOfUnits(id) {
+  cart = cart.map((item) => {
+    let numberOfUnits = item.numberOfUnits;
+
+    if (item.id === id) {
+      if (numberOfUnits < item.instock) {
+        numberOfUnits++;
+      }
+    }
+
+    return {
+      ...item,
+      numberOfUnits,
+    };
+  });
+}
+
+// save cart to local storage
+localStorage.setItem("CART", JSON.stringify(cart));
+let totalItems = 0;
+cart.forEach((item) => {
+  totalItems += item.numberOfUnits;
+  });
+totalItemsInCartEl.innerHTML = totalItems;
+}

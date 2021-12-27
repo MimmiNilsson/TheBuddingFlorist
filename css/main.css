@@ -324,12 +324,125 @@ input:focus, textarea:focus {
   background-color: #989e8b;
   outline-style: none; }
 
-.container-product {
+/* products list */
+.products-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 10%; }
 
+/* PRODUCTS */
+.products {
+  height: 100%;
+  width: 75%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 3fr); }
+
+.products .item .item-container .add-to-wishlist {
+  background-color: rgba(255, 21, 21, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; }
+
+.add-to-wishlist img {
+  width: 32px;
+  height: 32px;
+  padding: 5px; }
+
+.products-list {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 50px;
+  display: flex; }
+
+/* CART */
+.cart {
+  height: 100%;
+  width: 25%;
+  position: relative; }
+
+/* cart header */
+.cart-header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0; }
+
+/* cart items */
+.cart-items {
+  max-height: calc(100vh - 247px);
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+/* cart item */
+.cart-item {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0; }
+
+.cart-item div {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+/* item info */
+.cart-item .item-info {
+  flex: 1;
+  border-radius: 0 10px 10px 0;
+  padding: 10px; }
+
+.cart-item .item-info:hover {
+  background-color: red;
+  cursor: pointer; }
+
+.cart-item .item-info img {
+  width: 80px; }
+
+/* unit price */
+.cart-item .unit-price {
+  flex: 1;
+  font-size: 18px; }
+
+/* units */
+.cart-item .units {
+  flex: 1; }
+
+.cart-item .units .number {
+  margin: 0 10px;
+  font-size: 18px; }
+
+.cart-item .units .btn {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  font-weight: bold;
+  cursor: pointer; }
+
+/* cart footer */
+.cart-footer {
+  width: 100%;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.cart-footer div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+  font-size: 1.3rem; }
+
+.cart-footer .subtotal {
+  background-color: white; }
+
+.cart-footer .checkout {
+  background-color: green;
+  cursor: pointer; }
+
+/* products container */
 .card {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -357,107 +470,6 @@ input:focus, textarea:focus {
 
 .card button:hover {
   opacity: 0.7; }
-
-.products-container {
-  flex-wrap: wrap;
-  max-width: 850px;
-  justify-content: space-around;
-  margin: auto;
-  margin-top: 50px; }
-
-.products-container ion-icon {
-  font-size: 25px;
-  color: darkcyan;
-  margin-left: 10px;
-  margin-right: 10px;
-  cursor: pointer; }
-
-.product-header {
-  width: 100%;
-  max-width: 850px;
-  display: flex;
-  justify-content: flex;
-  border-bottom: 4px solid lightgrey;
-  margin: 0 auto; }
-
-.product-title {
-  width: 45%; }
-
-.price {
-  width: 15%;
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  align-items: center; }
-
-.quantity {
-  width: 30%;
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  align-items: center; }
-
-.total {
-  width: 10%;
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  align-items: center; }
-
-.product {
-  width: 45%;
-  border-bottom: 1px solid lightgrey;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 10px 0; }
-
-.product img {
-  width: 150px; }
-
-.basketTotalContainer {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  padding: 10px 0; }
-
-.basketTotalTitle {
-  width: 30%; }
-
-.basketTotal {
-  width: 10%; }
-
-/* CHECKOUT BUTTON */
-.checkOutBtn {
-  border-radius: 4px;
-  background-color: darkcyan;
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 180px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px; }
-
-.checkOutBtn span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s; }
-
-.checkOutBtn span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s; }
-
-.checkOutBtn:hover span {
-  padding-right: 25px; }
-
-.checkOutBtn:hover span:after {
-  opacity: 1;
-  right: 0; }
 
 svg {
   visibility: hidden; }
