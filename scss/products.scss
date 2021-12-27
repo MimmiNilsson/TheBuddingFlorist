@@ -1,34 +1,27 @@
-.container-product{
+/* products list */
+.products-list{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin:0 10%;
 }
-.card {
-  position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin-top: 5%;
-  margin-right: 2%;
-  margin-left: 2%;
-  text-align: center;
-  font-family: arial;
+/* PRODUCTS */
+.products {
+  height: 100%;
+  width: 75%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 3fr);
 }
-.prodprice {
-  color: #d49b7e;
-  font-size: 22px;
+.products .item .item-container .add-to-wishlist {
+  background-color: rgba(255, 21, 21, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
-.card .add {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-} 
-.card button:hover {
-  opacity: 0.7;
+.add-to-wishlist img {
+  width: 32px;
+  height: 32px;
+  padding: 5px;
 }
