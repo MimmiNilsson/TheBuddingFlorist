@@ -5,7 +5,7 @@
 const prodString = localStorage.getItem("incomingStock");
 const prodList = JSON.parse(prodString);
 
-const insertProd = document.querySelector(".incoming-prod-admin"); 
+const insertProd = document.querySelector(".products"); 
 
 console.log(prodList)
 prodList.forEach(item => {
