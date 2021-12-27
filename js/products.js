@@ -9,7 +9,7 @@ function renderProducts() {
     <div class="card">
         <div class="heart"></div>
                 <img src="${product.imgSrc}" alt="${product.name}" style="width:100%">
-                <h1>${product.name}</h1>
+                <h1 class="prod-h1">${product.name}</h1>
             <p class="prodprice">${product.price} SEK</p>
             <p class="desc"> ${product.desc}<p>
         <div class="add-to-cart" onclick="addToCart(${product.id})">

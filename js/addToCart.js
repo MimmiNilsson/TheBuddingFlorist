@@ -1,10 +1,10 @@
-let productsMain = [
+let products2 = [
     {
         id: 30,
         name: "Snowfall Bouquet",
         price: 349,
-        desc: "...",
-        inCart: 0,
+        desc: "A lovely snow-white bouquet made with love and joy",
+        instock: 100,
         imgSrc: "../assets/landing_page/Snowfall Bouquet.jpg"
     },
     {
@@ -12,7 +12,7 @@ let productsMain = [
         name: "Jingle Bell Rock",
         price: 399,
         desc: "....",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/Jingle Bell Rock.jpg"
     },
     {
@@ -20,7 +20,7 @@ let productsMain = [
         name: "Santas Little Bouquet",
         price: 299,
         desc: "A nice fFESAFASEFEFEFasr",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/Santas Little Bouquet.jpg"
     },
     {
@@ -28,7 +28,7 @@ let productsMain = [
         name: "Santas Bigger Bouquet",
         price: 399,
         desc: "A nice fFESAFASEFEFEFasr",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/Santas Bigger Bouquet.jpg"
     },
     {
@@ -36,7 +36,7 @@ let productsMain = [
         name: "Holly Jolly",
         price: 449,
         desc: "A nice fFESAFASEFEFEFasr",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/Holly Jolly.jpeg"
     },
     {
@@ -44,7 +44,7 @@ let productsMain = [
         name: "Prancer the raindeer",
         price: 499,
         desc: "A nice fFESAFASEFEFEFasr",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/Prancer The Raindeer.jpg"
     },
     {
@@ -52,7 +52,7 @@ let productsMain = [
         name: "Jingle Bells, Jingle Bells",
         price: 549,
         desc: "A nice fFESAFASEFEFEFasr",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/Jingle Bells Jingle Bells.png"
     },
     {
@@ -60,7 +60,7 @@ let productsMain = [
         name: "Rudolf the rednose raindeer",
         price: 499,
         desc: "A nice fFESAFASEFEFEFasr",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/Rudolf the rednose raindeer.png"
     },
     {
@@ -68,7 +68,7 @@ let productsMain = [
         name: "Vixen The Raindeer",
         price: 649,
         desc: "A nice fFESAFASEFEFEFasr",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/Vixen The Raindeer.png"
     },
     {
@@ -76,7 +76,7 @@ let productsMain = [
         name: "Roses Are Red, Violets Are Blue",
         price: 599,
         desc: "A nice fFESAFASEFEFEFasr",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/Roses Are Red Violets Are Blue.png"
     },
     {
@@ -84,7 +84,7 @@ let productsMain = [
         name: "All In For Christmas",
         price: 699,
         desc: "A nice fFESAFASEFEFEFasr",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/All In For Christmas.png"
     },
     {
@@ -92,7 +92,7 @@ let productsMain = [
         name: "Oh Christmas Tree ..",
         price: 699,
         desc: "A nice fFESAFASEFEFEFasr",
-        inCart: 0,
+        instock: 100,
         imgSrc: "../assets/landing_page/Oh Christmas Tree.jpg"
     },
 ]
