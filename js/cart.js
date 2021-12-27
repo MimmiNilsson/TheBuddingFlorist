@@ -1,13 +1,13 @@
 let carts = document.querySelectorAll('.add-cart');
 let productsAll = products.concat(products2);
 
-/////////////////// To listen when u press "add to cart"
 for (let i=0; i < carts.length; i++) {
     carts[i].addEventListener("click", () => {
         cartNumbers(productsAll[i]);
         totalCost(productsAll[i])
     })
 }
+
 function onLoadCartNumbers() {
     let productNumbers = localStorage.getItem("cartNumbers");
     if(productNumbers) {
@@ -15,7 +15,6 @@ function onLoadCartNumbers() {
     }
 }
 
-////////////////////
 function cartNumbers(product) {
     let productNumbers = parseInt(localStorage.getItem("cartNumbers")) || [];
     
@@ -29,28 +28,26 @@ function cartNumbers(product) {
     setItems(product);
 }
 
-///////////////////// Get the right product with name + id
 function setItems(product){
     let cartItems = JSON.parse(localStorage.getItem("productsInCart")) || [];
 
-    if(cartItems != null) {
-        if(cartItems[product.id] == undefined) {
+    if(cartItems != null) {                     //if u click and already have it cart
+        if(cartItems[product.name] == undefined) {
             cartItems = {
                 ...cartItems,
-                [product.id]: product
+                [product.name]: product
             }
         }
-        cartItems[product.id].inCart += 1;
-    } else {
+        cartItems[product.name].inCart += 1;
+    } else {                                    //first click. add product in cart
         product.inCart = 1;
         cartItems = {
-        [product.id]: product
+        [product.name]: product
         }
     }
-    localStorage.setItem("productsInCart", JSON.stringify
-    (cartItems));
+    localStorage.setItem("productsInCart", JSON.stringify(cartItems));
 }
-/////////////////// total price, for each product
+
 function totalCost(product) {
     let cartCost = localStorage.getItem("totalCost");
 
@@ -61,13 +58,13 @@ function totalCost(product) {
     localStorage.setItem("totalCost", product.price);
     }
 }
+
 function displayCart() {
     let cartItems = localStorage.getItem("productsInCart");
         cartItems = JSON.parse(cartItems);
     let productContainer = document.querySelector (".products");
     let cartCost = localStorage.getItem("totalCost");
     
-//////////////////// In cart, items, price etc...
     if( cartItems && productContainer ) {
         productContainer.innerHTML = '';
         Object.values(cartItems).map(item => {
@@ -90,8 +87,7 @@ function displayCart() {
             </div>
             `;
         });
-        
-//////////////// Total cost / checkout
+
             productContainer.innerHTML += `
             <div class="basketTotalContainer">
                 <h4 class="basketTotalTitle">

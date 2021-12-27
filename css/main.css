@@ -303,7 +303,7 @@ input[type='text'], input[type='number'], textarea {
   outline: 0;
   padding: 12px;
   color: white;
-  background-color: #000;
+  background-color: #c67f43;
   text-align: center;
   cursor: pointer;
   width: 100%;
@@ -313,9 +313,10 @@ input[type='text'], input[type='number'], textarea {
   opacity: 0.7; }
 
 .products-container {
+  flex-wrap: wrap;
   max-width: 850px;
   justify-content: space-around;
-  margin: 0 auto;
+  margin: auto;
   margin-top: 50px; }
 
 .products-container ion-icon {
@@ -329,7 +330,7 @@ input[type='text'], input[type='number'], textarea {
   width: 100%;
   max-width: 850px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex;
   border-bottom: 4px solid lightgrey;
   margin: 0 auto; }
 
@@ -363,7 +364,7 @@ input[type='text'], input[type='number'], textarea {
   padding: 10px 0; }
 
 .product img {
-  width: 200px; }
+  width: 150px; }
 
 .basketTotalContainer {
   display: flex;

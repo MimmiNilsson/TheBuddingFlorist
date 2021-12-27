@@ -82,6 +82,7 @@ function showProducts() {
                     </p>
                 <a class="add-cart">
                     <button class="add">Add to Cart</button>
+                    <div class="add-to-cart" onclick="addToCart(${product.id})">
                 </a>
             </div>
         `;
