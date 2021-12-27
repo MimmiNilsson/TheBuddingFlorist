@@ -47,7 +47,7 @@ function addNewProduct(e) {
             imgSrc: imgSrc.value,
             price: +price.value,
             desc: desc.value,
-            inCart: 0
+            instock: 1000,
         };
 
         incomingStock.push(incomingProd);
@@ -76,7 +76,7 @@ function addIncomingDOM(incomingProd) {
     <div>
         <p class="admin-main-text" id="admin-main-text-heading">${incomingProd.name}</p>
         <img class="admin-main-text" id="admin-main-pic" src="${incomingProd.imgSrc}" height="100%" width="25%">
-        <p class="admin-main-text" id="admin-main-cost">${incomingProd.price}SEK</p>
+        <p class="admin-main-text" id="admin-main-cost">${incomingProd.price} SEK</p>
         <p class="admin-main-text">${incomingProd.desc}</p>
         <button class="main-delete-btn" onclick="removeIncomingProd(${incomingProd.id})"><i class="far fa-times-circle"></i></button>
         

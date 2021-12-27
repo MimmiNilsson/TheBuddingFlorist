@@ -1,27 +1,15 @@
 /* products list */
-.products-list{
+.products-container{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin:0 10%;
 }
 /* PRODUCTS */
 .products {
-  height: 100%;
-  width: 75%;
+  width: 80%;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(3, 3fr);
-}
-.products .item .item-container .add-to-wishlist {
-  background-color: rgba(255, 21, 21, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-}
-.add-to-wishlist img {
-  width: 32px;
-  height: 32px;
-  padding: 5px;
 }

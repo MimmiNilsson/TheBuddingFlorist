@@ -2,6 +2,7 @@
 const cartItemsEl = document.querySelector(".cart-items");
 const subtotalEl = document.querySelector(".subtotal");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
+const productsAll = products.concat(products2);
 
 // render cart items
 function renderCartItems() {
@@ -14,7 +15,7 @@ function renderCartItems() {
                 <h4>${item.name}</h4>
             </div>
             <div class="unit-price">
-                ${item.price}SEK
+                ${item.price} SEK
             </div>
             <div class="units">
                 <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
@@ -36,7 +37,7 @@ function addToCart(id) {
   if (cart.some((item) => item.id === id)) {
     changeNumberOfUnits("plus", id);
   } else {
-    const item = products.find((product) => product.id === id);
+    const item = productsAll.find((product) => product.id === id);
 
     cart.push({
       ...item,
@@ -65,7 +66,7 @@ function renderSubtotal() {
     totalItems += item.numberOfUnits;
   });
 
-  subtotalEl.innerHTML = `Subtotal (${totalItems} items): $${totalPrice.toFixed(2)}`;
+  subtotalEl.innerHTML = `Subtotal (${totalItems} items): ${totalPrice.toFixed(2)} SEK`;
   totalItemsInCartEl.innerHTML = totalItems;
 }
 
@@ -97,3 +98,20 @@ function changeNumberOfUnits(action, id) {
 
   updateCart();
 }
+
+//=============================================================================
+/*===== MIMMI TRYING SOMETHING (CART/CHECKOUT WINDOW)=====*/
+//=============================================================================
+
+const checkoutBtn = document.querySelector("#cart-checkout");
+
+ checkoutBtn.addEventListener('click', (e)=> {
+     e.preventDefault()
+    window.location.href = "../html/checkout.html";
+
+    name.value = '';
+    imgSrc.value = '';
+    price.value = '';
+    desc.value = '';
+
+ });

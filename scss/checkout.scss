@@ -2,7 +2,9 @@
 /*===== CHECKOUT / ORDER COMPLETED MESSAGE ===== */
 //=============================================================================
 
-
+// #checkout-section {
+//     visibility: hidden;
+// }
 
 .checkout-heading {
     color: #fff;
@@ -12,4 +14,8 @@
     width: 80%;
     margin: auto;
     border: 2px solid orange;
+}
+
+.checkout-box {
+    border: 2px solid rebeccapurple;
 }
