@@ -47,7 +47,7 @@ function addNewProduct(e) {
             imgSrc: imgSrc.value,
             price: +price.value,
             desc: desc.value,
-            inCart: 0
+            instock: 1000,
         };
 
         incomingStock.push(incomingProd);
