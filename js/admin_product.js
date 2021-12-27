@@ -23,3 +23,6 @@ prodList.forEach(item => {
         `;
 })
 
+/* <a class="add-cart">
+            <button class="add" onclick="addToCart(${item.id})">Add to Cart</button>
+</a> */
