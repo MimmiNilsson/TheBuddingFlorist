@@ -3,6 +3,8 @@ const cartItemsEl = document.querySelector(".cart-items");
 const subtotalEl = document.querySelector(".subtotal");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 
+const productsAll = products.concat(productsMain);
+
 // render cart items
 function renderCartItems() {
   cartItemsEl.innerHTML = ""; // clear cart element
@@ -14,7 +16,7 @@ function renderCartItems() {
                 <h4>${item.name}</h4>
             </div>
             <div class="unit-price">
-                ${item.price}SEK
+                ${item.price} SEK
             </div>
             <div class="units">
                 <div class="btn minus" onclick="changeNumberOfUnits('minus', ${item.id})">-</div>
@@ -36,7 +38,7 @@ function addToCart(id) {
   if (cart.some((item) => item.id === id)) {
     changeNumberOfUnits("plus", id);
   } else {
-    const item = products.find((product) => product.id === id);
+    const item = productsAll.find((product) => product.id === id);
 
     cart.push({
       ...item,

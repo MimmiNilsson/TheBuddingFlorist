@@ -7,12 +7,10 @@ function renderProducts() {
   products.forEach((product) => {
     productsEl.innerHTML += `
     <div class="card">
-        <div class="add-to-wishlist">
-            <img src="HEAAAAAAAAAAAART FAV" alt="add to wish list">
-        </div>
+        <div class="heart"></div>
                 <img src="${product.imgSrc}" alt="${product.name}" style="width:100%">
                 <h1>${product.name}</h1>
-            <p class="prodprice">${product.price}SEK</p>
+            <p class="prodprice">${product.price} SEK</p>
             <p class="desc"> ${product.desc}<p>
         <div class="add-to-cart" onclick="addToCart(${product.id})">
             <button class="add">Add to Cart</button>
@@ -66,3 +64,17 @@ cart.forEach((item) => {
   });
 totalItemsInCartEl.innerHTML = totalItems;
 }
+
+const heart = document.querySelectorAll(".heart");
+const animationHeart = document.querySelectorAll(".animation-heart");
+
+/*  console.log(animationHeart.classList); */
+
+heart.forEach( (heart =>  { //heart fill color + animation-heart animation
+  heart.addEventListener("click", () => {
+  heart.classList.add('animation');
+  heart.classList.toggle('fill-color');
+  
+  onclick.add
+});
+}))

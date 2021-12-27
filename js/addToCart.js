@@ -1,4 +1,4 @@
-let products2 = [
+let productsMain = [
     {
         id: 30,
         name: "Snowfall Bouquet",
