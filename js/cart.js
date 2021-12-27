@@ -100,14 +100,14 @@ function changeNumberOfUnits(action, id) {
 }
 
 //=============================================================================
-/*===== MIMMI TRYING SOMETHING (CART/CHECKOUT WINDOW)=====*/
+/*===== MIMMI: CART/CHECKOUT WINDOW =====*/
 //=============================================================================
 
-const checkoutBtn = document.querySelector("#cart-checkout");
+const checkoutBtn = document.querySelector(".checkout-btn");
 
  checkoutBtn.addEventListener('click', (e)=> {
      e.preventDefault()
-    window.location.href = "../html/checkout.html";
+    window.location.href = "../html/checkout_msg.html";
 
     name.value = '';
     imgSrc.value = '';

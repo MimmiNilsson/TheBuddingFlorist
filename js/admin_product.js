@@ -1,5 +1,5 @@
 //=============================================================================
-/*===== PRODUCTS / IMPORT FROM LOCAL STORAGE ===== */
+/*===== MIMMI: PRODUCTS / IMPORT FROM LOCAL STORAGE ===== */
 //=============================================================================
 
 const prodString = localStorage.getItem("incomingStock");

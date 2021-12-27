@@ -1,5 +1,5 @@
 //=============================================================================
-/*===== ADMIN / NAVBAR ===== */
+/*===== MIMMI: ADMIN / NAVBAR ===== */
 //=============================================================================
 
 const toggleButton = document.getElementsByClassName('toggle-button')[0];
@@ -16,7 +16,7 @@ toggleButton.addEventListener('click', () => {
 })
 
 //=============================================================================
-/*===== ADMIN / MAIN =====*/
+/*===== MIMMI: ADMIN / MAIN =====*/
 //=============================================================================
 
 const name = document.querySelector("#prod-heading");
@@ -112,7 +112,7 @@ init();
 addBtn.addEventListener('click', addNewProduct);
 
 //=============================================================================
-/*===== PUBLISH PRODUCT LIST =====*/
+/*===== MIMMI: PUBLISH PRODUCT LIST =====*/
 //=============================================================================
 
 const pubBtn = document.querySelector(".main-pub-btn");

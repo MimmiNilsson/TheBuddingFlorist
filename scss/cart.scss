@@ -119,3 +119,83 @@
 .card button:hover {
   opacity: 0.7;
 }
+
+
+//=============================================================================
+/*===== MIMMI: CHECKOUT SECTION BENEATH CART ===== */
+//=============================================================================
+
+.checkout-container {
+    width: 100%;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.checkout-shipping, .checkout-billing {
+    width: 60%;
+    margin: auto;
+    padding: 0.75rem 2rem 2rem 2rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.checkout-heading {
+    color: black;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 1; 
+    padding: 10px;
+}
+
+.checkout-label {
+    display: block;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.checkout-input[type='text'], .checkout-input[type='option'], #country {
+    width: 100%;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    padding: 1rem;
+    margin: 10px 0 10px 0;
+}
+
+  input:focus {
+    outline: none;
+    box-shadow: 
+    0 2px 2px rgba(0,0,0,0.1),
+    0 4px 4px rgba(0,0,0,0.1),
+    0 6px 6px rgba(0,0,0,0.1),
+    0 8px 8px rgba(0,0,0,0.1);
+}
+
+.checkout-btn {
+    cursor: pointer;
+    background-color: #c4c4c4;
+    color: #fff;
+    text-transform: uppercase;
+    border: 0;
+    display: block;
+    font-size: 1rem;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.12), 
+    0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.checkout-btn:hover {
+    background-color: #dedede;
+    color: black; 
+}
+  
+  .checkout-btn:focus {
+    background-color: #c4c4c4; 
+    color: white;
+  }

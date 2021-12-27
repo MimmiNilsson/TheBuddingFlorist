@@ -1,0 +1,46 @@
+//=============================================================================
+/*===== MIMMI: ORDER COMPLETED MESSAGE ===== */
+//=============================================================================
+
+.body-checkout-msg {
+    background-color: yellowgreen;
+    margin-top: 10%;
+}
+
+.msg-container {
+    width: 80vh;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    
+}
+  
+  .msg-fieldset {
+    padding: 2rem;
+    border-radius: 5px; 
+}
+  
+  .msg-fieldset > .msg-legend {
+    color: black;
+    margin: auto;
+    padding: 0 1rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 1; 
+}
+  
+  .msg-heading {
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1; 
+    padding: 10px;
+    align-self: center;
+}
+
+.msg {
+    border: 2px solid red;
+    text-align: center;
+}
