@@ -727,7 +727,7 @@ input[name=cirkel] {
   text-align: center;
   font-family: arial;
   line-height: 20px;
-  height: 450px; }
+  /* height: 450px; */ }
 
 h1 {
   color: #989e8b; }
@@ -745,6 +745,7 @@ p {
   background-color: #7b876d;
   cursor: pointer;
   width: 100%;
+  height: 40px;
   font-size: 18px;
   text-align: center; }
 
