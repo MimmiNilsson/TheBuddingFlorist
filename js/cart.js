@@ -2,7 +2,7 @@
 const cartItemsEl = document.querySelector(".cart-items");
 const subtotalEl = document.querySelector(".subtotal");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
-const productsAll = products.concat(products2);
+/*const productsAll = products.concat(products2); */
 
 // render cart items
 function renderCartItems() {
