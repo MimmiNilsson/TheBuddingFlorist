@@ -11,7 +11,7 @@ body {
   font-size: 0.9rem;
   background-color: #fefefe; }
 
-/*===== NAVBAR w/ MEDIA QUERY ===== */
+/*===== MIMMI: NAVBAR ===== */
 .navbar {
   background-color: #7b876d;
   display: flex;
@@ -66,7 +66,7 @@ body {
   background-color: #fff;
   border-radius: 10px; }
 
-/*===== MEDIA QUERY ===== */
+/*===== MIMMI: NAVBAR MEDIA QUERY ===== */
 @media (max-width: 800px) {
   .navbar {
     flex-direction: column;
@@ -219,7 +219,11 @@ input:focus, textarea:focus {
 .main-delete-btn:hover {
   color: #8e8e8e; }
 
-/*===== MIMMI: ADMIN / MAIN w/ MEDIA QUERY ===== */
+/*===== MIMMI: ADMIN / MAIN MEDIA QUERIES ===== */
+@media (max-width: 415px) {
+  #main-incoming-prod li {
+    width: 90%; } }
+
 @media (max-width: 1020px) {
   .admin-main-container {
     flex-direction: column; }
@@ -228,9 +232,15 @@ input:focus, textarea:focus {
     margin: auto; }
   .admin-main-aside {
     width: 100%;
-    margin: auto; } }
+    margin: auto; }
+  .main-incoming-prod {
+    flex-flow: column wrap; }
+  #main-incoming-prod {
+    flex-flow: column wrap; }
+  #main-incoming-prod li {
+    align-self: center; } }
 
-/*===== MIMMI: ADMIN LOGIN SECTION ===== */
+/*===== MIMMI: ADMIN / LOGIN ===== */
 :root {
   --box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; }
 
@@ -238,7 +248,7 @@ input:focus, textarea:focus {
   background-image: url(../assets/admin_login/georgia-de-lotz-rTFwYeWGU-8-unsplash.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom; }
+  background-position: center; }
 
 .login-container {
   width: 65vh;
@@ -325,6 +335,26 @@ input:focus, textarea:focus {
   background-color: #989e8b;
   outline-style: none; }
 
+/*===== MIMMI: ADMIN / LOGIN MEDIA QUERIES ===== */
+@media (max-width: 376px) {
+  .login-container {
+    width: 50%;
+    height: 50%; } }
+
+@media (max-width: 780px) {
+  .body-admin-login {
+    background-image: none;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .login-container {
+    width: 100%;
+    height: 100%; }
+  .login-container:hover {
+    opacity: none; } }
+
 /* products list */
 .products-container {
   display: flex;
@@ -340,121 +370,38 @@ input:focus, textarea:focus {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(3, 3fr); }
 
-.products-list {
-  display: flex;
-  width: 100vw;
-  height: 90vh;
-  padding-top: 50px;
-  display: flex; }
-
 /* CART */
 /* cart header */
-.cart-header {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0; }
-
 /* cart items */
-.cart-items {
-  max-height: calc(90vh - 247px);
-  overflow-y: auto;
-  overflow-x: hidden; }
-
 /* cart item */
-.cart-item {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0; }
-
-.cart-item div {
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-
 /* item info */
-.cart-item .item-info {
-  flex: 1;
-  border-radius: 0 10px 10px 0;
-  padding: 10px; }
-
-.cart-item .item-info:hover {
-  background-color: red;
-  cursor: pointer; }
-
-.cart-item .item-info img {
-  width: 80px; }
-
 /* unit price */
-.cart-item .unit-price {
-  flex: 1;
-  font-size: 18px; }
-
 /* units */
-.cart-item .units {
-  flex: 1; }
-
-.cart-item .units .number {
-  margin: 0 10px;
-  font-size: 18px; }
-
-.cart-item .units .btn {
-  width: 20px;
-  height: 20px;
-  background-color: green;
-  border-radius: 50%;
-  font-weight: bold;
-  cursor: pointer; }
-
 /* cart footer */
-.cart-footer {
-  width: 100%;
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  left: 0; }
-
-.cart-footer div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 0;
-  font-size: 1.3rem; }
-
-.cart-footer .subtotal {
-  background-color: white; }
-
-.cart-footer .checkout {
-  background-color: green;
-  cursor: pointer; }
-
 /* products container */
-.card {
-  position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin-top: 5%;
-  margin-right: 2%;
-  margin-left: 2%;
-  text-align: center;
-  font-family: arial; }
+/*===== MIMMI: CART SECTION ABOVE CHECKOUT ===== */
+.cart-container {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  border: 2px solid yellowgreen; }
 
-.prodprice {
-  color: #d49b7e;
-  font-size: 22px; }
+.cart-header {
+  border: 2px solid blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
 
-.card .add {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #c67f43;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px; }
-
-.card button:hover {
-  opacity: 0.7; }
+.column {
+  color: black;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 10px; }
 
 /*===== MIMMI: CHECKOUT SECTION BENEATH CART ===== */
 .checkout-container {
@@ -769,7 +716,7 @@ p {
   display: flex;
   justify-content: center;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .msg-fieldset {
