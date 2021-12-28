@@ -103,7 +103,7 @@ function changeNumberOfUnits(action, id) {
 /*===== MIMMI: CART/CHECKOUT WINDOW =====*/
 //=============================================================================
 
-const checkoutBtn = document.querySelector(".checkout-btn");
+const checkoutBtn = document.querySelector(".checkout-msg-btn");
 
  checkoutBtn.addEventListener('click', (e)=> {
      e.preventDefault()
