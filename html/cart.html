@@ -36,26 +36,45 @@
             </div>
           </nav>
     </header>
-    <div class="products-list">
+    <div class="cart-container">
+        <div class="cart-list">
+            <div class="cart-header">
+                <div class="column column1">Product</div>
+                <div class="column column2">Price</div>
+                <div class="column column3">Amount</div>
+            </div>
+            <div class="cart-items">
+                <!-- render cart items here -->
+            </div>
+            <div class="cart-footer">
+                <h3 class="subtotal-heading">Subtotal (0 items): 0 SEK</h3>
+            </div>
+        </div>
+    </div>
+    <button class="checkout-proceed-btn">Proceed to Checkout</button>
+
+
+    <!--Mogges-->
+   <!-- <div class="products-list">
             <div class="cart">
                 <div class="cart-header">
-                    <div class="column1">Item</div>
-                    <div class="column2">Unit price</div>
-                    <div class="column3">Units</div>
+                    <div class="column1">Product</div>
+                    <div class="column2">Price</div>
+                    <div class="column3">Amount</div>
                 </div>
                 <div class="cart-items">
-                    <!-- render cart items here -->
+                    render cart items here 
                 </div>
                 <div class="cart-footer">
                     <div class="subtotal">
                         Subtotal (0 items): $0
                     </div>
-                    <div class="checkout" id="cart-checkout">
+                    <button class="checkout-proceed-btn" id="cart-checkout">
                         Proceed to checkout
-                    </div>
+                    </button>
                 </div>
             </div>
-    </div>
+    </div> -->
 
 <!--MIMMI: CHECKOUT-->
 <div class="checkout-container">
@@ -66,7 +85,6 @@
             <div class="checkout-box">
                 <label class="checkout-label" for="fname">Full Name</label>
                 <input class="checkout-input" type="text" id="fname">
-
                 <label class="checkout-label" for="country">Country</label>
                 <select class="checkout-input" name="country" id="country">
                     <option value="Select">Select...</option>
@@ -75,19 +93,14 @@
                     <option value="Finland">Finland</option>
                     <option value="Denmark">Denmark</option>
                 </select>
-
                 <label class="checkout-label" for="address">Street Address</label>
                 <input class="checkout-input" type="text" id="address">
-
                 <label class="checkout-label" for="zip">Postal Code / ZIP</label>
                 <input class="checkout-input" type="text" id="zip">
-
                 <label class="checkout-label" for="city">City</label>
                 <input class="checkout-input" type="text" id="city">
-
                 <label class="checkout-label" for="email">Email</label>
                 <input class="checkout-input" type="text" id="email">
-
                 <label for="phone">Phone</label>
                 <input class="checkout-input" type="text" id="phone">
             </div>
