@@ -1,25 +1,25 @@
 const products = [
     {
       id: 0,
-      name: "Flower 1",
+      name: "TBF signature",
       price: 499,
       instock: 100,
       desc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
+        "Our signature birthday bouquette",
       imgSrc: "../assets/products/flower 1.jpg",
     },
     {
       id: 1,
-      name: "Flower 2",
+      name: "Pink dream",
       price: 249,
       instock: 43,
       desc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
+        "Pink, pink and more pink",
       imgSrc: "../assets/products/flower 2.jpg",
     },
     {
       id: 2,
-      name: "Flower 3",
+      name: "Birthday Bouquette",
       price: 199,
       instock: 10,
       desc:
@@ -68,7 +68,7 @@ const products = [
       price: 299,
       instock: 10,
       desc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
+        "Lorem ipsum dolor sit amet.",
       imgSrc: "../assets/products/flower 8.jpg",
     },
   ];
