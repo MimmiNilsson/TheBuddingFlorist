@@ -19,7 +19,7 @@ function renderProducts() {
 `;
   });
 }
-renderProducts(); 
+renderProducts();
 
 // cart array
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
