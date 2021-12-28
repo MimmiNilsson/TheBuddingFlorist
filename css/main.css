@@ -335,20 +335,19 @@ input:focus, textarea:focus {
 
 /* PRODUCTS */
 .products {
-  width: 80%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, 3fr); }
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%; }
 
 .products-list {
+  justify-content: center;
   display: flex;
-  width: 100vw;
   height: 90vh;
   padding-top: 50px;
   display: flex; }
 
-/* CART */
-/* cart header */
 .cart-header {
   display: flex;
   justify-content: space-around;
@@ -382,7 +381,7 @@ input:focus, textarea:focus {
   cursor: pointer; }
 
 .cart-item .item-info img {
-  width: 80px; }
+  width: 100px; }
 
 /* unit price */
 .cart-item .unit-price {
@@ -425,6 +424,7 @@ input:focus, textarea:focus {
 
 .cart-footer .checkout {
   background-color: green;
+  color: white;
   cursor: pointer; }
 
 /* products container */

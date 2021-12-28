@@ -1,17 +1,10 @@
 .products-list {
+  justify-content: center;
   display: flex;
-  width: 100vw;
   height: 90vh;
   padding-top: 50px;
   display: flex;
 }
-/* CART */
-// .cart {
-//   height: 100%;
-//   width: 25%;
-//   position: relative;
-// }
-/* cart header */
 .cart-header {
   display: flex;
   justify-content: space-around;
@@ -45,7 +38,7 @@
   cursor: pointer;
 }
 .cart-item .item-info img {
-  width: 80px;
+  width: 100px;
 }
 /* unit price */
 .cart-item .unit-price {
@@ -88,6 +81,7 @@
 }
 .cart-footer .checkout {
   background-color: green;
+  color: white;
   cursor: pointer;
 }
 /* products container */
