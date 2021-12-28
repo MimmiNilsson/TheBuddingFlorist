@@ -338,7 +338,42 @@ input:focus, textarea:focus {
   width: 80%;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, 3fr); }
+  grid-template-columns: repeat(3, 3fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 50px; }
+
+.footer_bottom {
+  display: flex;
+  justify-content: space-around;
+  bottom: 0;
+  width: 100%;
+  background-color: #7b876d;
+  margin-top: 5%;
+  display: flex;
+  height: 100px;
+  padding: 10px; }
+
+.footer_rubrik {
+  color: white; }
+
+.footer_text {
+  color: white; }
+
+.footer_ett {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px; }
+
+.footer_mitten {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+.footer_tva {
+  position: relative;
+  text-align: right;
+  padding-top: 4px; }
 
 .products-list {
   display: flex;
