@@ -19,7 +19,7 @@ function renderProducts() {
 `;
   });
 }
-renderProducts();
+renderProducts(); 
 
 // cart array
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
@@ -30,7 +30,7 @@ function addToCart(id) {
   if (cart.some((item) => item.id === id)) {
     changeNumberOfUnits(id);
   } else {
-    const item = products.find((product) => product.id === id);
+    const item = productsAll.find((product) => product.id === id);
 
     cart.push({
       ...item,
