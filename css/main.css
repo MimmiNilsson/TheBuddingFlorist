@@ -240,7 +240,7 @@ input:focus, textarea:focus {
   #main-incoming-prod li {
     align-self: center; } }
 
-/*===== MIMMI: ADMIN / LOGIN ===== */
+/*===== MIMMI: ADMIN LOGIN ===== */
 :root {
   --box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; }
 
@@ -335,7 +335,7 @@ input:focus, textarea:focus {
   background-color: #989e8b;
   outline-style: none; }
 
-/*===== MIMMI: ADMIN / LOGIN MEDIA QUERIES ===== */
+/*===== MIMMI: ADMIN LOGIN MEDIA QUERIES ===== */
 @media (max-width: 376px) {
   .login-container {
     width: 50%;
@@ -405,44 +405,40 @@ input:focus, textarea:focus {
   text-align: right;
   padding-top: 4px; }
 
-.products-list {
-  justify-content: center;
-  display: flex;
-  height: 90vh;
-  padding-top: 50px;
-  display: flex; }
-
-.cart-header {
-  display: flex;
-  justify-content: space-around;
-  padding: 10px 0; }
-
-.products-list {
-  display: flex;
-  width: 100vw;
-  height: 90vh;
-  padding-top: 50px;
-  display: flex; }
-
-/* CART */
-.cart {
+.cart-container {
+  width: 80%;
   height: 100%;
-  width: 25%;
-  position: relative; }
+  margin: auto;
+  padding: 2rem;
+  border: 2px solid yellowgreen; }
 
-/* cart header */
+.product-info {
+  border: 2px solid brown; }
+
+.cart-items {
+  border: 2px solid rebeccapurple; }
+
+.cart-1, .cart-2 {
+  display: flex;
+  flex-flow: row wrap; }
+
+.cart-header {
+  width: 100%;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border: 2px solid blue; }
+
 .cart-header {
   display: flex;
   justify-content: space-around;
   padding: 10px 0; }
 
-/* cart items */
 .cart-items {
   max-height: calc(90vh - 247px);
   overflow-y: auto;
   overflow-x: hidden; }
 
-/* cart item */
 .cart-item {
   display: flex;
   justify-content: space-around;
@@ -453,7 +449,6 @@ input:focus, textarea:focus {
   align-items: center;
   justify-content: center; }
 
-/* item info */
 .cart-item .item-info {
   flex: 1;
   border-radius: 0 10px 10px 0;
@@ -466,12 +461,10 @@ input:focus, textarea:focus {
 .cart-item .item-info img {
   width: 80px; }
 
-/* unit price */
 .cart-item .unit-price {
   flex: 1;
   font-size: 18px; }
 
-/* units */
 .cart-item .units {
   flex: 1; }
 
@@ -487,7 +480,6 @@ input:focus, textarea:focus {
   font-weight: bold;
   cursor: pointer; }
 
-/* cart footer */
 .cart-footer {
   width: 100%;
   background-color: black;
@@ -509,7 +501,6 @@ input:focus, textarea:focus {
   background-color: green;
   cursor: pointer; }
 
-/* products container */
 .card {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -838,17 +829,20 @@ p {
 
 /*===== MIMMI: ORDER COMPLETED MESSAGE ===== */
 .body-checkout-msg {
-  height: 100%;
-  margin-top: 15%;
   background-image: url(../assets/checkout_msg/hands.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-attachment: fixed; }
 
 .msg-container {
-  width: 40%;
+  width: 60%;
   margin: auto;
   padding: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
   background-color: #fff;
@@ -876,3 +870,48 @@ p {
 
 .msg {
   text-align: center; }
+
+.back-checkout-btn {
+  cursor: pointer;
+  background-color: #c4c4c4;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  display: block;
+  font-size: 1rem;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.back-checkout-btn:hover {
+  background-color: #dedede;
+  color: black; }
+
+.back-checkout-btn:focus {
+  background-color: #c4c4c4;
+  color: white; }
+
+/*===== MIMMI: ORDER COMPLETED MESSAGE MEDIA QUERY ===== */
+@media (max-width: 321px) {
+  .msg-container {
+    width: 130%;
+    height: 110%;
+    padding: 0.75rem; } }
+
+@media (max-width: 376px) {
+  .body-checkout-msg {
+    background-image: none;
+    background-color: #fff; }
+  .msg-fieldset {
+    width: 100%;
+    height: 100%;
+    padding: 0.25rem; } }
+
+@media (max-width: 527px) {
+  .msg-container {
+    width: 90%;
+    height: 65%; }
+  .msg-fieldset {
+    height: 90%;
+    padding: 0.5rem; } }
