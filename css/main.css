@@ -87,6 +87,9 @@ body {
     display: flex; } }
 
 /*===== MIMMI: ADMIN / MAIN ADD PRODUCTS ===== */
+:root {
+  --box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
+
 .admin-main-container {
   width: 80%;
   margin: auto;
@@ -98,11 +101,11 @@ body {
 .admin-main-main {
   width: 40%;
   padding: 0.75rem 2rem 2rem 2rem;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  box-shadow: var(--box-shadow); }
 
 .admin-main-aside {
   width: 60%;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  box-shadow: var(--box-shadow); }
 
 .admin-main-fieldset {
   padding: 2rem;
@@ -405,43 +408,85 @@ input:focus, textarea:focus {
   text-align: right;
   padding-top: 4px; }
 
-.cart-container {
-  width: 80%;
-  height: 100%;
-  margin: auto;
-  padding: 2rem;
-  border: 2px solid yellowgreen; }
-
-.product-info {
-  border: 2px solid brown; }
-
-.cart-items {
-  border: 2px solid rebeccapurple; }
-
-.cart-1, .cart-2 {
-  display: flex;
-  flex-flow: row wrap; }
-
 .cart-header {
-  width: 100%;
-  justify-content: center;
-  font-size: 1.5rem;
+  width: 40%;
+  margin-left: 15%;
+  padding: 2rem 2rem 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.2rem;
   text-transform: uppercase;
-  border: 2px solid blue; }
+  border-bottom: 1px dotted #ccc;
+  position: relative;
+  top: 5rem; }
 
-.cart-header {
+.cart-wrapper {
   display: flex;
-  justify-content: space-around;
-  padding: 10px 0; }
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+  height: 90%; }
+
+.cart-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  background-color: #fff; }
 
 .cart-items {
   max-height: calc(90vh - 247px);
   overflow-y: auto;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 60%;
+  height: 100%;
+  margin-top: 6rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.cart-footer {
+  width: 40%; }
+
+.subtotal {
+  height: 75%;
+  margin: auto;
+  padding: 2rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: url(../assets/cart_checkout/cart_background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.checkout-proceed-btn {
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  background-color: #c4c4c4;
+  color: #fff;
+  text-transform: uppercase;
+  border: 0;
+  display: block;
+  font-size: 1rem;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24); }
+
+.checkout-proceed-btn:hover {
+  background-color: #dedede;
+  color: black; }
+
+.checkout-proceed-btn:focus {
+  background-color: #c4c4c4;
+  color: white; }
 
 .cart-item {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding: 10px 0; }
 
 .cart-item div {
@@ -480,27 +525,6 @@ input:focus, textarea:focus {
   font-weight: bold;
   cursor: pointer; }
 
-.cart-footer {
-  width: 100%;
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  left: 0; }
-
-.cart-footer div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 15px 0;
-  font-size: 1.3rem; }
-
-.cart-footer .subtotal {
-  background-color: white; }
-
-.cart-footer .checkout {
-  background-color: green;
-  cursor: pointer; }
-
 .card {
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -536,15 +560,28 @@ input:focus, textarea:focus {
   margin: auto;
   padding: 2rem;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   background-color: #fff; }
 
 .checkout-shipping, .checkout-billing {
-  width: 60%;
+  width: 40%;
   margin: auto;
   padding: 0.75rem 2rem 2rem 2rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+
+.checkout-shipping {
+  margin-bottom: 3rem;
+  opacity: 0.6; }
+
+.checkout-shipping:hover {
+  opacity: 1; }
+
+.checkout-billing {
+  opacity: 0.3; }
+
+.checkout-billing:hover {
+  opacity: 1; }
 
 .checkout-heading {
   color: black;
@@ -837,7 +874,7 @@ p {
   background-attachment: fixed; }
 
 .msg-container {
-  width: 60%;
+  width: 45%;
   margin: auto;
   padding: 2rem;
   position: absolute;
@@ -893,7 +930,7 @@ p {
   background-color: #c4c4c4;
   color: white; }
 
-/*===== MIMMI: ORDER COMPLETED MESSAGE MEDIA QUERY ===== */
+/*===== MIMMI: ORDER COMPLETED MESSAGE MEDIA QUERIES ===== */
 @media (max-width: 321px) {
   .msg-container {
     width: 130%;

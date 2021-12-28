@@ -1,6 +1,9 @@
 //=============================================================================
 /*===== MIMMI: ADMIN / MAIN ADD PRODUCTS ===== */
 //=============================================================================
+:root {
+    --box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
 
 .admin-main-container {
     width: 80%;
@@ -14,12 +17,12 @@
 .admin-main-main {
     width: 40%;
     padding: 0.75rem 2rem 2rem 2rem;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: var(--box-shadow);
 }
 
 .admin-main-aside {
     width: 60%;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: var(--box-shadow);
 }
 
 .admin-main-fieldset {
