@@ -2,12 +2,15 @@
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 const productsEl = document.querySelector(".products");
 
+let incomingStock = JSON.parse(localStorage.getItem("incomingStock")) || [];
+let productsAllNew = incomingStock.concat(products);
+
 // RENDER PRODUCTS
 function renderProducts() {
-  products.forEach((product) => {
+  productsAllNew.forEach((product) => {
     productsEl.innerHTML += `
     <div class="card">
-        <div class="heart"></div>
+        <div class="heart" onclick="togglefav(${product.id})"></div>
                 <img src="${product.imgSrc}" alt="${product.name}" style="width:100%">
                 <h1 class="prod-h1">${product.name}</h1>
             <p class="prodprice">${product.price} SEK</p>
@@ -23,6 +26,23 @@ renderProducts();
 
 // cart array
 let cart = JSON.parse(localStorage.getItem("CART")) || [];
+let fav = JSON.parse(localStorage.getItem("FAV")) || [];
+
+//add to fav
+function togglefav(id) {
+   // check if product already exist in fav
+  if (fav.some((item) => item.id === id)) {
+    fav = fav.filter((item) => item.id !== id);
+  } else {
+    const item = productsAllNew.find((product) => product.id === id);
+
+    fav.push({
+      ...item
+    });
+  }
+    localStorage.setItem("FAV", JSON.stringify(fav));
+}
+
 
 // ADD TO CART
 function addToCart(id) {
@@ -30,13 +50,21 @@ function addToCart(id) {
   if (cart.some((item) => item.id === id)) {
     changeNumberOfUnits(id);
   } else {
-    const item = productsAll.find((product) => product.id === id);
+    const item = productsAllNew.find((product) => product.id === id);
 
     cart.push({
       ...item,
       numberOfUnits: 1,
     });
   }
+// save cart to local storage
+localStorage.setItem("CART", JSON.stringify(cart));
+let totalItems = 0;
+cart.forEach((item) => {
+  totalItems += item.numberOfUnits;
+  });
+totalItemsInCartEl.innerHTML = totalItems;
+}
 
   // change number of units for an item
 function changeNumberOfUnits(id) {
@@ -56,15 +84,6 @@ function changeNumberOfUnits(id) {
   });
 }
 
-// save cart to local storage
-localStorage.setItem("CART", JSON.stringify(cart));
-let totalItems = 0;
-cart.forEach((item) => {
-  totalItems += item.numberOfUnits;
-  });
-totalItemsInCartEl.innerHTML = totalItems;
-}
-
 const heart = document.querySelectorAll(".heart");
 const animationHeart = document.querySelectorAll(".animation-heart");
 
@@ -74,7 +93,5 @@ heart.forEach( (heart =>  { //heart fill color + animation-heart animation
   heart.addEventListener("click", () => {
   heart.classList.add('animation');
   heart.classList.toggle('fill-color');
-  
-  onclick.add
 });
 }))

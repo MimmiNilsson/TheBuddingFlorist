@@ -72,8 +72,8 @@ const products = [
       imgSrc: "../assets/products/flower 8.jpg",
     },
   ];
-
-  let products2 = [
+  
+ const products2 = [
     {
         id: 30,
         name: "Snowfall Bouquet",
@@ -172,4 +172,4 @@ const products = [
     },
 ]
 
-const productsAll = products.concat(products2);
+  const productsAll = products.concat(products2);
