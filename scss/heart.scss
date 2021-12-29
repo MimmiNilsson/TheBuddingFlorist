@@ -6,7 +6,6 @@ svg{ //snöflingan från fontawesome i <head>
 
 .body-index{
   background-color: white;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -150,13 +149,20 @@ cursor: default;
 //========================
 //=========CARDS==========
 //========================
-.cards{ //parent för varje enskilt card
+ .cards{ //parent för varje enskilt card
   display: flex;
   justify-content: center;
   flex-wrap: wrap; 
   margin-top: 650px; 
   margin-left: 10%;
   margin-right: 10%;
+
+  width: 80%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 3fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 50px;
 }
  
 .card {
@@ -170,8 +176,26 @@ cursor: default;
   text-align: center;
   font-family: arial;
   line-height: 20px;
-  /* height: 450px; */
+} 
+
+
+/* products list */ /*
+.products-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:0 10%;
 }
+/* PRODUCTS */ 
+.products {
+  width: 80%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 3fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 50px;
+} 
 
   h1{
   color: #989e8b;
