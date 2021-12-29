@@ -86,7 +86,7 @@ const products = [
         id: 31,
         name: "Jingle Bell Rock",
         price: 399,
-        desc: "....",
+        desc: "A christmas bouquet with that little extra spark of happiness and joy",
         instock: 100,
         imgSrc: "../assets/landing_page/Jingle Bell Rock.jpg"
     },
@@ -94,7 +94,7 @@ const products = [
         id: 32,
         name: "Santas Little Bouquet",
         price: 299,
-        desc: "A nice fFESAFASEFEFEFasr",
+        desc: "A smaller version of our famous christmas bouquet",
         instock: 100,
         imgSrc: "../assets/landing_page/Santas Little Bouquet.jpg"
     },
@@ -102,7 +102,7 @@ const products = [
         id: 33,
         name: "Santas Bigger Bouquet",
         price: 399,
-        desc: "A nice fFESAFASEFEFEFasr",
+        desc: "A bigger version of our famous christmas bouquet",
         instock: 100,
         imgSrc: "../assets/landing_page/Santas Bigger Bouquet.jpg"
     },
@@ -110,7 +110,7 @@ const products = [
         id: 34,
         name: "Holly Jolly",
         price: 449,
-        desc: "A nice fFESAFASEFEFEFasr",
+        desc: "Merry and jolly to you all. Beautiful bouqet with vase icluded",
         instock: 100,
         imgSrc: "../assets/landing_page/Holly Jolly.jpeg"
     },
@@ -118,7 +118,7 @@ const products = [
         id: 35,
         name: "Prancer the raindeer",
         price: 499,
-        desc: "A nice fFESAFASEFEFEFasr",
+        desc: "Including: red roses, cones from the Swedish forrest and lovely redberries",
         instock: 100,
         imgSrc: "../assets/landing_page/Prancer The Raindeer.jpg"
     },
@@ -126,7 +126,7 @@ const products = [
         id: 36,
         name: "Jingle Bells, Jingle Bells",
         price: 549,
-        desc: "A nice fFESAFASEFEFEFasr",
+        desc: "A wonderful bouquet with a jinglebell- inspired vase included",
         instock: 100,
         imgSrc: "../assets/landing_page/Jingle Bells Jingle Bells.png"
     },
@@ -134,7 +134,7 @@ const products = [
         id: 37,
         name: "Rudolf the rednose raindeer",
         price: 499,
-        desc: "A nice fFESAFASEFEFEFasr",
+        desc: "Follow Rudolf and his friends into some real holiday spirit. Red vase icluded",
         instock: 100,
         imgSrc: "../assets/landing_page/Rudolf the rednose raindeer.png"
     },
@@ -142,7 +142,7 @@ const products = [
         id: 38,
         name: "Vixen The Raindeer",
         price: 649,
-        desc: "A nice fFESAFASEFEFEFasr",
+        desc: "Beautiful table decoration, including: ornaments and christmas spirit",
         instock: 100,
         imgSrc: "../assets/landing_page/Vixen The Raindeer.png"
     },
@@ -150,7 +150,7 @@ const products = [
         id: 39,
         name: "Roses Are Red, Violets Are Blue",
         price: 599,
-        desc: "A nice fFESAFASEFEFEFasr",
+        desc: "We sure love Christmas, how 'bout you?",
         instock: 100,
         imgSrc: "../assets/landing_page/Roses Are Red Violets Are Blue.png"
     },
@@ -158,7 +158,7 @@ const products = [
         id: 40,
         name: "All In For Christmas",
         price: 699,
-        desc: "A nice fFESAFASEFEFEFasr",
+        desc: "All in on christmas? Then this one is perfect for you and your christmas set-up",
         instock: 100,
         imgSrc: "../assets/landing_page/All In For Christmas.png"
     },
@@ -166,7 +166,7 @@ const products = [
         id: 41,
         name: "Oh Christmas Tree ..",
         price: 699,
-        desc: "A nice fFESAFASEFEFEFasr",
+        desc: "For thoose who cannot fit a Christmas tree at home, or simply just like the sight of it",
         instock: 100,
         imgSrc: "../assets/landing_page/Oh Christmas Tree.jpg"
     },
