@@ -102,7 +102,7 @@ const products = [
         id: 33,
         name: "Santas Bigger Bouquet",
         price: 399,
-        desc: "A bigger version of our famous christmas bouquet",
+        desc: "A bigger version of our famous x-mas bouquet",
         instock: 100,
         imgSrc: "../assets/landing_page/Santas Bigger Bouquet.jpg"
     },
@@ -142,7 +142,7 @@ const products = [
         id: 38,
         name: "Vixen The Raindeer",
         price: 649,
-        desc: "Beautiful table decoration, including: ornaments and christmas spirit",
+        desc: "Beautiful table decoration, including: ornaments, candles, vase and loooads of christmas spirit",
         instock: 100,
         imgSrc: "../assets/landing_page/Vixen The Raindeer.png"
     },
