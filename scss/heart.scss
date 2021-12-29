@@ -50,6 +50,7 @@ svg{ //snöflingan från fontawesome i <head>
   position: relative;
   top: 0;
   height: 600px;
+  min-height: 100px;
   border: solid 1px #7b876d;
 }
 
@@ -284,4 +285,20 @@ cursor: default;
 
 .footer_bottom a:hover{
   color: black;
+}
+
+@media (max-width: 800px) {
+  #makeItSnow{
+    margin-top: 73%;
+    width: 20%;
+  }
+.bildspel{
+  margin-top: 5%;
+}
+#search{
+  width: 90%;
+}
+#unsplashKnapp{
+  width: 10%;
+}
 }
