@@ -1,7 +1,7 @@
 const products = [
     {
       id: 0,
-      name: "TBF signature",
+      name: "TBF Signature",
       price: 499,
       instock: 100,
       desc:
@@ -10,11 +10,11 @@ const products = [
     },
     {
       id: 1,
-      name: "Pink dream",
+      name: "Pink Dream",
       price: 249,
       instock: 43,
       desc:
-        "Pink, pink and more pink",
+        "Pink, Pink And More Pink",
       imgSrc: "../assets/products/flower 2.jpg",
     },
     {
@@ -23,52 +23,52 @@ const products = [
       price: 199,
       instock: 10,
       desc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
+        "Happy Birthday Tralala",
       imgSrc: "../assets/products/flower 3.jpg",
     },
     {
       id: 3,
-      name: "Flower 4",
+      name: "Hipp",
       price: 259,
       instock: 5,
       desc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
+        "A birthday bouquette for a birthday mate",
       imgSrc: "../assets/products/flower 4.jpeg",
     },
     {
       id: 4,
-      name: "Flower 5",
+      name: "Hipp",
       price: 299,
       instock: 4,
       desc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
+        "This one just screams HAPPY B-DAY",
       imgSrc: "../assets/products/flower 5.jpg",
     },
     {
       id: 5,
-      name: "Flower 6",
+      name: "Hurraaa",
       price: 399,
       instock: 40,
       desc:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, error.",
+        "The perfect birthday bouquette",
       imgSrc: "../assets/products/flower 6.jpg",
     },
     {
       id: 6,
-      name: "Flower 7",
+      name: "The Bud Bouquette",
       price: 399,
       instock: 10,
       desc:
-        "nice flower maddafakka",
+        "The Budding Florist presents: ",
       imgSrc: "../assets/products/flower 7.jpg",
     },
     {
       id: 7,
-      name: "Flower 8",
+      name: "XOXO",
       price: 299,
       instock: 10,
       desc:
-        "Lorem ipsum dolor sit amet.",
+        "Câlins & Bisous, Puss & Kram",
       imgSrc: "../assets/products/flower 8.jpg",
     },
   ];
