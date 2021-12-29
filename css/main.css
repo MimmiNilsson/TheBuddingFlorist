@@ -975,14 +975,6 @@ p {
   position: relative;
   top: 5rem; }
 
-.item-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 80%;
-  margin: auto;
-  height: 90%; }
-
 .fav-to-cart {
   border: none;
   outline: 0;

@@ -58,6 +58,8 @@ function addToCart(id) {
     });
   }
 
+  
+
 // save cart to local storage
 localStorage.setItem("CART", JSON.stringify(cart));
 let totalItems = 0;
