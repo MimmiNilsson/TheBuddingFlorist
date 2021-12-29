@@ -361,19 +361,16 @@ input:focus, textarea:focus {
 /* products list */
 .products-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: 0 10%; }
+  flex-wrap: wrap; }
 
 /* PRODUCTS */
 .products {
-  width: 80%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, 3fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 50px; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%; }
 
 .footer_bottom {
   display: flex;
@@ -633,10 +630,6 @@ svg {
   top: -20px;
   position: absolute; }
 
-.body-index {
-  background-color: white;
-  box-sizing: border-box; }
-
 .fa-snowflake {
   position: absolute;
   top: -20px;
@@ -747,46 +740,11 @@ input[name=cirkel] {
 .cards {
   display: flex;
   justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 650px;
   margin-left: 10%;
-  margin-right: 10%;
-  width: 80%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, 3fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 50px; }
-
-.card {
-  position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  margin-top: 5%;
-  margin-right: 2%;
-  margin-left: 2%;
-  text-align: center;
-  font-family: arial;
-  line-height: 20px; }
-
-/* products list */
-/*
-.products-container{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin:0 10%;
-}
-/* PRODUCTS */
-.products {
-  width: 80%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, 3fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 50px; }
+  margin-right: 10%; }
 
 h1 {
   color: #989e8b; }
@@ -806,7 +764,8 @@ p {
   width: 100%;
   height: 40px;
   font-size: 18px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 0; }
 
 .card button:hover {
   opacity: 0.7; }

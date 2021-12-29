@@ -2,7 +2,7 @@
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 const productsEl = document.querySelector(".products");
 
-let incomingStock = JSON.parse(localStorage.getItem("incomingStock")) || [];
+incomingStock = JSON.parse(localStorage.getItem("incomingStock")) || [];
 let productsAllNew = incomingStock.concat(products);
 
 // RENDER PRODUCTS

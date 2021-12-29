@@ -1,19 +1,16 @@
 /* products list */
 .products-container{
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin:0 10%;
 }
 /* PRODUCTS */
 .products {
-  width: 80%;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: repeat(3, 3fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 50px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ justify-content: space-around;
+ margin-left: 10%;
+ margin-right: 10%; 
 }
 
   //=======================

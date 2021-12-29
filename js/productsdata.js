@@ -5,7 +5,7 @@ const products = [
       price: 499,
       instock: 100,
       desc:
-        "Our signature birthday bouquette",
+        "Our signature birthday bouquet",
       imgSrc: "../assets/products/flower 1.jpg",
     },
     {
@@ -19,7 +19,7 @@ const products = [
     },
     {
       id: 2,
-      name: "Birthday Bouquette",
+      name: "Birthday Bouquet",
       price: 199,
       instock: 10,
       desc:
@@ -50,12 +50,12 @@ const products = [
       price: 399,
       instock: 40,
       desc:
-        "The perfect birthday bouquette",
+        "The perfect birthday bouquet",
       imgSrc: "../assets/products/flower 6.jpg",
     },
     {
       id: 6,
-      name: "The Bud Bouquette",
+      name: "The Bud Bouquet",
       price: 399,
       instock: 10,
       desc:
@@ -100,9 +100,9 @@ const products = [
     },
     {
         id: 33,
-        name: "Santas Bigger Bouquet",
+        name: "Santas Big Bouquet",
         price: 399,
-        desc: "A bigger version of our famous x-mas bouquet",
+        desc: "A bigger version of our famous christmas bouquet",
         instock: 100,
         imgSrc: "../assets/landing_page/Santas Bigger Bouquet.jpg"
     },
@@ -124,7 +124,7 @@ const products = [
     },
     {
         id: 36,
-        name: "Jingle Bells, Jingle Bells",
+        name: "Jingle Bells",
         price: 549,
         desc: "A wonderful bouquet with a jinglebell- inspired vase included",
         instock: 100,
@@ -132,7 +132,7 @@ const products = [
     },
     {
         id: 37,
-        name: "Rudolf the rednose raindeer",
+        name: "Rudolf",
         price: 499,
         desc: "Follow Rudolf and his friends into some real holiday spirit. Red vase icluded",
         instock: 100,
@@ -142,15 +142,15 @@ const products = [
         id: 38,
         name: "Vixen The Raindeer",
         price: 649,
-        desc: "Beautiful table decoration, including: ornaments, candles, vase and loooads of christmas spirit",
+        desc: "Beautiful table decoration, including: ornaments, candles and christmas spirit",
         instock: 100,
         imgSrc: "../assets/landing_page/Vixen The Raindeer.png"
     },
     {
         id: 39,
-        name: "Roses Are Red, Violets Are Blue",
+        name: "Roses Are Red",
         price: 599,
-        desc: "We sure love Christmas, how 'bout you?",
+        desc: "Violets are blue. We sure love Christmas, how 'bout you?",
         instock: 100,
         imgSrc: "../assets/landing_page/Roses Are Red Violets Are Blue.png"
     },
