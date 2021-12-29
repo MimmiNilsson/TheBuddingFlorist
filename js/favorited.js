@@ -54,32 +54,13 @@ function removeItemFromFav(id) {
     updateFav(); 
 }
 
-/*
-// calculate and render subtotal
-function renderSubtotal() {
-  let totalPrice = 0,
-    totalItems = 0;
-
-  fav.forEach((item) => {
-    totalPrice += item.price * item.numberOfUnits;
-    totalItems += item.numberOfUnits;
-  });
-
-  subtotalEl.innerHTML = `Subtotal (${totalItems} items): ${totalPrice.toFixed(2)} SEK`;
-  totalItemsInFavEl.innerHTML = totalItems;
-}
-
-
-
 // change number of units for an item
-function changeNumberOfUnits(action, id) {
+function changeNumberOfUnits(id) {
   fav = fav.map((item) => {
     let numberOfUnits = item.numberOfUnits;
 
     if (item.id === id) {
-      if (action === "minus" && numberOfUnits > 1) {
-        numberOfUnits--;
-      } else if (action === "plus" && numberOfUnits < item.instock) {
+      if (numberOfUnits < item.instock) {
         numberOfUnits++;
       }
     }
@@ -89,6 +70,22 @@ function changeNumberOfUnits(action, id) {
       numberOfUnits,
     };
   });
+}
 
-  updateFav();
-} */
+ // change number of units for an item
+ function changeNumberOfUnits(id) {
+  cart = cart.map((item) => {
+    let numberOfUnits = item.numberOfUnits;
+
+    if (item.id === id) {
+      if (numberOfUnits < item.instock) {
+        numberOfUnits++;
+      }
+    }
+
+    return {
+      ...item,
+      numberOfUnits,
+    };
+  });
+}

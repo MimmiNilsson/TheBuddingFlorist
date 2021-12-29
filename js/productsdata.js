@@ -7,6 +7,7 @@ const products = [
       desc:
         "Our signature birthday bouquette",
       imgSrc: "../assets/products/flower 1.jpg",
+      favorited: false
     },
     {
       id: 1,
@@ -16,6 +17,7 @@ const products = [
       desc:
         "Pink, Pink And More Pink",
       imgSrc: "../assets/products/flower 2.jpg",
+      favorited: false
     },
     {
       id: 2,
@@ -25,6 +27,7 @@ const products = [
       desc:
         "Happy Birthday Tralala",
       imgSrc: "../assets/products/flower 3.jpg",
+      favorited: false
     },
     {
       id: 3,
@@ -34,6 +37,7 @@ const products = [
       desc:
         "A birthday bouquette for a birthday mate",
       imgSrc: "../assets/products/flower 4.jpeg",
+      favorited: false
     },
     {
       id: 4,
@@ -43,6 +47,7 @@ const products = [
       desc:
         "This one just screams HAPPY B-DAY",
       imgSrc: "../assets/products/flower 5.jpg",
+      favorited: false
     },
     {
       id: 5,
@@ -52,6 +57,7 @@ const products = [
       desc:
         "The perfect birthday bouquette",
       imgSrc: "../assets/products/flower 6.jpg",
+      favorited: false
     },
     {
       id: 6,
@@ -61,6 +67,7 @@ const products = [
       desc:
         "The Budding Florist presents: ",
       imgSrc: "../assets/products/flower 7.jpg",
+      favorited: false
     },
     {
       id: 7,
@@ -70,6 +77,7 @@ const products = [
       desc:
         "Câlins & Bisous, Puss & Kram",
       imgSrc: "../assets/products/flower 8.jpg",
+      favorited: false
     },
   ];
   
@@ -80,7 +88,8 @@ const products = [
         price: 349,
         desc: "A lovely snow-white bouquet made with love and joy",
         instock: 100,
-        imgSrc: "../assets/landing_page/Snowfall Bouquet.jpg"
+        imgSrc: "../assets/landing_page/Snowfall Bouquet.jpg",
+        favorited: false
     },
     {
         id: 31,
@@ -88,7 +97,8 @@ const products = [
         price: 399,
         desc: "A christmas bouquet with that little extra spark of happiness and joy",
         instock: 100,
-        imgSrc: "../assets/landing_page/Jingle Bell Rock.jpg"
+        imgSrc: "../assets/landing_page/Jingle Bell Rock.jpg",
+        favorited: false
     },
     {
         id: 32,
@@ -96,7 +106,8 @@ const products = [
         price: 299,
         desc: "A smaller version of our famous christmas bouquet",
         instock: 100,
-        imgSrc: "../assets/landing_page/Santas Little Bouquet.jpg"
+        imgSrc: "../assets/landing_page/Santas Little Bouquet.jpg",
+        favorited: false
     },
     {
         id: 33,
@@ -104,7 +115,8 @@ const products = [
         price: 399,
         desc: "A bigger version of our famous x-mas bouquet",
         instock: 100,
-        imgSrc: "../assets/landing_page/Santas Bigger Bouquet.jpg"
+        imgSrc: "../assets/landing_page/Santas Bigger Bouquet.jpg",
+        favorited: false
     },
     {
         id: 34,
@@ -112,7 +124,8 @@ const products = [
         price: 449,
         desc: "Merry and jolly to you all. Beautiful bouqet with vase icluded",
         instock: 100,
-        imgSrc: "../assets/landing_page/Holly Jolly.jpeg"
+        imgSrc: "../assets/landing_page/Holly Jolly.jpeg",
+        favorited: false
     },
     {
         id: 35,
@@ -120,7 +133,8 @@ const products = [
         price: 499,
         desc: "Including: red roses, cones from the Swedish forrest and lovely redberries",
         instock: 100,
-        imgSrc: "../assets/landing_page/Prancer The Raindeer.jpg"
+        imgSrc: "../assets/landing_page/Prancer The Raindeer.jpg",
+        favorited: false
     },
     {
         id: 36,
@@ -128,7 +142,8 @@ const products = [
         price: 549,
         desc: "A wonderful bouquet with a jinglebell- inspired vase included",
         instock: 100,
-        imgSrc: "../assets/landing_page/Jingle Bells Jingle Bells.png"
+        imgSrc: "../assets/landing_page/Jingle Bells Jingle Bells.png",
+        favorited: false
     },
     {
         id: 37,
@@ -136,7 +151,8 @@ const products = [
         price: 499,
         desc: "Follow Rudolf and his friends into some real holiday spirit. Red vase icluded",
         instock: 100,
-        imgSrc: "../assets/landing_page/Rudolf the rednose raindeer.png"
+        imgSrc: "../assets/landing_page/Rudolf the rednose raindeer.png",
+        favorited: false
     },
     {
         id: 38,
@@ -144,7 +160,8 @@ const products = [
         price: 649,
         desc: "Beautiful table decoration, including: ornaments, candles, vase and loooads of christmas spirit",
         instock: 100,
-        imgSrc: "../assets/landing_page/Vixen The Raindeer.png"
+        imgSrc: "../assets/landing_page/Vixen The Raindeer.png",
+        favorited: false
     },
     {
         id: 39,
@@ -152,7 +169,8 @@ const products = [
         price: 599,
         desc: "We sure love Christmas, how 'bout you?",
         instock: 100,
-        imgSrc: "../assets/landing_page/Roses Are Red Violets Are Blue.png"
+        imgSrc: "../assets/landing_page/Roses Are Red Violets Are Blue.png",
+        favorited: false
     },
     {
         id: 40,
@@ -160,7 +178,8 @@ const products = [
         price: 699,
         desc: "All in on christmas? Then this one is perfect for you and your christmas set-up",
         instock: 100,
-        imgSrc: "../assets/landing_page/All In For Christmas.png"
+        imgSrc: "../assets/landing_page/All In For Christmas.png",
+        favorited: false
     },
     {
         id: 41,
@@ -168,7 +187,8 @@ const products = [
         price: 699,
         desc: "For thoose who cannot fit a Christmas tree at home, or simply just like the sight of it",
         instock: 100,
-        imgSrc: "../assets/landing_page/Oh Christmas Tree.jpg"
+        imgSrc: "../assets/landing_page/Oh Christmas Tree.jpg",
+        favorited: false
     },
 ]
 

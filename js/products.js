@@ -2,7 +2,7 @@
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 const productsEl = document.querySelector(".products");
 
-let incomingStock = JSON.parse(localStorage.getItem("incomingStock")) || [];
+incomingStock = JSON.parse(localStorage.getItem("incomingStock")) || [];
 let productsAllNew = incomingStock.concat(products);
 
 // RENDER PRODUCTS
@@ -57,6 +57,11 @@ function addToCart(id) {
       numberOfUnits: 1,
     });
   }
+
+  function updateCart() {
+    localStorage.setItem("CART", JSON.stringify(cart));
+  }
+
 // save cart to local storage
 localStorage.setItem("CART", JSON.stringify(cart));
 let totalItems = 0;
@@ -84,6 +89,24 @@ function changeNumberOfUnits(id) {
   });
 }
 
+  // change number of units for an item
+  function changeNumberOfUnits(id) {
+    cart = cart.map((item) => {
+      let numberOfUnits = item.numberOfUnits;
+  
+      if (item.id === id) {
+        if (numberOfUnits < item.instock) {
+          numberOfUnits++;
+        }
+      }
+  
+      return {
+        ...item,
+        numberOfUnits,
+      };
+    });
+  }
+
 const heart = document.querySelectorAll(".heart");
 const animationHeart = document.querySelectorAll(".animation-heart");
 
@@ -93,5 +116,7 @@ heart.forEach( (heart =>  { //heart fill color + animation-heart animation
   heart.addEventListener("click", () => {
   heart.classList.add('animation');
   heart.classList.toggle('fill-color');
+  localStorage.setItem("CART", JSON.stringify(cart));
+  /*onclick="togglefav" */
 });
 }))

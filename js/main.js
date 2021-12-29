@@ -1,4 +1,5 @@
-// for products to show on the page
+// select elements
+const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 const productsCards = document.querySelector(".cards");
 
 // RENDER PRODUCTS
@@ -61,7 +62,7 @@ cart.forEach((item) => {
 totalItemsInCartEl.innerHTML = totalItems;
 }
 
-  // change number of units for an item
+// change number of units for an item
 function changeNumberOfUnits(id) {
   cart = cart.map((item) => {
     let numberOfUnits = item.numberOfUnits;
