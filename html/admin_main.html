@@ -7,6 +7,7 @@
         <title>Admin</title>
         <link rel="stylesheet" href="../css/main.css">
         <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.min.css">
+        <script src="../js/navbar.js" defer></script>
         <script src="../js/admin_main.js" defer></script>
         <script src="../js/productsdata.js" defer></script>
         <script src="../js/products.js" defer></script>
@@ -14,23 +15,22 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="shop-title">Admin Dashboard</div>
+            <div class="shop-title">The Budding Florist</div>
             <a href="#" class="toggle-button">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </a>
             <div class="navbar-links">
-              <ul id="navbar-links">
-                <li class="navbar-link"><a href="./index.html">Home</a></li>
-                <li class="navbar-link"><a href="./products.html">Our Products</a></li>
-                <li class="navbar-link"><a href="./admin_login.html"><i class="fas fa-user-cog"></i></a></li>
-                <li class="navbar-link"><a href="./favorited.html"><i class="fas fa-heart"></i></a></li>
-                <!-- <li class="cart"><a href="./cart.html"><span>0</span><i class="fas fa-shopping-cart"></i></a></li> -->
-                <li class="navbar-link"><a href="./cart.html"><span class="total-items-in-cart">0</span> <i class="fas fa-shopping-cart"></i></a></li>
-              </ul>
+                <ul id="menu-list">
+                    <li><a href="./index.html" class="nav-item">Home</a></li>
+                    <li><a href="./products.html" class="nav-item">Our Products</a></li>
+                    <li><a href="./admin_login.html" class="nav-item"><i class="fas fa-user-cog"></i></a></li>
+                    <li><a href="./favorited.html" class="nav-item"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="./cart.html" class="nav-item"><span class="total-items-in-cart">0</span> <i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
             </div>
-          </nav>
+        </nav>
     </header>
     <div class="admin-main-container">
         <div class="admin-main-main">

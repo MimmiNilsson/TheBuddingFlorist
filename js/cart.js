@@ -104,7 +104,7 @@ function changeNumberOfUnits(action, id) {
 }
 
 //=============================================================================
-/*===== MIMMI: CART/CHECKOUT WINDOW =====*/
+/*===== MIMMI: CART / CHECKOUT WINDOW =====*/
 //=============================================================================
 
 const checkoutBtn = document.querySelector(".checkout-msg-btn");

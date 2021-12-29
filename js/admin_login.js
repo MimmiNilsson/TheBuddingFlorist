@@ -2,6 +2,7 @@
 /*===== MIMMI: ADMIN / LOGIN ===== */
 //=============================================================================
 
+// Submit username and password 
 function validateAdmin(e) {
     e.preventDefault();
     const username = document.querySelector('#username').value;
