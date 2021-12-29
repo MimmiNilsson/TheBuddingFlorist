@@ -10,6 +10,24 @@ toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active');
 })
 
+// document.addEventListener('DOMContentLoaded', function () {
+//     const selector = '.nav-item';
+//     const elems = Array.from( document.querySelectorAll( selector ) );
+//     const nav = document.querySelector('.nav');
+
+//     function makeActive(evt) {
+//         const target = evt.target;
+//         if(!target || target.matches(selector)) {
+//             return;
+//         }
+
+//         elems.forEach(elem => elem.classList.remove('active'));
+//         evt.target.classList.add('active');
+//     };
+    
+//     nav.addEventListener('click', makeActive);
+// })
+
 //=============================================================================
 /*===== MIMMI: ADMIN / MAIN =====*/
 //=============================================================================
