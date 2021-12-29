@@ -1,34 +1,4 @@
 //=============================================================================
-/*===== MIMMI: ADMIN / NAVBAR ===== */
-//=============================================================================
-
-const toggleButton = document.getElementsByClassName('toggle-button')[0];
-
-const navbarLinks = document.getElementsByClassName('navbar-links')[0];
-
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active');
-})
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const selector = '.nav-item';
-//     const elems = Array.from( document.querySelectorAll( selector ) );
-//     const nav = document.querySelector('.nav');
-
-//     function makeActive(evt) {
-//         const target = evt.target;
-//         if(!target || target.matches(selector)) {
-//             return;
-//         }
-
-//         elems.forEach(elem => elem.classList.remove('active'));
-//         evt.target.classList.add('active');
-//     };
-    
-//     nav.addEventListener('click', makeActive);
-// })
-
-//=============================================================================
 /*===== MIMMI: ADMIN / MAIN =====*/
 //=============================================================================
 
@@ -37,8 +7,6 @@ const imgSrc = document.querySelector("#prod-img");
 const price = document.querySelector("#prod-price");
 const desc = document.querySelector("#prod-desc");
 const addBtn = document.querySelector("#main-add-btn");
-
-// const prodInfo = document.querySelectorAll(".main-add-prod"); 
 
 const incomingList = document.querySelector("#main-incoming-prod");
 
