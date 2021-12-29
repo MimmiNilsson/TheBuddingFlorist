@@ -11,7 +11,7 @@ body {
   font-size: 0.9rem;
   background-color: #fefefe; }
 
-/*===== MIMMI: NAVBAR ===== */
+/*===== MIMMI: NAVBAR MENU ===== */
 .navbar {
   background-color: #7b876d;
   display: flex;
@@ -413,6 +413,8 @@ input:focus, textarea:focus {
   text-align: right;
   padding-top: 4px; }
 
+/*===== MIMMI & MORGAN: CART SECTION ABOVE CHECKOUT ===== */
+/*===== MEDIA QUERY NEEDED! ===== */
 .cart-header {
   width: 40%;
   margin-left: 15%;
@@ -558,7 +560,6 @@ input:focus, textarea:focus {
 .card button:hover {
   opacity: 0.7; }
 
-/*===== MIMMI: CART SECTION ABOVE CHECKOUT ===== */
 /*===== MIMMI: CHECKOUT SECTION BENEATH CART ===== */
 .checkout-container {
   width: 100%;
