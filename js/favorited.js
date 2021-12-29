@@ -16,6 +16,7 @@ function renderFavItems() {
                 ${item.price} SEK
             </div>
             <button class="fav-to-cart" title="add to cart" onclick="addToCart(${item.id})">
+              Add to cart
             </button>
         </div>
       `;
@@ -26,50 +27,38 @@ function renderFavItems() {
 let fav = JSON.parse(localStorage.getItem("FAV")) || [];
 updateFav();
 
-// ADD TO fav
-function addToFav(id) {
-  // check if product already exist in fav
-  if (fav.some((item) => item.id === id)) {
-    fav = fav.filter((item) => item.id !== id);
-  }else{
-    const item = productsAll.find((product) => product.id === id);
 
-    fav.push({
-      ...item
+/////////////
+// ADD TO CART
+function addToCart(id) {
+  // check if product already exist in cart
+  if (cart.some((item) => item.id === id)) {
+    changeNumberOfUnits("plus", id);
+  } else {
+    const item = productsAllNew.find((product) => product.id === id);
+
+    cart.push({
+      ...item,
+      numberOfUnits: 1,
     });
   }
-  updateFav();
+  updateCart(); 
 }
+////////////
 
 // update fav
 function updateFav() {
   renderFavItems();
 
 // save fav to local storage
-  localStorage.setItem("Fav", JSON.stringify(fav));
+  localStorage.setItem("FAV", JSON.stringify(fav));
 }
 
+// remove item from cart
 function removeItemFromFav(id) {
-    fav = fav.filter((item) => item.id !==id); 
-    updateFav(); 
-}
+  fav = fav.filter((item) => item.id !== id);
 
-// change number of units for an item
-function changeNumberOfUnits(id) {
-  fav = fav.map((item) => {
-    let numberOfUnits = item.numberOfUnits;
-
-    if (item.id === id) {
-      if (numberOfUnits < item.instock) {
-        numberOfUnits++;
-      }
-    }
-
-    return {
-      ...item,
-      numberOfUnits,
-    };
-  });
+  updateFav();
 }
 
  // change number of units for an item
