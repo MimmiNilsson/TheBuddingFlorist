@@ -11,7 +11,6 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="../js/productsdata.js" defer></script>
-    <script src="../js/addToCart.js" defer></script>
     <script src="../js/cart.js" defer></script>
 </head>
 <body>
@@ -36,37 +35,44 @@
             </div>
           </nav>
     </header>
-    <!-- <div class="cart-container">
-        <div class="cart-list">
-            <div class="cart-header">
-                <div class="column column1">Product</div>
-                <div class="column column2">Price</div>
-                <div class="column column3">Amount</div>
-            </div>
+    <!--CART-->
+    <div class="cart-header">
+        <div class="column1">Product</div>
+        <div class="column2">Price</div>
+        <div class="column3">Amount</div>
+    </div>
+    <div class="cart-wrapper">
+        <div class="cart-container">
+            
             <div class="cart-items">
                
             </div>
-            <div class="cart-footer">
-                <h3 class="subtotal-heading">Subtotal (0 items): 0 SEK</h3>
-            </div>
+           <div class="cart-footer">
+                <div class="subtotal">
+                    <h3 class="subtotal-heading">Subtotal (0 items): 0 SEK</h3>
+                </div>
+                
+                <a href="#checkout-container" class="checkout-proceed-btn" id="cart-checkout">Proceed to Checkout</a>
+                
+           </div>
         </div>
     </div>
-    <button class="checkout-proceed-btn">Proceed to Checkout</button> -->
+    
 
 
-    <!--Mogges-->
-    <div class="my-cart">
-        <h1 class="cart-heading">This is my cart:</h1>
+
+<!-- 
+
+
     </div>
-   <div class="products-list">
-            <div class="cart">
-                <div class="cart-header">
+            <div class="cart-header">
+                <div class="cart-item">
                     <div class="column1">Product</div>
                     <div class="column2">Price</div>
                     <div class="column3">Amount</div>
                 </div>
                 <div class="cart-items">
-                    <!--render cart items here--> 
+                   
                 </div>
                 <div class="cart-footer">
                     <div class="subtotal">
@@ -77,59 +83,85 @@
                     </button>
                 </div>
             </div>
-    </div>
+    </div> -->
 
-<!--MIMMI: CHECKOUT-->
-<div class="checkout-container">
-    
-    <div class="checkout-shipping">
-        <h3 class="checkout-heading">&#9312; Shipping Details</h3>
-        <form action="./checkout_msg.html" class="checkout-form">
-            <div class="checkout-box">
-                <label class="checkout-label" for="fname">Full Name</label>
-                <input class="checkout-input" type="text" id="fname">
-                <label class="checkout-label" for="country">Country</label>
-                <select class="checkout-input" name="country" id="country">
-                    <option value="Select">Select...</option>
-                    <option value="Sweden">Sweden</option>
-                    <option value="Norway">Norway</option>
-                    <option value="Finland">Finland</option>
-                    <option value="Denmark">Denmark</option>
-                </select>
-                <label class="checkout-label" for="address">Street Address</label>
-                <input class="checkout-input" type="text" id="address">
-                <label class="checkout-label" for="zip">Postal Code / ZIP</label>
-                <input class="checkout-input" type="text" id="zip">
-                <label class="checkout-label" for="city">City</label>
-                <input class="checkout-input" type="text" id="city">
-                <label class="checkout-label" for="email">Email</label>
-                <input class="checkout-input" type="text" id="email">
-                <label for="phone">Phone</label>
-                <input class="checkout-input" type="text" id="phone">
-            </div>
-        </form>
-    </div>
-    <div class="checkout-billing">
-        <h3 class="checkout-heading">&#9313; Billing Details</h3>
-        <form action="submit" class="checkout-form">
-            <div class="checkout-box">
-                <label class="checkout-label" for="card-name">Cardholder Name</label>
-                <input class="checkout-input" type="text" id="card-name">
-                <label class="checkout-label" for="card-number">Credit card number</label>
-                <input class="checkout-input" type="text" id="card-number" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19">
-                <label class="checkout-label" for="exp-date">Expiration Date</label>
-                <input class="checkout-input" type="text" id="expmonth" name="exp-date">
-                <label class="checkout-label" for="cvv">CVV/CVC</label>
-                <input class="checkout-input" type="text" id="cvv">
-                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
-                <button class="checkout-msg-btn">Place Order</button>
-            </div>
-        </form>
-    </div>
+    <!--Mimmi-->
+    <!-- <h1 class="cart-heading">My Cart</h1>
 </div>
-
-
+<div class="cart-container">
+   <div class="product-info">
+       <div class="cart-1">
+            <div class="cart-header">
+                <div class="column1">Product</div>
+                <div class="column2">Price</div>
+                <div class="column3">Amount</div>
+            </div>
+            <div class="cart-items">
+            
+            </div>
+        </div>
+        <div class="cart-2">
+            <div class="cart-footer">
+                <div class="subtotal">
+                    <h3 class="subtotal-heading">Subtotal (0 items): 0 SEK</h3>
+                </div>
+                <button class="checkout-proceed-btn" id="cart-checkout">
+                    Proceed to checkout
+                </button>
+            </div>
+        </div>
+   </div>
+</div> -->
+   
     
+
+<!--MIMMI: CHECKOUT SECTION INSIDE CART-->
+    <div class="checkout-container" id="checkout-container">
+        <div class="checkout-shipping">
+            <h3 class="checkout-heading">&#9312; Shipping Details</h3>
+            <form action="./checkout_msg.html" class="checkout-form">
+                <div class="checkout-box">
+                    <label class="checkout-label" for="fname">Full Name</label>
+                    <input class="checkout-input" type="text" id="fname">
+                    <label class="checkout-label" for="country">Country</label>
+                    <select class="checkout-input" name="country" id="country">
+                        <option value="Select">Select...</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Finland">Finland</option>
+                        <option value="Denmark">Denmark</option>
+                    </select>
+                    <label class="checkout-label" for="address">Street Address</label>
+                    <input class="checkout-input" type="text" id="address">
+                    <label class="checkout-label" for="zip">Postal Code / ZIP</label>
+                    <input class="checkout-input" type="text" id="zip">
+                    <label class="checkout-label" for="city">City</label>
+                    <input class="checkout-input" type="text" id="city">
+                    <label class="checkout-label" for="email">Email</label>
+                    <input class="checkout-input" type="text" id="email">
+                    <label for="phone">Phone</label>
+                    <input class="checkout-input" type="text" id="phone">
+                </div>
+            </form>
+        </div>
+        <div class="checkout-billing">
+            <h3 class="checkout-heading">&#9313; Billing Details</h3>
+            <form action="submit" class="checkout-form">
+                <div class="checkout-box">
+                    <label class="checkout-label" for="card-name">Cardholder Name</label>
+                    <input class="checkout-input" type="text" id="card-name">
+                    <label class="checkout-label" for="card-number">Credit card number</label>
+                    <input class="checkout-input" type="text" id="card-number" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19">
+                    <label class="checkout-label" for="exp-date">Expiration Date</label>
+                    <input class="checkout-input" type="text" id="expmonth" name="exp-date">
+                    <label class="checkout-label" for="cvv">CVV/CVC</label>
+                    <input class="checkout-input" type="text" id="cvv">
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    <button class="checkout-msg-btn">Place Order</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
 </body>
 </html>

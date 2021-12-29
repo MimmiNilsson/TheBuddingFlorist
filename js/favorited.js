@@ -1,7 +1,6 @@
 // SELECT ELEMENTS
 const favItemsEl = document.querySelector(".fav-items");
-const subtotalEl = document.querySelector(".subtotal");
-// const totalItemsInFavEl = document.querySelector(".total-items-in-fav");
+const totalItemsInFavEl = document.querySelector(".total-items-in-fav");
 
 // render fav items
 function renderFavItems() {
@@ -31,6 +30,7 @@ updateFav();
 function addToFav(id) {
   // check if product already exist in fav
   if (fav.some((item) => item.id === id)) {
+    fav = fav.filter((item) => item.id !== id);
   }else{
     const item = productsAll.find((product) => product.id === id);
 
@@ -52,7 +52,8 @@ function updateFav() {
 function removeItemFromFav(id) {
     fav = fav.filter((item) => item.id !==id); 
     updateFav(); 
-} 
+}
+
 /*
 // calculate and render subtotal
 function renderSubtotal() {
@@ -68,12 +69,7 @@ function renderSubtotal() {
   totalItemsInFavEl.innerHTML = totalItems;
 }
 
-// remove item from fav
-function removeItemFromfav(id) {
-  fav = fav.filter((item) => item.id !== id);
 
-  updatefav();
-}
 
 // change number of units for an item
 function changeNumberOfUnits(action, id) {
