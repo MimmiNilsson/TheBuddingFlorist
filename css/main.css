@@ -50,6 +50,13 @@ body {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff; }
 
+.nav-item.active {
+  background-color: #989e8b;
+  font-size: 1rem;
+  border-radius: 2px;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff; }
+
 .toggle-button {
   position: absolute;
   top: .75rem;
