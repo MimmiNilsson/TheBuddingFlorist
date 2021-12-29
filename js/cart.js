@@ -113,9 +113,6 @@ const checkoutBtn = document.querySelector(".checkout-msg-btn");
      e.preventDefault()
     window.location.href = "../html/checkout_msg.html";
 
-    name.value = '';
-    imgSrc.value = '';
-    price.value = '';
-    desc.value = '';
+    
 
  });

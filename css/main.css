@@ -414,7 +414,7 @@ input:focus, textarea:focus {
   padding-top: 4px; }
 
 /*===== MIMMI & MORGAN: CART SECTION ABOVE CHECKOUT ===== */
-/*===== MEDIA QUERY NEEDED! ===== */
+/*===== MEDIA QUERY NEEDED FOR CART! ===== */
 .cart-header {
   width: 40%;
   margin-left: 15%;
@@ -433,8 +433,7 @@ input:focus, textarea:focus {
   flex-direction: row;
   justify-content: center;
   width: 80%;
-  margin: auto;
-  height: 90%; }
+  margin: auto; }
 
 .cart-container {
   width: 100%;
@@ -577,7 +576,7 @@ input:focus, textarea:focus {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
 
 .checkout-shipping {
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   opacity: 0.6; }
 
 .checkout-shipping:hover {
@@ -606,8 +605,8 @@ input:focus, textarea:focus {
   border: 1px solid #dedede;
   border-radius: 5px;
   font-size: 0.9rem;
-  padding: 1rem;
-  margin: 10px 0 10px 0; }
+  margin: 10px 0 10px 0;
+  padding: 0.5rem; }
 
 input:focus {
   outline: none;
