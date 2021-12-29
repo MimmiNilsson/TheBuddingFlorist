@@ -58,10 +58,6 @@ function addToCart(id) {
     });
   }
 
-  function updateCart() {
-    localStorage.setItem("CART", JSON.stringify(cart));
-  }
-
 // save cart to local storage
 localStorage.setItem("CART", JSON.stringify(cart));
 let totalItems = 0;
@@ -117,6 +113,6 @@ heart.forEach( (heart =>  { //heart fill color + animation-heart animation
   heart.classList.add('animation');
   heart.classList.toggle('fill-color');
   localStorage.setItem("CART", JSON.stringify(cart));
-  /*onclick="togglefav" */
+  /* toggle favorits */
 });
 }))
