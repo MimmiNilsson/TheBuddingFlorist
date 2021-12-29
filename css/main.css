@@ -846,6 +846,13 @@ p {
   text-align: right;
   padding-top: 4px; }
 
+.footer_bottom a:link {
+  text-decoration: none;
+  color: white; }
+
+.footer_bottom a:hover {
+  color: black; }
+
 /*===== MIMMI: ORDER COMPLETED MESSAGE ===== */
 .body-checkout-msg {
   background-image: url(../assets/checkout_msg/hands.jpg);
