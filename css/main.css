@@ -439,7 +439,7 @@ input:focus, textarea:focus {
 
 .cart-items {
   max-height: calc(90vh - 247px);
-  overflow-y: auto;
+  overflow-y: scroll;
   overflow-x: hidden;
   width: 60%;
   height: 100%;
@@ -565,7 +565,7 @@ input:focus, textarea:focus {
   background-color: #fff; }
 
 .checkout-shipping, .checkout-billing {
-  width: 40%;
+  width: 60%;
   margin: auto;
   padding: 0.75rem 2rem 2rem 2rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
@@ -635,7 +635,6 @@ svg {
 
 .body-index {
   background-color: white;
-  padding: 0;
   box-sizing: border-box; }
 
 .fa-snowflake {
@@ -751,7 +750,13 @@ input[name=cirkel] {
   flex-wrap: wrap;
   margin-top: 650px;
   margin-left: 10%;
-  margin-right: 10%; }
+  margin-right: 10%;
+  width: 80%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 3fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 50px; }
 
 .card {
   position: relative;
@@ -763,8 +768,25 @@ input[name=cirkel] {
   margin-left: 2%;
   text-align: center;
   font-family: arial;
-  line-height: 20px;
-  /* height: 450px; */ }
+  line-height: 20px; }
+
+/* products list */
+/*
+.products-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:0 10%;
+}
+/* PRODUCTS */
+.products {
+  width: 80%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 3fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 50px; }
 
 h1 {
   color: #989e8b; }

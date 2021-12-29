@@ -36,7 +36,7 @@
 
 .cart-items {
     max-height: calc(90vh - 247px);
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
     width: 60%;
     height: 100%;
@@ -226,7 +226,7 @@
 }
 
 .checkout-shipping, .checkout-billing {
-    width: 40%;
+    width: 60%;
     margin: auto;
     padding: 0.75rem 2rem 2rem 2rem;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
