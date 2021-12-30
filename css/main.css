@@ -1010,3 +1010,9 @@ p {
 
 .fav-item-name {
   text-align: center; }
+
+@media (max-width: 590px) {
+  .fav-item {
+    flex-direction: column; }
+  .fav-to-cart {
+    align-self: center; } }

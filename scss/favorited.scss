@@ -44,7 +44,16 @@
     flex: 1;
     border-radius: 0 10px 10px 0;
   }
-  .fav-item-name {
+.fav-item-name {
     text-align: center;
     
+  }
+
+@media (max-width: 590px) {
+.fav-item { 
+    flex-direction: column;
+    }
+.fav-to-cart {
+    align-self: center;
+}     
   }
