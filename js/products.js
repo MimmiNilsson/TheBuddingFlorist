@@ -9,6 +9,7 @@ let productsAllNew = incomingStock.concat(products);
 function renderProducts() {
   productsAllNew.forEach((product) => {
     productsEl.innerHTML += `
+    
     <div class="card">
         <div class="heart" onclick="togglefav(${product.id})"></div>
                 <img src="${product.imgSrc}" alt="${product.name}" style="width:100%">
@@ -18,6 +19,7 @@ function renderProducts() {
         <div class="add-to-cart" onclick="addToCart(${product.id})">
             <button class="add">Add to Cart</button>
         </div>
+    </div>
     </div>
 `;
   });

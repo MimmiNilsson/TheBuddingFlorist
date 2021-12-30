@@ -7,18 +7,20 @@ function renderFavItems() {
   favItemsEl.innerHTML = ""; // clear fav element
   fav.forEach((item) => {
     favItemsEl.innerHTML += `
+      <div class="favs">
         <div class="fav-item">
+          <h4 class="fav-item-name">${item.name}</h4>
             <div class="item-info" onclick="removeItemFromFav(${item.id})">
-                <img src="${item.imgSrc}" alt="${item.name}">
-                <h4>${item.name}</h4>
+                <img class="fav-img" src="${item.imgSrc}" alt="${item.name}">
             </div>
-            <div class="unit-price">
+            <div class="fav-unit-price">
                 ${item.price} SEK
             </div>
             <button class="fav-to-cart" title="add to cart" onclick="addToCart(${item.id})">
               Add to cart
             </button>
         </div>
+      </div>    
       `;
   });
 }
