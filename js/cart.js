@@ -8,6 +8,9 @@ const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 let incomingStock = JSON.parse(localStorage.getItem("incomingStock")) || [];
 let productsAllNew = productsAll.concat(incomingStock);
 
+// cart array
+let cart = JSON.parse(localStorage.getItem("CART")) || [];
+
 // render cart items
 function renderCartItems() {
   cartItemsEl.innerHTML = ""; // clear cart element
@@ -30,10 +33,6 @@ function renderCartItems() {
       `;
   });
 }
-
-// cart array
-let cart = JSON.parse(localStorage.getItem("CART")) || [];
-updateCart();
 
 // ADD TO CART
 function addToCart(id) {
@@ -59,6 +58,7 @@ function updateCart() {
 // save cart to local storage
   localStorage.setItem("CART", JSON.stringify(cart));
 }
+updateCart();
 
 // calculate and render subtotal
 function renderSubtotal() {
@@ -104,7 +104,7 @@ function changeNumberOfUnits(action, id) {
 }
 
 //=============================================================================
-/*===== MIMMI: CART/CHECKOUT WINDOW =====*/
+/*===== MIMMI: CART / CHECKOUT WINDOW =====*/
 //=============================================================================
 
 const checkoutBtn = document.querySelector(".checkout-msg-btn");
@@ -113,9 +113,6 @@ const checkoutBtn = document.querySelector(".checkout-msg-btn");
      e.preventDefault()
     window.location.href = "../html/checkout_msg.html";
 
-    name.value = '';
-    imgSrc.value = '';
-    price.value = '';
-    desc.value = '';
+    
 
  });

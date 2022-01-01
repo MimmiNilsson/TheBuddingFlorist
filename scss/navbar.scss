@@ -1,5 +1,5 @@
 //=============================================================================
-/*===== MIMMI: NAVBAR ===== */
+/*===== MIMMI: NAVBAR MENU ===== */
 //=============================================================================
 
 .navbar {
@@ -42,12 +42,20 @@
 }
   
 .navbar-links li:hover {
-    background-color: #989e8b; 
+    background-color: #88937b; 
     font-size: 1rem;
     border-radius: 2px;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
 }
+
+a:is(:link, :active).active {
+    background-color: #959f8a; 
+    font-size: 1rem;
+    border-radius: 2px;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+} 
 
 .toggle-button {
     position: absolute;

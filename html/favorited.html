@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.min.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="../js/navbar.js" defer></script>
     <script src="../js/productsdata.js" defer></script>
     <script src="../js/favorited.js" defer></script>
 </head>
@@ -22,38 +24,27 @@
                 <span class="bar"></span>
             </a>
             <div class="navbar-links">
-              <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./products.html">Our Products</a></li>
-                <li><a href="./admin_login.html"><i class="fas fa-user-cog"></i></a></li>
-                <li><a href="./favorited.html"><i class="fas fa-heart"></i></a></li>
-                <!-- <li class="cart"><a href="./cart.html"><span>0</span><i class="fas fa-shopping-cart"></i></a></li> -->
-                <li><a href="./cart.html"><span class="total-items-in-cart">0</span> <i class="fas fa-shopping-cart"></i></a></li>
-              </ul>
+                <ul id="menu-list">
+                    <li><a href="./index.html" class="nav-item">Home</a></li>
+                    <li><a href="./products.html" class="nav-item">Our Products</a></li>
+                    <li><a href="./admin_login.html" class="nav-item"><i class="fas fa-user-cog"></i></a></li>
+                    <li><a href="./favorited.html" class="nav-item"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="./cart.html" class="nav-item"><span class="total-items-in-cart">0</span> <i
+                                class="fas fa-shopping-cart"></i></a></li>
+                </ul>
             </div>
-          </nav>
-    </header> 
+        </nav>
+    </header>
     <h1 class="wishlist-title">Wishlist</h1>
-
-    <div class="products-container">
- 
-        <div class="product-header">
-            <h5 class="product-title">Product</h5>
-        </div>
-        <div class="wishlistProducts">
+    <h4 class="fav-info"><em>(Click on item to remove from favorites)</em></h4>
+    <div class="favs">   
+        <div class="fav-header">
             
         </div>
-    </div>
-    
-    <div class="products-list">
-        <div class="favs">
-            <div class="fav-header">
-                <div class="column1">Item</div>
-            </div>
-            <div class="fav-items">
-                <!-- render cart items here -->
-            </div>
+        <div class="fav-items">
+            <!-- render cart items here -->
         </div>
     </div>
+
 </body>
 </html>
