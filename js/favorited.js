@@ -35,7 +35,7 @@ function addToFav(id) {
   if (fav.some((item) => item.id === id)) {
     fav = fav.filter((item) => item.id !== id);
   }else{
-    const item = productsAll.find((product) => product.id === id);
+    const item = productsAllNew.find((product) => product.id === id);
 
     fav.push({
       ...item
@@ -55,4 +55,29 @@ function updateFav() {
 function removeItemFromFav(id) {
     fav = fav.filter((item) => item.id !==id); 
     updateFav(); 
+}
+
+let cart = JSON.parse(localStorage.getItem("CART")) || [];
+
+// ADD TO CART
+function addToCart(id) {
+  // check if product already exist in cart
+  if (cart.some((item) => item.id === id)) {
+    changeNumberOfUnits(id);
+  } else {
+    const item = productsAll.find((product) => product.id === id);
+
+    cart.push({
+      ...item,
+      numberOfUnits: 1,
+    });
+  }
+
+// save cart to local storage
+localStorage.setItem("CART", JSON.stringify(cart));
+let totalItems = 0;
+cart.forEach((item) => {
+  totalItems += item.numberOfUnits;
+  });
+totalItemsInCartEl.innerHTML = totalItems;
 }

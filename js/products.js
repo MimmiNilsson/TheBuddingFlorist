@@ -2,8 +2,9 @@
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 const productsEl = document.querySelector(".products");
 
+// Itemst that we add from admin, and concat it with our array we already had
 incomingStock = JSON.parse(localStorage.getItem("incomingStock")) || [];
-let productsAllNew = incomingStock.concat(products);
+let productsAllNew = incomingStock.concat(products); //new items pushes in att the top of the array
 
 // RENDER PRODUCTS
 function renderProducts() {
@@ -45,7 +46,6 @@ function togglefav(id) {
     localStorage.setItem("FAV", JSON.stringify(fav));
 }
 
-
 // ADD TO CART
 function addToCart(id) {
   // check if product already exist in cart
@@ -60,8 +60,6 @@ function addToCart(id) {
     });
   }
 
-  
-
 // save cart to local storage
 localStorage.setItem("CART", JSON.stringify(cart));
 let totalItems = 0;
@@ -71,7 +69,7 @@ cart.forEach((item) => {
 totalItemsInCartEl.innerHTML = totalItems;
 }
 
-  // change number of units for an item
+// change number of units for an item
 function changeNumberOfUnits(id) {
   cart = cart.map((item) => {
     let numberOfUnits = item.numberOfUnits;
@@ -89,24 +87,6 @@ function changeNumberOfUnits(id) {
   });
 }
 
-  // change number of units for an item
-  function changeNumberOfUnits(id) {
-    cart = cart.map((item) => {
-      let numberOfUnits = item.numberOfUnits;
-  
-      if (item.id === id) {
-        if (numberOfUnits < item.instock) {
-          numberOfUnits++;
-        }
-      }
-  
-      return {
-        ...item,
-        numberOfUnits,
-      };
-    });
-  }
-
 const heart = document.querySelectorAll(".heart");
 const animationHeart = document.querySelectorAll(".animation-heart");
 
@@ -116,7 +96,7 @@ heart.forEach( (heart =>  { //heart fill color + animation-heart animation
   heart.addEventListener("click", () => {
   heart.classList.add('animation');
   heart.classList.toggle('fill-color');
-  localStorage.setItem("CART", JSON.stringify(cart));
+  localStorage.setItem("FAV", JSON.stringify(fav));
   /* toggle favorits */
 });
 }))

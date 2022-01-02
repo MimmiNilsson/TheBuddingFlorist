@@ -4,6 +4,7 @@ const subtotalEl = document.querySelector(".subtotal");
 const totalItemsInCartEl = document.querySelector(".total-items-in-cart");
 
 
+
 // cart array incoming
 let incomingStock = JSON.parse(localStorage.getItem("incomingStock")) || [];
 let productsAllNew = productsAll.concat(incomingStock);
