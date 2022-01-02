@@ -5,3 +5,5 @@ Color codes:
     Blue = Morgan
     Dark blue = Everybody
     Yellow = if time allows 
+
+5) Vad var det intressantaste du lärde dig om att använda agila  metoder under projektarbetet?
