@@ -6,6 +6,9 @@ Color codes:
     Dark blue = Everybody
     Yellow = if time allows 
 
+
+GRUPPINLÄMNING
+
 5) Vad var det mest intressanta ni lärde er om att använda agila  metoder under projektarbetet?
 
 När man jobbar agilt och med sprints går det inte att skjuta upp ens arbete eftersom sprints kräver att du levererar på dina tasks. En av de stora utmaningarna har även varit att konstant behöva ändra i planeringen, se över prioriteringar samt estimatet. Stämmer vår avsätta tid eller behöver vi uppdatera även denna task?
