@@ -633,6 +633,20 @@ input:focus {
   background-color: #c4c4c4;
   color: white; }
 
+@media (max-width: 800px) {
+  .cart-header {
+    width: auto;
+    font-size: 10px; }
+  .cart-items {
+    width: auto; }
+  .cart-footer {
+    justify-content: center;
+    width: auto; }
+  .subtotal {
+    height: auto;
+    font-size: 15px;
+    background-image: none; } }
+
 svg {
   visibility: hidden;
   top: -20px;

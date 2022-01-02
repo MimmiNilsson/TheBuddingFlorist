@@ -108,8 +108,3 @@ const pubBtn = document.querySelector(".main-pub-btn");
     desc.value = '';
 
  });
-
-
-
-
-
